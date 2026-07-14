@@ -21,7 +21,8 @@
             "Description": null,
             "ParameterKey": "Ex_externalize",
             "ParameterValues": {
-              "Default": "from Dev"
+              "Default": "from Dev",
+              "TST": "from TST"
             }
           },
           {
