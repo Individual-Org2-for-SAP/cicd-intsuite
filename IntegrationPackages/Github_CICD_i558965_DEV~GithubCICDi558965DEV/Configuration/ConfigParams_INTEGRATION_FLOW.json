@@ -1,0 +1,39 @@
+{
+  "PackageIntegrationFlowParameters": {
+    "PackageName": "Github_CICD_i558965_DEV",
+    "PackageID": "GithubCICDi558965DEV",
+    "Artifacts": [
+      {
+        "ArtifactID": "iFlow_CICD_1",
+        "ArtifactName": "iFlow_CICD_1",
+        "ArtifactType": "INTEGRATION_FLOW",
+        "Parameters": [
+          {
+            "DataType": "xsd:string",
+            "Description": null,
+            "ParameterKey": "Ex_test_value",
+            "ParameterValues": {
+              "Default": ""
+            }
+          },
+          {
+            "DataType": "xsd:string",
+            "Description": null,
+            "ParameterKey": "Ex_externalize",
+            "ParameterValues": {
+              "Default": "from Dev"
+            }
+          },
+          {
+            "DataType": "xsd:string",
+            "Description": null,
+            "ParameterKey": "SAP_ProfileId",
+            "ParameterValues": {
+              "Default": "iflmap"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

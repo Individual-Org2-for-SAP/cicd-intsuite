@@ -1,0 +1,16 @@
+{
+  "PackageIntegrationFlowDeployments": {
+    "PackageName": "Github_CICD_i558965_DEV",
+    "PackageID": "GithubCICDi558965DEV",
+    "IntegrationFlows": [
+      {
+        "ArtifactID": "iFlow_CICD_1",
+        "ArtifactName": "iFlow_CICD_1",
+        "Deploy": "false",
+        "Rank": "100",
+        "LogLevel": "INFO",
+        "Runtimes": "iflmap"
+      }
+    ]
+  }
+}
