@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-15T03:25:34Z",
+  "generated": "2026-07-16T03:48:03Z",
   "environments": [
     "DEV",
     "TST"
@@ -2384,26 +2384,6 @@
       },
       "iflows": [
         {
-          "id": "Integrate_Sales_Order_History_Data_from_CAL2025_to_IBP",
-          "name": "Integrate Sales Order History Data from CAL2025 to IBP",
-          "source": "btp",
-          "hasGitConfig": false,
-          "environments": {
-            "DEV": {
-              "deploy": null,
-              "logLevel": null,
-              "runtimeStatus": "STARTED",
-              "runtimeVersion": "1.0.3"
-            },
-            "TST": {
-              "deploy": null,
-              "logLevel": null,
-              "runtimeStatus": null,
-              "runtimeVersion": null
-            }
-          }
-        },
-        {
           "id": "Integrate_Sales_Order_History_Data_from_CAL2025_to_SAPIBP1",
           "name": "Integrate Sales Order History Data from CAL2025 to SAPIBP1",
           "source": "btp",
@@ -2434,6 +2414,26 @@
               "logLevel": null,
               "runtimeStatus": "ERROR",
               "runtimeVersion": "1.0.2"
+            },
+            "TST": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": null,
+              "runtimeVersion": null
+            }
+          }
+        },
+        {
+          "id": "Integrate_Sales_Order_History_Data_from_CAL2025_to_IBP",
+          "name": "Integrate Sales Order History Data from CAL2025 to _SAPIBP2",
+          "source": "btp",
+          "hasGitConfig": false,
+          "environments": {
+            "DEV": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": "STARTED",
+              "runtimeVersion": "1.0.3"
             },
             "TST": {
               "deploy": null,
@@ -48900,6 +48900,520 @@
       ]
     },
     {
+      "id": "SAPS4HANAintegrationwithSAPFieldglass.MDI",
+      "name": "SAP S/4HANA Integration with SAP Fieldglass.MDI",
+      "source": "btp",
+      "foundOnEnvironments": [
+        "DEV"
+      ],
+      "gitConfig": {
+        "found": false,
+        "jsonFormat": null
+      },
+      "iflows": [
+        {
+          "id": "Replicate_Company_Code_from_S4HANA_to_Fieldglass.MDI",
+          "name": "Deprecate-Replicate Company Code from S4HANA to SAP Fieldglass",
+          "source": "btp",
+          "hasGitConfig": false,
+          "environments": {
+            "DEV": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": "NOT_DEPLOYED",
+              "runtimeVersion": ""
+            },
+            "TST": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": null,
+              "runtimeVersion": null
+            }
+          }
+        },
+        {
+          "id": "Invoice_Status_Replication_from_S4HANA_to_Fieldglass.MDI",
+          "name": "Invoice Status Replication from SAP S4HANA to SAP Fieldglass",
+          "source": "btp",
+          "hasGitConfig": false,
+          "environments": {
+            "DEV": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": "NOT_DEPLOYED",
+              "runtimeVersion": ""
+            },
+            "TST": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": null,
+              "runtimeVersion": null
+            }
+          }
+        },
+        {
+          "id": "PurchaseOrder_Replicate_from_FG_to_S4.MDI",
+          "name": "Purchase Order Replication from SAP Fieldglass to SAP S4HANA_1709",
+          "source": "btp",
+          "hasGitConfig": false,
+          "environments": {
+            "DEV": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": "NOT_DEPLOYED",
+              "runtimeVersion": ""
+            },
+            "TST": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": null,
+              "runtimeVersion": null
+            }
+          }
+        },
+        {
+          "id": "PurchaseOrderStatus_Update_from_S4_to_FG.MDI",
+          "name": "Purchase Order Status Notification Replication from SAP S4HANA to SAP Fieldglass_1709",
+          "source": "btp",
+          "hasGitConfig": false,
+          "environments": {
+            "DEV": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": "NOT_DEPLOYED",
+              "runtimeVersion": ""
+            },
+            "TST": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": null,
+              "runtimeVersion": null
+            }
+          }
+        },
+        {
+          "id": "Purchase_Order_Status_Replication_from_S4HANA_to_Fieldglass.MDI",
+          "name": "Purchase Order Status Replication from SAP S4HANA to SAP Fieldglass",
+          "source": "btp",
+          "hasGitConfig": false,
+          "environments": {
+            "DEV": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": "NOT_DEPLOYED",
+              "runtimeVersion": ""
+            },
+            "TST": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": null,
+              "runtimeVersion": null
+            }
+          }
+        },
+        {
+          "id": "PurchaseRequistion_Replicate_from_FG_to_S4.MDI",
+          "name": "Purchase Requisition Replication from SAP Fieldglass to SAP S4HANA_1709",
+          "source": "btp",
+          "hasGitConfig": false,
+          "environments": {
+            "DEV": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": "NOT_DEPLOYED",
+              "runtimeVersion": ""
+            },
+            "TST": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": null,
+              "runtimeVersion": null
+            }
+          }
+        },
+        {
+          "id": "PurchaseRequisitionStatus_Update_from_S4_to_FG.MDI",
+          "name": "Purchase Requisition Status Notification Replication from SAP S4HANA to SAP Fieldglass_1709",
+          "source": "btp",
+          "hasGitConfig": false,
+          "environments": {
+            "DEV": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": "NOT_DEPLOYED",
+              "runtimeVersion": ""
+            },
+            "TST": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": null,
+              "runtimeVersion": null
+            }
+          }
+        },
+        {
+          "id": "Purchase_Requisition_Status_Replication_from_S4HANA_to_Fieldglass.MDI",
+          "name": "Purchase Requisition Status Replication from SAP S4HANA to SAP Fieldglass",
+          "source": "btp",
+          "hasGitConfig": false,
+          "environments": {
+            "DEV": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": "NOT_DEPLOYED",
+              "runtimeVersion": ""
+            },
+            "TST": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": null,
+              "runtimeVersion": null
+            }
+          }
+        },
+        {
+          "id": "BusinessPartnerRelationship_passthrough.MDI",
+          "name": "Replicate Business Partner Relationship from SAP S4HANA to SAP Fieldglass",
+          "source": "btp",
+          "hasGitConfig": false,
+          "environments": {
+            "DEV": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": "NOT_DEPLOYED",
+              "runtimeVersion": ""
+            },
+            "TST": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": null,
+              "runtimeVersion": null
+            }
+          }
+        },
+        {
+          "id": "Business_Partner_passthrough.MDI",
+          "name": "Replicate Business Partner from SAP S4HANA to SAP Fieldglass",
+          "source": "btp",
+          "hasGitConfig": false,
+          "environments": {
+            "DEV": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": "NOT_DEPLOYED",
+              "runtimeVersion": ""
+            },
+            "TST": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": null,
+              "runtimeVersion": null
+            }
+          }
+        },
+        {
+          "id": "Replicate_Company_Code_from_S4HANA_to_SAP_Fieldglass.MDI",
+          "name": "Replicate Company Code from SAP S4HANA to SAP Fieldglass",
+          "source": "btp",
+          "hasGitConfig": false,
+          "environments": {
+            "DEV": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": "NOT_DEPLOYED",
+              "runtimeVersion": ""
+            },
+            "TST": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": null,
+              "runtimeVersion": null
+            }
+          }
+        },
+        {
+          "id": "Replicate_Cost_Center_from_S4HANA_to_SAP_Fieldglass.MDI",
+          "name": "Replicate Cost Center from SAP S4HANA to SAP Fieldglass",
+          "source": "btp",
+          "hasGitConfig": false,
+          "environments": {
+            "DEV": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": "NOT_DEPLOYED",
+              "runtimeVersion": ""
+            },
+            "TST": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": null,
+              "runtimeVersion": null
+            }
+          }
+        },
+        {
+          "id": "Replicate_ERS_Invoice_from_SAP_S4HANA_to_SAP_Fieldglass.MDI",
+          "name": "Replicate ERS Invoice from SAP S4HANA to SAP Fieldglass",
+          "source": "btp",
+          "hasGitConfig": false,
+          "environments": {
+            "DEV": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": "NOT_DEPLOYED",
+              "runtimeVersion": ""
+            },
+            "TST": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": null,
+              "runtimeVersion": null
+            }
+          }
+        },
+        {
+          "id": "Replicate_GLAccount_Replicate_from_S4HANA_to_SAP_Fieldglass.MDI",
+          "name": "Replicate GLAccount from SAP S4HANA to SAP Fieldglass",
+          "source": "btp",
+          "hasGitConfig": false,
+          "environments": {
+            "DEV": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": "NOT_DEPLOYED",
+              "runtimeVersion": ""
+            },
+            "TST": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": null,
+              "runtimeVersion": null
+            }
+          }
+        },
+        {
+          "id": "Replicate_Invoice_from_Fieldglass_to_S4HANA.MDI",
+          "name": "Replicate Invoice from SAP Fieldglass to SAP S4HANA",
+          "source": "btp",
+          "hasGitConfig": false,
+          "environments": {
+            "DEV": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": "NOT_DEPLOYED",
+              "runtimeVersion": ""
+            },
+            "TST": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": null,
+              "runtimeVersion": null
+            }
+          }
+        },
+        {
+          "id": "Replicate_Plant_from_S4HANA_to_SAP_Fieldglass.MDI",
+          "name": "Replicate Plant from SAP S4HANA to SAP Fieldglass",
+          "source": "btp",
+          "hasGitConfig": false,
+          "environments": {
+            "DEV": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": "NOT_DEPLOYED",
+              "runtimeVersion": ""
+            },
+            "TST": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": null,
+              "runtimeVersion": null
+            }
+          }
+        },
+        {
+          "id": "Replicate_Purchase_Order_from_Fieldglass_to_S4HANA.MDI",
+          "name": "Replicate Purchase Order from SAP Fieldglass to SAP S4HANA",
+          "source": "btp",
+          "hasGitConfig": false,
+          "environments": {
+            "DEV": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": "NOT_DEPLOYED",
+              "runtimeVersion": ""
+            },
+            "TST": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": null,
+              "runtimeVersion": null
+            }
+          }
+        },
+        {
+          "id": "Replicate_Purchase_Requisition_from_Fieldglass_to_S4HANA.MDI",
+          "name": "Replicate Purchase Requisition from SAP Fieldglass to SAP S4HANA",
+          "source": "btp",
+          "hasGitConfig": false,
+          "environments": {
+            "DEV": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": "NOT_DEPLOYED",
+              "runtimeVersion": ""
+            },
+            "TST": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": null,
+              "runtimeVersion": null
+            }
+          }
+        },
+        {
+          "id": "Replicate_Purchasing_Organisation_from_S4HANA_to_SAP_Fieldglass.MDI",
+          "name": "Replicate Purchasing Organisation from SAP S4HANA to SAP Fieldglass",
+          "source": "btp",
+          "hasGitConfig": false,
+          "environments": {
+            "DEV": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": "NOT_DEPLOYED",
+              "runtimeVersion": ""
+            },
+            "TST": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": null,
+              "runtimeVersion": null
+            }
+          }
+        },
+        {
+          "id": "Replicate_SES_from_Fieldglass_to_S4HANA.MDI",
+          "name": "Replicate SES from SAP Fieldglass to SAP S4HANA",
+          "source": "btp",
+          "hasGitConfig": false,
+          "environments": {
+            "DEV": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": "NOT_DEPLOYED",
+              "runtimeVersion": ""
+            },
+            "TST": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": null,
+              "runtimeVersion": null
+            }
+          }
+        },
+        {
+          "id": "Replicate_SES_from_SAP_Fieldglass_to_SAP_S4HANA_1909.MDI",
+          "name": "Replicate SES from SAP Fieldglass to SAP S4HANA_OP_1909",
+          "source": "btp",
+          "hasGitConfig": false,
+          "environments": {
+            "DEV": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": "NOT_DEPLOYED",
+              "runtimeVersion": ""
+            },
+            "TST": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": null,
+              "runtimeVersion": null
+            }
+          }
+        },
+        {
+          "id": "Replicate_Sales_Order_from_S4HANA_to_SAP_Fieldglass.MDI",
+          "name": "Replicate Sales Order from SAP S4HANA to SAP Fieldglass",
+          "source": "btp",
+          "hasGitConfig": false,
+          "environments": {
+            "DEV": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": "NOT_DEPLOYED",
+              "runtimeVersion": ""
+            },
+            "TST": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": null,
+              "runtimeVersion": null
+            }
+          }
+        },
+        {
+          "id": "Replicate_WBS_Elements_from_S4_to_FG.MDI",
+          "name": "Replicate WBS Elements from SAP S4HANA to SAP Fieldglass",
+          "source": "btp",
+          "hasGitConfig": false,
+          "environments": {
+            "DEV": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": "STARTED",
+              "runtimeVersion": "1.0.8"
+            },
+            "TST": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": null,
+              "runtimeVersion": null
+            }
+          }
+        },
+        {
+          "id": "DateTransfer_passthrough.MDI",
+          "name": "SAP S4HANA integration with SAP Fieldglass Data Transfer and Get Data by Transaction ID",
+          "source": "btp",
+          "hasGitConfig": false,
+          "environments": {
+            "DEV": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": "NOT_DEPLOYED",
+              "runtimeVersion": ""
+            },
+            "TST": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": null,
+              "runtimeVersion": null
+            }
+          }
+        },
+        {
+          "id": "SES_Status_Replication_from_S4HANA_to_Fieldglass.MDI",
+          "name": "SES Status Replication from SAP S4HANA to SAP Fieldglass",
+          "source": "btp",
+          "hasGitConfig": false,
+          "environments": {
+            "DEV": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": "NOT_DEPLOYED",
+              "runtimeVersion": ""
+            },
+            "TST": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": null,
+              "runtimeVersion": null
+            }
+          }
+        }
+      ]
+    },
+    {
       "id": "SAPS4HANAintegrationwithSAPFieldglass.ZFG",
       "name": "SAP S/4HANA Integration with SAP Fieldglass.ZFG",
       "source": "btp",
@@ -53188,8 +53702,8 @@
     }
   ],
   "summary": {
-    "btpPackageCount": 267,
+    "btpPackageCount": 268,
     "gitOnlyPackageCount": 0,
-    "totalPackageCount": 267
+    "totalPackageCount": 268
   }
 }
