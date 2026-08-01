@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-31T03:53:53Z",
+  "generated": "2026-08-01T03:52:13Z",
   "environments": [
     "DEV",
     "TST"
@@ -38281,6 +38281,126 @@
       },
       "iflows": [
         {
+          "id": "Add-On_Generic_Process_Post_Filter_Extension_i344716",
+          "name": "Add-On Generic Process Post Filter Extension i344716",
+          "source": "btp",
+          "hasGitConfig": false,
+          "environments": {
+            "DEV": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": "STARTED",
+              "runtimeVersion": "1.0.2"
+            },
+            "TST": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": null,
+              "runtimeVersion": null
+            }
+          }
+        },
+        {
+          "id": "CI_020_IBPtoSNOWFLAKE",
+          "name": "CI_020_IBPtoSNOWFLAKE",
+          "source": "btp",
+          "hasGitConfig": false,
+          "environments": {
+            "DEV": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": "NOT_DEPLOYED",
+              "runtimeVersion": ""
+            },
+            "TST": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": null,
+              "runtimeVersion": null
+            }
+          }
+        },
+        {
+          "id": "CI_030_IBPtoIBP",
+          "name": "CI_030_IBPtoIBP",
+          "source": "btp",
+          "hasGitConfig": false,
+          "environments": {
+            "DEV": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": "STARTED",
+              "runtimeVersion": "1.0.2"
+            },
+            "TST": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": null,
+              "runtimeVersion": null
+            }
+          }
+        },
+        {
+          "id": "CI_031_IBPtoIBPmultipleVersionsOutputs",
+          "name": "CI_031_IBPtoIBPmultipleVersionsOutputs",
+          "source": "btp",
+          "hasGitConfig": false,
+          "environments": {
+            "DEV": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": "STARTED",
+              "runtimeVersion": "1.0.2"
+            },
+            "TST": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": null,
+              "runtimeVersion": null
+            }
+          }
+        },
+        {
+          "id": "CI_040_IBPAppJobTemplate",
+          "name": "CI_040_IBPAppJobTemplate",
+          "source": "btp",
+          "hasGitConfig": false,
+          "environments": {
+            "DEV": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": "STARTED",
+              "runtimeVersion": "1.0.1"
+            },
+            "TST": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": null,
+              "runtimeVersion": null
+            }
+          }
+        },
+        {
+          "id": "CI_050_IBPtoSFTP",
+          "name": "CI_050_IBPtoSFTP",
+          "source": "btp",
+          "hasGitConfig": false,
+          "environments": {
+            "DEV": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": "STARTED",
+              "runtimeVersion": "1.0.2"
+            },
+            "TST": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": null,
+              "runtimeVersion": null
+            }
+          }
+        },
+        {
           "id": "I344716_EX2",
           "name": "I344716_EX2",
           "source": "btp",
@@ -38301,16 +38421,16 @@
           }
         },
         {
-          "id": "S4Addon_To_IBP_Master_Data_Replication",
-          "name": "S4Addon To IBP Master Data Replication",
+          "id": "I344716_Ex2_2",
+          "name": "I344716_Ex2_2",
           "source": "btp",
           "hasGitConfig": false,
           "environments": {
             "DEV": {
               "deploy": null,
               "logLevel": null,
-              "runtimeStatus": "NOT_DEPLOYED",
-              "runtimeVersion": ""
+              "runtimeStatus": "STARTED",
+              "runtimeVersion": "1.0.1"
             },
             "TST": {
               "deploy": null,
@@ -38321,16 +38441,116 @@
           }
         },
         {
-          "id": "Snowflake_To_IBP_Product_Master_Replication",
-          "name": "Snowflake To IBP Product Master Replication",
+          "id": "Integrate_SO_History_Data_from_CAL2025_to_SAPIBP1_i344716",
+          "name": "Integrate SO History Data from CAL2025 to SAPIBP1_i344716",
           "source": "btp",
           "hasGitConfig": false,
           "environments": {
             "DEV": {
               "deploy": null,
               "logLevel": null,
-              "runtimeStatus": "NOT_DEPLOYED",
-              "runtimeVersion": ""
+              "runtimeStatus": "STARTED",
+              "runtimeVersion": "1.0.3"
+            },
+            "TST": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": null,
+              "runtimeVersion": null
+            }
+          }
+        },
+        {
+          "id": "Integrate_SO_History_Data_from_CAL2025_to__SAPIBP2_i344716",
+          "name": "Integrate SO History Data from CAL2025 to _SAPIBP2_i344716",
+          "source": "btp",
+          "hasGitConfig": false,
+          "environments": {
+            "DEV": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": "STARTED",
+              "runtimeVersion": "1.0.4"
+            },
+            "TST": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": null,
+              "runtimeVersion": null
+            }
+          }
+        },
+        {
+          "id": "Wrapper_01_For_Processing_KF_ver_01_I344716",
+          "name": "Wrapper 01 For Processing KF ver 01_I344716",
+          "source": "btp",
+          "hasGitConfig": false,
+          "environments": {
+            "DEV": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": "STARTED",
+              "runtimeVersion": "1.0.1"
+            },
+            "TST": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": null,
+              "runtimeVersion": null
+            }
+          }
+        },
+        {
+          "id": "Wrapper_01_For_Processing_KF_Actual_ver_01_i344716",
+          "name": "Wrapper 01 For Processing KF_Actual ver 01_i344716",
+          "source": "btp",
+          "hasGitConfig": false,
+          "environments": {
+            "DEV": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": "STARTED",
+              "runtimeVersion": "1.0.1"
+            },
+            "TST": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": null,
+              "runtimeVersion": null
+            }
+          }
+        },
+        {
+          "id": "Wrapper_01_For_Processing_MD_ver_I344716",
+          "name": "Wrapper 01 For Processing MD ver I344716",
+          "source": "btp",
+          "hasGitConfig": false,
+          "environments": {
+            "DEV": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": "STARTED",
+              "runtimeVersion": "1.0.2"
+            },
+            "TST": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": null,
+              "runtimeVersion": null
+            }
+          }
+        },
+        {
+          "id": "Wrapper_01_For_Processing_MD_ver_Loc_I344716",
+          "name": "Wrapper 01 For Processing MD ver Loc I344716",
+          "source": "btp",
+          "hasGitConfig": false,
+          "environments": {
+            "DEV": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": "STARTED",
+              "runtimeVersion": "1.0.1"
             },
             "TST": {
               "deploy": null,
