@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-16T02:15:29Z",
+  "generated": "2026-08-17T02:02:43Z",
   "environments": [
     "DEV",
     "TST"
@@ -52299,6 +52299,19 @@
       ]
     },
     {
+      "id": "SMBAdapterforSAPIntegrationSuite",
+      "name": "SMB (Server Message Block) Adapter for SAP Integration Suite",
+      "source": "btp",
+      "foundOnEnvironments": [
+        "DEV"
+      ],
+      "gitConfig": {
+        "found": false,
+        "jsonFormat": null
+      },
+      "iflows": []
+    },
+    {
       "id": "SalesforcePubSubAdapterforSAPIntegrationSuite",
       "name": "Salesforce Pub/Sub Adapter for SAP Integration Suite",
       "source": "btp",
@@ -55165,8 +55178,8 @@
     }
   ],
   "summary": {
-    "btpPackageCount": 274,
+    "btpPackageCount": 275,
     "gitOnlyPackageCount": 0,
-    "totalPackageCount": 274
+    "totalPackageCount": 275
   }
 }
