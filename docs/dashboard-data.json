@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-17T02:02:43Z",
+  "generated": "2026-08-18T02:09:15Z",
   "environments": [
     "DEV",
     "TST"
@@ -33009,6 +33009,26 @@
         {
           "id": "JMS_TempQueue",
           "name": "JMS_TempQueue",
+          "source": "btp",
+          "hasGitConfig": false,
+          "environments": {
+            "DEV": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": "NOT_DEPLOYED",
+              "runtimeVersion": ""
+            },
+            "TST": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": null,
+              "runtimeVersion": null
+            }
+          }
+        },
+        {
+          "id": "Migrate_test",
+          "name": "Migrate_test",
           "source": "btp",
           "hasGitConfig": false,
           "environments": {
