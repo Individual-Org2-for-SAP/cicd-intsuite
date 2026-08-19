@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-18T02:09:15Z",
+  "generated": "2026-08-19T02:11:51Z",
   "environments": [
     "DEV",
     "TST"
@@ -33972,7 +33972,7 @@
             "DEV": {
               "deploy": null,
               "logLevel": null,
-              "runtimeStatus": "ERROR",
+              "runtimeStatus": "STARTED",
               "runtimeVersion": "1.0.0"
             },
             "TST": {
@@ -33992,7 +33992,7 @@
             "DEV": {
               "deploy": null,
               "logLevel": null,
-              "runtimeStatus": "ERROR",
+              "runtimeStatus": "STARTED",
               "runtimeVersion": "1.0.3"
             },
             "TST": {
@@ -34012,7 +34012,7 @@
             "DEV": {
               "deploy": null,
               "logLevel": null,
-              "runtimeStatus": "ERROR",
+              "runtimeStatus": "STARTED",
               "runtimeVersion": "1.0.3"
             },
             "TST": {
@@ -35452,7 +35452,7 @@
             "DEV": {
               "deploy": null,
               "logLevel": null,
-              "runtimeStatus": "ERROR",
+              "runtimeStatus": "STARTED",
               "runtimeVersion": "1.0.0"
             },
             "TST": {
@@ -39142,6 +39142,26 @@
           }
         },
         {
+          "id": "Read_from_IBP",
+          "name": "Read from IBP and write Snowflake",
+          "source": "btp",
+          "hasGitConfig": false,
+          "environments": {
+            "DEV": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": "NOT_DEPLOYED",
+              "runtimeVersion": ""
+            },
+            "TST": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": null,
+              "runtimeVersion": null
+            }
+          }
+        },
+        {
           "id": "SAP_IBP_Read_-_Example_i344716",
           "name": "SAP IBP Read - Example_i344716",
           "source": "btp",
@@ -39372,6 +39392,26 @@
               "logLevel": null,
               "runtimeStatus": "STARTED",
               "runtimeVersion": "1.0.0"
+            },
+            "TST": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": null,
+              "runtimeVersion": null
+            }
+          }
+        },
+        {
+          "id": "Read_from_Snowflake_and_write_IBP",
+          "name": "Write to IBP with data from Snowflake",
+          "source": "btp",
+          "hasGitConfig": false,
+          "environments": {
+            "DEV": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": "NOT_DEPLOYED",
+              "runtimeVersion": ""
             },
             "TST": {
               "deploy": null,
@@ -45800,7 +45840,7 @@
             "DEV": {
               "deploy": null,
               "logLevel": null,
-              "runtimeStatus": "ERROR",
+              "runtimeStatus": "STARTED",
               "runtimeVersion": "1.0.2"
             },
             "TST": {
@@ -47489,7 +47529,7 @@
               "deploy": null,
               "logLevel": null,
               "runtimeStatus": "STARTED",
-              "runtimeVersion": "1.0.2"
+              "runtimeVersion": "1.0.3"
             },
             "TST": {
               "deploy": null,
@@ -47509,7 +47549,7 @@
               "deploy": null,
               "logLevel": null,
               "runtimeStatus": "STARTED",
-              "runtimeVersion": "1.0.3"
+              "runtimeVersion": "1.0.4"
             },
             "TST": {
               "deploy": null,
@@ -47529,7 +47569,7 @@
               "deploy": null,
               "logLevel": null,
               "runtimeStatus": "STARTED",
-              "runtimeVersion": "1.0.4"
+              "runtimeVersion": "1.0.5"
             },
             "TST": {
               "deploy": null,
@@ -47549,7 +47589,7 @@
               "deploy": null,
               "logLevel": null,
               "runtimeStatus": "STARTED",
-              "runtimeVersion": "1.0.2"
+              "runtimeVersion": "1.0.3"
             },
             "TST": {
               "deploy": null,
@@ -52995,7 +53035,7 @@
             "DEV": {
               "deploy": null,
               "logLevel": null,
-              "runtimeStatus": "ERROR",
+              "runtimeStatus": "STARTED",
               "runtimeVersion": "1.0.0"
             },
             "TST": {
