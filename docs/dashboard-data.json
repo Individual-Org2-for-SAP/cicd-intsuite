@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-20T02:09:39Z",
+  "generated": "2026-08-21T02:05:18Z",
   "environments": [
     "DEV",
     "TST"
@@ -34733,7 +34733,7 @@
               "deploy": null,
               "logLevel": null,
               "runtimeStatus": "STARTED",
-              "runtimeVersion": "1.0.3"
+              "runtimeVersion": "1.0.4"
             },
             "TST": {
               "deploy": null,
@@ -42555,128 +42555,8 @@
       },
       "iflows": [
         {
-          "id": "PIPO_Demo_Migrate_05",
-          "name": "PIPO_Demo_Migrate_05",
-          "source": "btp",
-          "hasGitConfig": false,
-          "environments": {
-            "DEV": {
-              "deploy": null,
-              "logLevel": null,
-              "runtimeStatus": "NOT_DEPLOYED",
-              "runtimeVersion": ""
-            },
-            "TST": {
-              "deploy": null,
-              "logLevel": null,
-              "runtimeStatus": null,
-              "runtimeVersion": null
-            }
-          }
-        },
-        {
-          "id": "PIPO_Demo_Migrate_06",
-          "name": "PIPO_Demo_Migrate_06",
-          "source": "btp",
-          "hasGitConfig": false,
-          "environments": {
-            "DEV": {
-              "deploy": null,
-              "logLevel": null,
-              "runtimeStatus": "NOT_DEPLOYED",
-              "runtimeVersion": ""
-            },
-            "TST": {
-              "deploy": null,
-              "logLevel": null,
-              "runtimeStatus": null,
-              "runtimeVersion": null
-            }
-          }
-        },
-        {
-          "id": "PIPO_Demo_Migrate_IF02",
-          "name": "PIPO_Demo_Migrate_IF02",
-          "source": "btp",
-          "hasGitConfig": false,
-          "environments": {
-            "DEV": {
-              "deploy": null,
-              "logLevel": null,
-              "runtimeStatus": "NOT_DEPLOYED",
-              "runtimeVersion": ""
-            },
-            "TST": {
-              "deploy": null,
-              "logLevel": null,
-              "runtimeStatus": null,
-              "runtimeVersion": null
-            }
-          }
-        },
-        {
-          "id": "PIPO_Demo_Migrate_IF03",
-          "name": "PIPO_Demo_Migrate_IF03",
-          "source": "btp",
-          "hasGitConfig": false,
-          "environments": {
-            "DEV": {
-              "deploy": null,
-              "logLevel": null,
-              "runtimeStatus": "NOT_DEPLOYED",
-              "runtimeVersion": ""
-            },
-            "TST": {
-              "deploy": null,
-              "logLevel": null,
-              "runtimeStatus": null,
-              "runtimeVersion": null
-            }
-          }
-        },
-        {
-          "id": "PIPO_Demo_Migrate_IF04",
-          "name": "PIPO_Demo_Migrate_IF04",
-          "source": "btp",
-          "hasGitConfig": false,
-          "environments": {
-            "DEV": {
-              "deploy": null,
-              "logLevel": null,
-              "runtimeStatus": "NOT_DEPLOYED",
-              "runtimeVersion": ""
-            },
-            "TST": {
-              "deploy": null,
-              "logLevel": null,
-              "runtimeStatus": null,
-              "runtimeVersion": null
-            }
-          }
-        },
-        {
-          "id": "PIPO_Demo_Migration_IF01",
-          "name": "PIPO_Demo_Migration_IF01",
-          "source": "btp",
-          "hasGitConfig": false,
-          "environments": {
-            "DEV": {
-              "deploy": null,
-              "logLevel": null,
-              "runtimeStatus": "NOT_DEPLOYED",
-              "runtimeVersion": ""
-            },
-            "TST": {
-              "deploy": null,
-              "logLevel": null,
-              "runtimeStatus": null,
-              "runtimeVersion": null
-            }
-          }
-        },
-        {
-          "id": "PIPO_Demo_Migration_IF04_Content",
-          "name": "PIPO_Demo_Migration_IF04_Content",
+          "id": "PIPO_Seminar_Migrate_Demo_IF01",
+          "name": "PIPO_Seminar_Migrate_Demo_IF01",
           "source": "btp",
           "hasGitConfig": false,
           "environments": {
