@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-24T02:15:01Z",
+  "generated": "2026-08-25T02:05:50Z",
   "environments": [
     "DEV",
     "TST"
@@ -7617,7 +7617,7 @@
     },
     {
       "id": "DataIntegrationScenariosforSAPIntegratedPlanningforSupplyChain",
-      "name": "CleanCoreExtensibility_Day5sample_I545133",
+      "name": "Data Integration Scenarios for SAP Integrated Business Planning for Supply Chain",
       "source": "btp",
       "foundOnEnvironments": [
         "DEV"
@@ -7676,8 +7676,8 @@
             "DEV": {
               "deploy": null,
               "logLevel": null,
-              "runtimeStatus": "NOT_DEPLOYED",
-              "runtimeVersion": ""
+              "runtimeStatus": "STARTED",
+              "runtimeVersion": "1.0.0"
             },
             "TST": {
               "deploy": null,
@@ -16419,6 +16419,26 @@
           }
         },
         {
+          "id": "I026676_PIPOMigrate_JavaMapping_groovy_01",
+          "name": "I026676_PIPOMigrate_JavaMapping_groovy_01",
+          "source": "btp",
+          "hasGitConfig": false,
+          "environments": {
+            "DEV": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": "NOT_DEPLOYED",
+              "runtimeVersion": ""
+            },
+            "TST": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": null,
+              "runtimeVersion": null
+            }
+          }
+        },
+        {
           "id": "I026676_RFC",
           "name": "I026676_RFC",
           "source": "btp",
@@ -16821,26 +16841,6 @@
         {
           "id": "i026676_genaitest_001_s3_file_to_s4hana_post",
           "name": "i026676_genaitest_001_s3_file_to_s4hana_post",
-          "source": "btp",
-          "hasGitConfig": false,
-          "environments": {
-            "DEV": {
-              "deploy": null,
-              "logLevel": null,
-              "runtimeStatus": "NOT_DEPLOYED",
-              "runtimeVersion": ""
-            },
-            "TST": {
-              "deploy": null,
-              "logLevel": null,
-              "runtimeStatus": null,
-              "runtimeVersion": null
-            }
-          }
-        },
-        {
-          "id": "i026676_scenarioName_01",
-          "name": "i026676_scenarioName_01",
           "source": "btp",
           "hasGitConfig": false,
           "environments": {
@@ -36075,6 +36075,26 @@
           }
         },
         {
+          "id": "C005-REVIEW-Common_23_Hire_APIUpsert",
+          "name": "C005-REVIEW-Common_23_Hire_APIUpsert",
+          "source": "btp",
+          "hasGitConfig": false,
+          "environments": {
+            "DEV": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": "NOT_DEPLOYED",
+              "runtimeVersion": ""
+            },
+            "TST": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": null,
+              "runtimeVersion": null
+            }
+          }
+        },
+        {
           "id": "CSV_S4HANA",
           "name": "CSV_S4HANA",
           "source": "btp",
@@ -37145,6 +37165,26 @@
               "logLevel": null,
               "runtimeStatus": "NOT_DEPLOYED",
               "runtimeVersion": ""
+            },
+            "TST": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": null,
+              "runtimeVersion": null
+            }
+          }
+        },
+        {
+          "id": "P031-Splitter_HTTPSession_CSRF",
+          "name": "P031-Splitter_HTTPSession_CSRF",
+          "source": "btp",
+          "hasGitConfig": false,
+          "environments": {
+            "DEV": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": "STARTED",
+              "runtimeVersion": "1.0.0"
             },
             "TST": {
               "deploy": null,
@@ -38952,6 +38992,26 @@
               "logLevel": null,
               "runtimeStatus": "STARTED",
               "runtimeVersion": "1.0.3"
+            },
+            "TST": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": null,
+              "runtimeVersion": null
+            }
+          }
+        },
+        {
+          "id": "FlatFile_SFTP_to_IBP_SalesOrder_OData",
+          "name": "FlatFile SFTP to IBP SalesOrder OData",
+          "source": "btp",
+          "hasGitConfig": false,
+          "environments": {
+            "DEV": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": "NOT_DEPLOYED",
+              "runtimeVersion": ""
             },
             "TST": {
               "deploy": null,
@@ -42674,6 +42734,86 @@
         "jsonFormat": null
       },
       "iflows": [
+        {
+          "id": "PIPO_Seminar_Bulk_Migrate_iflow01_SI_Demo01_Out",
+          "name": "PIPO_Seminar_Bulk_Migrate_iflow01_SI_Demo01_Out",
+          "source": "btp",
+          "hasGitConfig": false,
+          "environments": {
+            "DEV": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": "NOT_DEPLOYED",
+              "runtimeVersion": ""
+            },
+            "TST": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": null,
+              "runtimeVersion": null
+            }
+          }
+        },
+        {
+          "id": "PIPO_Seminar_Bulk_Migrate_iflow02_SI_Demo02_Out",
+          "name": "PIPO_Seminar_Bulk_Migrate_iflow02_SI_Demo02_Out",
+          "source": "btp",
+          "hasGitConfig": false,
+          "environments": {
+            "DEV": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": "NOT_DEPLOYED",
+              "runtimeVersion": ""
+            },
+            "TST": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": null,
+              "runtimeVersion": null
+            }
+          }
+        },
+        {
+          "id": "PIPO_Seminar_Bulk_Migrate_iflow03_SI_Demo03_Out",
+          "name": "PIPO_Seminar_Bulk_Migrate_iflow03_SI_Demo03_Out",
+          "source": "btp",
+          "hasGitConfig": false,
+          "environments": {
+            "DEV": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": "NOT_DEPLOYED",
+              "runtimeVersion": ""
+            },
+            "TST": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": null,
+              "runtimeVersion": null
+            }
+          }
+        },
+        {
+          "id": "PIPO_Seminar_Bulk_Migrate_iflow04_SI_Demo04_Out",
+          "name": "PIPO_Seminar_Bulk_Migrate_iflow04_SI_Demo04_Out",
+          "source": "btp",
+          "hasGitConfig": false,
+          "environments": {
+            "DEV": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": "NOT_DEPLOYED",
+              "runtimeVersion": ""
+            },
+            "TST": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": null,
+              "runtimeVersion": null
+            }
+          }
+        },
         {
           "id": "PIPO_Seminar_Migrate_Demo_IF01",
           "name": "PIPO_Seminar_Migrate_Demo_IF01",
