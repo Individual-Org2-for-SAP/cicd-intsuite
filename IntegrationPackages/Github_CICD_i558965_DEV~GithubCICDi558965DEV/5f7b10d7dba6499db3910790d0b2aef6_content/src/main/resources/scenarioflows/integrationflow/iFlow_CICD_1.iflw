@@ -116,7 +116,7 @@
                     <value>ctype::FlowstepVariant/cname::MessageEndEvent/version::1.1.0</value>
                 </ifl:property>
             </bpmn2:extensionElements>
-            <bpmn2:incoming>SequenceFlow_8</bpmn2:incoming>
+            <bpmn2:incoming>SequenceFlow_10</bpmn2:incoming>
             <bpmn2:messageEventDefinition/>
         </bpmn2:endEvent>
         <bpmn2:callActivity id="CallActivity_7" name="Set Externailze">
@@ -135,7 +135,10 @@
                 </ifl:property>
                 <ifl:property>
                     <key>wrapContent</key>
-                    <value/>
+                    <value>&lt;root&gt;
+&lt;username&gt;Bob&lt;/username&gt;
+&lt;address&gt;Tokyo&lt;/address&gt;
+&lt;/root&gt;</value>
                 </ifl:property>
                 <ifl:property>
                     <key>componentVersion</key>
@@ -155,7 +158,7 @@
         </bpmn2:callActivity>
         <bpmn2:startEvent id="StartEvent_4" name="Start Timer 1">
             <bpmn2:outgoing>SequenceFlow_5</bpmn2:outgoing>
-            <bpmn2:timerEventDefinition id="TimerEventDefinition_530277">
+            <bpmn2:timerEventDefinition id="TimerEventDefinition_3837">
                 <bpmn2:extensionElements>
                     <ifl:property>
                         <key>scheduleKey</key>
@@ -176,13 +179,70 @@
                 </bpmn2:extensionElements>
             </bpmn2:timerEventDefinition>
         </bpmn2:startEvent>
-        <bpmn2:sequenceFlow id="SequenceFlow_8" sourceRef="CallActivity_7" targetRef="EndEvent_2"/>
+        <bpmn2:callActivity id="CallActivity_9" name="XML to JSON Converter 1">
+            <bpmn2:extensionElements>
+                <ifl:property>
+                    <key>xmlJsonUseStreaming</key>
+                    <value>false</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>xmlJsonSuppressRootElement</key>
+                    <value>false</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>xmlJsonPathTable</key>
+                    <value/>
+                </ifl:property>
+                <ifl:property>
+                    <key>jsonOutputEncoding</key>
+                    <value/>
+                </ifl:property>
+                <ifl:property>
+                    <key>jsonNamespaceMapping</key>
+                    <value/>
+                </ifl:property>
+                <ifl:property>
+                    <key>componentVersion</key>
+                    <value>1.0</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>xmlJsonConvertAllElements</key>
+                    <value>specific</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>activityType</key>
+                    <value>XmlToJsonConverter</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>cmdVariantUri</key>
+                    <value>ctype::FlowstepVariant/cname::XmlToJsonConverter/version::1.0.8</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>useNamespaces</key>
+                    <value>true</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>jsonNamespaceSeparator</key>
+                    <value>:</value>
+                </ifl:property>
+            </bpmn2:extensionElements>
+            <bpmn2:incoming>SequenceFlow_8</bpmn2:incoming>
+            <bpmn2:outgoing>SequenceFlow_10</bpmn2:outgoing>
+        </bpmn2:callActivity>
+        <bpmn2:sequenceFlow id="SequenceFlow_8" sourceRef="CallActivity_7" targetRef="CallActivity_9"/>
         <bpmn2:sequenceFlow id="SequenceFlow_5" sourceRef="StartEvent_4" targetRef="CallActivity_7"/>
+        <bpmn2:sequenceFlow id="SequenceFlow_10" sourceRef="CallActivity_9" targetRef="EndEvent_2"/>
     </bpmn2:process>
     <bpmndi:BPMNDiagram id="BPMNDiagram_1" name="Default Collaboration Diagram">
         <bpmndi:BPMNPlane bpmnElement="Collaboration_1" id="BPMNPlane_1">
             <bpmndi:BPMNShape bpmnElement="EndEvent_2" id="BPMNShape_EndEvent_2">
-                <dc:Bounds height="32.0" width="32.0" x="703.0" y="142.0"/>
+                <dc:Bounds height="32.0" width="32.0" x="762.0" y="142.0"/>
+            </bpmndi:BPMNShape>
+            <bpmndi:BPMNShape bpmnElement="CallActivity_7" id="BPMNShape_CallActivity_7">
+                <dc:Bounds height="60.0" width="100.0" x="422.0" y="132.0"/>
+            </bpmndi:BPMNShape>
+            <bpmndi:BPMNShape bpmnElement="StartEvent_4" id="BPMNShape_StartEvent_4">
+                <dc:Bounds height="32.0" width="32.0" x="302.0" y="142.0"/>
             </bpmndi:BPMNShape>
             <bpmndi:BPMNShape bpmnElement="Participant_2" id="BPMNShape_Participant_2">
                 <dc:Bounds height="140.0" width="100.0" x="900.0" y="100.0"/>
@@ -191,21 +251,22 @@
                 <dc:Bounds height="140.0" width="100.0" x="40.0" y="100.0"/>
             </bpmndi:BPMNShape>
             <bpmndi:BPMNShape bpmnElement="Participant_Process_1" id="BPMNShape_Participant_Process_1">
-                <dc:Bounds height="220.0" width="569.0" x="250.0" y="60.0"/>
+                <dc:Bounds height="220.0" width="628.0" x="250.0" y="60.0"/>
             </bpmndi:BPMNShape>
-            <bpmndi:BPMNShape bpmnElement="StartEvent_4" id="BPMNShape_StartEvent_4">
-                <dc:Bounds height="32.0" width="32.0" x="302.0" y="142.0"/>
-            </bpmndi:BPMNShape>
-            <bpmndi:BPMNShape bpmnElement="CallActivity_7" id="BPMNShape_CallActivity_7">
-                <dc:Bounds height="60.0" width="100.0" x="422.0" y="132.0"/>
+            <bpmndi:BPMNShape bpmnElement="CallActivity_9" id="BPMNShape_CallActivity_9">
+                <dc:Bounds height="60.0" width="100.0" x="572.0" y="132.0"/>
             </bpmndi:BPMNShape>
             <bpmndi:BPMNEdge bpmnElement="SequenceFlow_5" id="BPMNEdge_SequenceFlow_5" sourceElement="BPMNShape_StartEvent_4" targetElement="BPMNShape_CallActivity_7">
                 <di:waypoint x="318.0" xsi:type="dc:Point" y="160.0"/>
                 <di:waypoint x="472.0" xsi:type="dc:Point" y="160.0"/>
             </bpmndi:BPMNEdge>
-            <bpmndi:BPMNEdge bpmnElement="SequenceFlow_8" id="BPMNEdge_SequenceFlow_8" sourceElement="BPMNShape_CallActivity_7" targetElement="BPMNShape_EndEvent_2">
-                <di:waypoint x="472.0" xsi:type="dc:Point" y="160.0"/>
-                <di:waypoint x="719.0" xsi:type="dc:Point" y="160.0"/>
+            <bpmndi:BPMNEdge bpmnElement="SequenceFlow_8" id="BPMNEdge_SequenceFlow_8" sourceElement="BPMNShape_CallActivity_7" targetElement="BPMNShape_CallActivity_9">
+                <di:waypoint x="472.0" xsi:type="dc:Point" y="162.0"/>
+                <di:waypoint x="622.0" xsi:type="dc:Point" y="162.0"/>
+            </bpmndi:BPMNEdge>
+            <bpmndi:BPMNEdge bpmnElement="SequenceFlow_10" id="BPMNEdge_SequenceFlow_10" sourceElement="BPMNShape_CallActivity_9" targetElement="BPMNShape_EndEvent_2">
+                <di:waypoint x="622.0" xsi:type="dc:Point" y="160.0"/>
+                <di:waypoint x="778.0" xsi:type="dc:Point" y="160.0"/>
             </bpmndi:BPMNEdge>
         </bpmndi:BPMNPlane>
     </bpmndi:BPMNDiagram>
