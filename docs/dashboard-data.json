@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-26T02:05:57Z",
+  "generated": "2026-08-27T09:02:02Z",
   "environments": [
     "DEV",
     "TST"
@@ -13249,7 +13249,7 @@
               "deploy": "true",
               "logLevel": "INFO",
               "runtimeStatus": "STARTED",
-              "runtimeVersion": "1.0.1"
+              "runtimeVersion": "1.0.2"
             }
           }
         }
@@ -42775,88 +42775,48 @@
       },
       "iflows": [
         {
-          "id": "PIPO_Seminar_Bulk_Migrate_iflow01_SI_Demo01_Out",
-          "name": "PIPO_Seminar_Bulk_Migrate_iflow01_SI_Demo01_Out",
-          "source": "btp",
-          "hasGitConfig": false,
-          "environments": {
-            "DEV": {
-              "deploy": null,
-              "logLevel": null,
-              "runtimeStatus": "NOT_DEPLOYED",
-              "runtimeVersion": ""
-            },
-            "TST": {
-              "deploy": null,
-              "logLevel": null,
-              "runtimeStatus": null,
-              "runtimeVersion": null
-            }
-          }
-        },
-        {
-          "id": "PIPO_Seminar_Bulk_Migrate_iflow02_SI_Demo02_Out",
-          "name": "PIPO_Seminar_Bulk_Migrate_iflow02_SI_Demo02_Out",
-          "source": "btp",
-          "hasGitConfig": false,
-          "environments": {
-            "DEV": {
-              "deploy": null,
-              "logLevel": null,
-              "runtimeStatus": "NOT_DEPLOYED",
-              "runtimeVersion": ""
-            },
-            "TST": {
-              "deploy": null,
-              "logLevel": null,
-              "runtimeStatus": null,
-              "runtimeVersion": null
-            }
-          }
-        },
-        {
-          "id": "PIPO_Seminar_Bulk_Migrate_iflow03_SI_Demo03_Out",
-          "name": "PIPO_Seminar_Bulk_Migrate_iflow03_SI_Demo03_Out",
-          "source": "btp",
-          "hasGitConfig": false,
-          "environments": {
-            "DEV": {
-              "deploy": null,
-              "logLevel": null,
-              "runtimeStatus": "NOT_DEPLOYED",
-              "runtimeVersion": ""
-            },
-            "TST": {
-              "deploy": null,
-              "logLevel": null,
-              "runtimeStatus": null,
-              "runtimeVersion": null
-            }
-          }
-        },
-        {
-          "id": "PIPO_Seminar_Bulk_Migrate_iflow04_SI_Demo04_Out",
-          "name": "PIPO_Seminar_Bulk_Migrate_iflow04_SI_Demo04_Out",
-          "source": "btp",
-          "hasGitConfig": false,
-          "environments": {
-            "DEV": {
-              "deploy": null,
-              "logLevel": null,
-              "runtimeStatus": "NOT_DEPLOYED",
-              "runtimeVersion": ""
-            },
-            "TST": {
-              "deploy": null,
-              "logLevel": null,
-              "runtimeStatus": null,
-              "runtimeVersion": null
-            }
-          }
-        },
-        {
           "id": "PIPO_Seminar_Migrate_Demo_IF01",
           "name": "PIPO_Seminar_Migrate_Demo_IF01",
+          "source": "btp",
+          "hasGitConfig": false,
+          "environments": {
+            "DEV": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": "NOT_DEPLOYED",
+              "runtimeVersion": ""
+            },
+            "TST": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": null,
+              "runtimeVersion": null
+            }
+          }
+        },
+        {
+          "id": "PIPO_Seminar_Migrate_Demo_IF02",
+          "name": "PIPO_Seminar_Migrate_Demo_IF02",
+          "source": "btp",
+          "hasGitConfig": false,
+          "environments": {
+            "DEV": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": "NOT_DEPLOYED",
+              "runtimeVersion": ""
+            },
+            "TST": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": null,
+              "runtimeVersion": null
+            }
+          }
+        },
+        {
+          "id": "PIPO_Seminar_Migrate_Demo_IF03",
+          "name": "PIPO_Seminar_Migrate_Demo_IF03",
           "source": "btp",
           "hasGitConfig": false,
           "environments": {
