@@ -248,7 +248,7 @@
 <body>
   <div class="header">
     <h1>📊 Integration Suite Dashboard</h1>
-    <div class="meta"><span>📁 <strong>Individual-Org2-for-SAP/cicd-intsuite</strong></span><span>📅 2026-08-27T09:02:02Z</span><span>🌍 <a href="https://dev.integrationsuite.cfapps.jp10.hana.ondemand.com/shell/home" target="_blank" style="color:#58a6ff;text-decoration:none;">DEV</a>, <a href="https://eu1.integrationsuite.cfapps.eu10-003.hana.ondemand.com/shell/home" target="_blank" style="color:#58a6ff;text-decoration:none;">TST</a></span><span>📦 278 BTP packages</span>
+    <div class="meta"><span>📁 <strong>Individual-Org2-for-SAP/cicd-intsuite</strong></span><span>📅 2026-08-28T11:23:27Z</span><span>🌍 <a href="https://dev.integrationsuite.cfapps.jp10.hana.ondemand.com/shell/home" target="_blank" style="color:#58a6ff;text-decoration:none;">DEV</a>, <a href="https://eu1.integrationsuite.cfapps.eu10-003.hana.ondemand.com/shell/home" target="_blank" style="color:#58a6ff;text-decoration:none;">TST</a></span><span>📦 279 BTP packages</span>
     </div>
     <div class="scope-note">ℹ️ This dashboard covers Integration Flow (IFlow) artifacts only. Other artifact types (Value Mappings, Script Collections, etc.) are not included.</div>
     <nav class="page-nav">
@@ -276,21 +276,21 @@
       <h2>📈 Summary</h2>
       <div class="summary-grid">
         <div class="summary-card" data-card-filter="btp" onclick="toggleCardFilter('btp')">
-          <div class="number">278</div>
+          <div class="number">279</div>
           <div class="label">BTP Packages</div>
         </div>
         <div class="summary-card" data-card-filter="not-all-envs" onclick="toggleCardFilter('not-all-envs')">
-          <div class="number">244</div>
+          <div class="number">245</div>
           <div class="label">Not on All Environments</div>
         </div>
         <div class="summary-card" data-card-filter="git-issues" onclick="toggleCardFilter('git-issues')">
-          <div class="number">277</div>
+          <div class="number">278</div>
           <div class="label">Git Config Issues</div>
-          <div class="sub-label">🔴 277 packages missing entirely</div>
+          <div class="sub-label">🔴 278 packages missing entirely</div>
           <div class="sub-label">⚠️ 0 packages with missing IFlows</div>
         </div>
       </div>
-      <div class="alert">⚠️ <strong>Action required:</strong> 277 package(s) and 2569 IFlow(s) found on BTP have no Git deployment configuration.</div>
+      <div class="alert">⚠️ <strong>Action required:</strong> 278 package(s) and 2567 IFlow(s) found on BTP have no Git deployment configuration.</div>
     </div>
     <div class="filter-bar">
       <input type="text" id="searchInput" placeholder="🔍 Filter by package or IFlow name/ID..." onkeyup="filterDashboard()">
@@ -3114,8 +3114,8 @@
           </tr>
           <tr class="notingit-row" data-iflow="Get_all_production_documents_from_S4 Get all production documents from SAP S4HANA" data-loglevel="">
             <td class="iflow-name" title="Get all production documents from SAP S4HANA">❓ Get all production documents from SAP S4HANA</td>
-            <td class="iflow-id" title="Get_all_production_documents_from_S4"><code class="copyable" onclick="showIdMenu(event,'iflow','Get_all_production_documents_from_S4','DataIntegrationScenariosforSAPIntegratedPlanningforSupplyChain','DEV','','','')" title="Click for options">Get_all_production_documents_from_S4</code></td>
-            <td class="env-cell"><span class="row-item">—</span><span class="row-item">—</span><span class="row-item">⚫ N/A</span></td>
+            <td class="iflow-id" title="Get_all_production_documents_from_S4"><code class="copyable" onclick="showIdMenu(event,'iflow','Get_all_production_documents_from_S4','DataIntegrationScenariosforSAPIntegratedPlanningforSupplyChain','DEV','','','DEV')" title="Click for options">Get_all_production_documents_from_S4</code></td>
+            <td class="env-cell"><span class="row-item">—</span><span class="row-item">—</span><span class="row-item">✅ STARTED v1.0.0</span></td>
             <td class="env-not-found" title="Package not found on TST">📦 Not found</td>
           </tr>
           <tr class="notingit-row" data-iflow="PD_Write_IBP Write data to SAP Integrated Business Planning" data-loglevel="">
@@ -6067,7 +6067,7 @@
           <tr class="notingit-row" data-iflow="I026676_001_split_odata_gather I026676_001_split_odata_gather" data-loglevel="">
             <td class="iflow-name" title="I026676_001_split_odata_gather">❓ I026676_001_split_odata_gather</td>
             <td class="iflow-id" title="I026676_001_split_odata_gather"><code class="copyable" onclick="showIdMenu(event,'iflow','I026676_001_split_odata_gather','I026676','DEV','','','DEV')" title="Click for options">I026676_001_split_odata_gather</code></td>
-            <td class="env-cell"><span class="row-item">—</span><span class="row-item">—</span><span class="row-item">✅ STARTED v1.0.0</span></td>
+            <td class="env-cell"><span class="row-item">—</span><span class="row-item">—</span><span class="row-item">✅ STARTED v1.0.1</span></td>
             <td class="env-not-found" title="Package not found on TST">📦 Not found</td>
           </tr>
           <tr class="notingit-row" data-iflow="I026676_002_split_gather_header I026676_002_split_gather_header" data-loglevel="">
@@ -6406,36 +6406,6 @@
             <td class="env-cell"><span class="row-item">—</span><span class="row-item">—</span><span class="row-item">✅ STARTED v1.0.0</span></td>
             <td class="env-not-found" title="Package not found on TST">📦 Not found</td>
           </tr>
-          <tr class="notingit-row" data-iflow="I026676_046_PIO_Migrate_test I026676_046_PIO_Migrate_test" data-loglevel="">
-            <td class="iflow-name" title="I026676_046_PIO_Migrate_test">❓ I026676_046_PIO_Migrate_test</td>
-            <td class="iflow-id" title="I026676_046_PIO_Migrate_test"><code class="copyable" onclick="showIdMenu(event,'iflow','I026676_046_PIO_Migrate_test','I026676','DEV','','','')" title="Click for options">I026676_046_PIO_Migrate_test</code></td>
-            <td class="env-cell"><span class="row-item">—</span><span class="row-item">—</span><span class="row-item">⚫ N/A</span></td>
-            <td class="env-not-found" title="Package not found on TST">📦 Not found</td>
-          </tr>
-          <tr class="notingit-row" data-iflow="I026676_047_Mig_DualScenario6_Content I026676_047_Mig_DualScenario6_Content" data-loglevel="">
-            <td class="iflow-name" title="I026676_047_Mig_DualScenario6_Content">❓ I026676_047_Mig_DualScenario6_Content</td>
-            <td class="iflow-id" title="I026676_047_Mig_DualScenario6_Content"><code class="copyable" onclick="showIdMenu(event,'iflow','I026676_047_Mig_DualScenario6_Content','I026676','DEV','','','')" title="Click for options">I026676_047_Mig_DualScenario6_Content</code></td>
-            <td class="env-cell"><span class="row-item">—</span><span class="row-item">—</span><span class="row-item">⚫ N/A</span></td>
-            <td class="env-not-found" title="Package not found on TST">📦 Not found</td>
-          </tr>
-          <tr class="notingit-row" data-iflow="I026676_047_Mig_SI_Text_BPM_Out I026676_047_Mig_SI_Text_BPM_Out" data-loglevel="">
-            <td class="iflow-name" title="I026676_047_Mig_SI_Text_BPM_Out">❓ I026676_047_Mig_SI_Text_BPM_Out</td>
-            <td class="iflow-id" title="I026676_047_Mig_SI_Text_BPM_Out"><code class="copyable" onclick="showIdMenu(event,'iflow','I026676_047_Mig_SI_Text_BPM_Out','I026676','DEV','','','')" title="Click for options">I026676_047_Mig_SI_Text_BPM_Out</code></td>
-            <td class="env-cell"><span class="row-item">—</span><span class="row-item">—</span><span class="row-item">⚫ N/A</span></td>
-            <td class="env-not-found" title="Package not found on TST">📦 Not found</td>
-          </tr>
-          <tr class="notingit-row" data-iflow="I026676_047_Mig_Scenario01_adaptermodule I026676_047_Mig_Scenario01_adaptermodule" data-loglevel="">
-            <td class="iflow-name" title="I026676_047_Mig_Scenario01_adaptermodule">❓ I026676_047_Mig_Scenario01_adaptermodule</td>
-            <td class="iflow-id" title="I026676_047_Mig_Scenario01_adaptermodule"><code class="copyable" onclick="showIdMenu(event,'iflow','I026676_047_Mig_Scenario01_adaptermodule','I026676','DEV','','','')" title="Click for options">I026676_047_Mig_Scenario01_adaptermodule</code></td>
-            <td class="env-cell"><span class="row-item">—</span><span class="row-item">—</span><span class="row-item">⚫ N/A</span></td>
-            <td class="env-not-found" title="Package not found on TST">📦 Not found</td>
-          </tr>
-          <tr class="notingit-row" data-iflow="I026676_047_Mig_Scenario3_Default I026676_047_Mig_Scenario3_Default" data-loglevel="">
-            <td class="iflow-name" title="I026676_047_Mig_Scenario3_Default">❓ I026676_047_Mig_Scenario3_Default</td>
-            <td class="iflow-id" title="I026676_047_Mig_Scenario3_Default"><code class="copyable" onclick="showIdMenu(event,'iflow','I026676_047_Mig_Scenario3_Default','I026676','DEV','','','')" title="Click for options">I026676_047_Mig_Scenario3_Default</code></td>
-            <td class="env-cell"><span class="row-item">—</span><span class="row-item">—</span><span class="row-item">⚫ N/A</span></td>
-            <td class="env-not-found" title="Package not found on TST">📦 Not found</td>
-          </tr>
           <tr class="notingit-row" data-iflow="I026676_047_Mig_Sync I026676_047_Mig_Sync" data-loglevel="">
             <td class="iflow-name" title="I026676_047_Mig_Sync">❓ I026676_047_Mig_Sync</td>
             <td class="iflow-id" title="I026676_047_Mig_Sync"><code class="copyable" onclick="showIdMenu(event,'iflow','I026676_047_Mig_Sync','I026676','DEV','','','')" title="Click for options">I026676_047_Mig_Sync</code></td>
@@ -6463,12 +6433,6 @@
           <tr class="notingit-row" data-iflow="I026676_047_mig_ccbpm I026676_047_mig_ccbpm" data-loglevel="">
             <td class="iflow-name" title="I026676_047_mig_ccbpm">❓ I026676_047_mig_ccbpm</td>
             <td class="iflow-id" title="I026676_047_mig_ccbpm"><code class="copyable" onclick="showIdMenu(event,'iflow','I026676_047_mig_ccbpm','I026676','DEV','','','')" title="Click for options">I026676_047_mig_ccbpm</code></td>
-            <td class="env-cell"><span class="row-item">—</span><span class="row-item">—</span><span class="row-item">⚫ N/A</span></td>
-            <td class="env-not-found" title="Package not found on TST">📦 Not found</td>
-          </tr>
-          <tr class="notingit-row" data-iflow="I026676_047_mig_scenario2withVM I026676_047_mig_scenario2withVM" data-loglevel="">
-            <td class="iflow-name" title="I026676_047_mig_scenario2withVM">❓ I026676_047_mig_scenario2withVM</td>
-            <td class="iflow-id" title="I026676_047_mig_scenario2withVM"><code class="copyable" onclick="showIdMenu(event,'iflow','I026676_047_mig_scenario2withVM','I026676','DEV','','','')" title="Click for options">I026676_047_mig_scenario2withVM</code></td>
             <td class="env-cell"><span class="row-item">—</span><span class="row-item">—</span><span class="row-item">⚫ N/A</span></td>
             <td class="env-not-found" title="Package not found on TST">📦 Not found</td>
           </tr>
@@ -6809,7 +6773,13 @@
           </tr>
           <tr class="notingit-row" data-iflow="No003_S4HC_CFIN_CostCenter1 No003_S4HC_CFIN_CostCenter" data-loglevel="">
             <td class="iflow-name" title="No003_S4HC_CFIN_CostCenter">❓ No003_S4HC_CFIN_CostCenter</td>
-            <td class="iflow-id" title="No003_S4HC_CFIN_CostCenter1"><code class="copyable" onclick="showIdMenu(event,'iflow','No003_S4HC_CFIN_CostCenter1','I033740','DEV','','','')" title="Click for options">No003_S4HC_CFIN_CostCenter1</code></td>
+            <td class="iflow-id" title="No003_S4HC_CFIN_CostCenter1"><code class="copyable" onclick="showIdMenu(event,'iflow','No003_S4HC_CFIN_CostCenter1','I033740','DEV','','','DEV')" title="Click for options">No003_S4HC_CFIN_CostCenter1</code></td>
+            <td class="env-cell"><span class="row-item">—</span><span class="row-item">—</span><span class="row-item">✅ STARTED v1.0.4</span></td>
+            <td class="env-not-found" title="Package not found on TST">📦 Not found</td>
+          </tr>
+          <tr class="notingit-row" data-iflow="No003_S4HC_CFIN_CostCenter_Copy No003_S4HC_CFIN_CostCenter_Copy" data-loglevel="">
+            <td class="iflow-name" title="No003_S4HC_CFIN_CostCenter_Copy">❓ No003_S4HC_CFIN_CostCenter_Copy</td>
+            <td class="iflow-id" title="No003_S4HC_CFIN_CostCenter_Copy"><code class="copyable" onclick="showIdMenu(event,'iflow','No003_S4HC_CFIN_CostCenter_Copy','I033740','DEV','','','')" title="Click for options">No003_S4HC_CFIN_CostCenter_Copy</code></td>
             <td class="env-cell"><span class="row-item">—</span><span class="row-item">—</span><span class="row-item">⚫ N/A</span></td>
             <td class="env-not-found" title="Package not found on TST">📦 Not found</td>
           </tr>
@@ -8531,15 +8501,21 @@
             <td class="env-cell"><span class="row-item">—</span><span class="row-item">—</span><span class="row-item">✅ STARTED v1.0.3</span></td>
             <td class="env-not-found" title="Package not found on TST">📦 Not found</td>
           </tr>
+          <tr class="notingit-row" data-iflow="YdemoCPI2026029 YdemoCI2026029" data-loglevel="">
+            <td class="iflow-name" title="YdemoCI2026029">❓ YdemoCI2026029</td>
+            <td class="iflow-id" title="YdemoCPI2026029"><code class="copyable" onclick="showIdMenu(event,'iflow','YdemoCPI2026029','I0383282026','DEV','','','')" title="Click for options">YdemoCPI2026029</code></td>
+            <td class="env-cell"><span class="row-item">—</span><span class="row-item">—</span><span class="row-item">⚫ N/A</span></td>
+            <td class="env-not-found" title="Package not found on TST">📦 Not found</td>
+          </tr>
           <tr class="notingit-row" data-iflow="YdemoCI2026030 YdemoCI2026030" data-loglevel="">
             <td class="iflow-name" title="YdemoCI2026030">❓ YdemoCI2026030</td>
             <td class="iflow-id" title="YdemoCI2026030"><code class="copyable" onclick="showIdMenu(event,'iflow','YdemoCI2026030','I0383282026','DEV','','','DEV')" title="Click for options">YdemoCI2026030</code></td>
             <td class="env-cell"><span class="row-item">—</span><span class="row-item">—</span><span class="row-item">✅ STARTED v1.0.12</span></td>
             <td class="env-not-found" title="Package not found on TST">📦 Not found</td>
           </tr>
-          <tr class="notingit-row" data-iflow="YdemoCPI2026029 YdemoCPI2026029" data-loglevel="">
-            <td class="iflow-name" title="YdemoCPI2026029">❓ YdemoCPI2026029</td>
-            <td class="iflow-id" title="YdemoCPI2026029"><code class="copyable" onclick="showIdMenu(event,'iflow','YdemoCPI2026029','I0383282026','DEV','','','')" title="Click for options">YdemoCPI2026029</code></td>
+          <tr class="notingit-row" data-iflow="YdemoCI2026031 YdemoCI2026031" data-loglevel="">
+            <td class="iflow-name" title="YdemoCI2026031">❓ YdemoCI2026031</td>
+            <td class="iflow-id" title="YdemoCI2026031"><code class="copyable" onclick="showIdMenu(event,'iflow','YdemoCI2026031','I0383282026','DEV','','','')" title="Click for options">YdemoCI2026031</code></td>
             <td class="env-cell"><span class="row-item">—</span><span class="row-item">—</span><span class="row-item">⚫ N/A</span></td>
             <td class="env-not-found" title="Package not found on TST">📦 Not found</td>
           </tr>
@@ -13083,8 +13059,14 @@
           </tr>
           <tr class="notingit-row" data-iflow="C005-REVIEW-Common_23_Hire_APIUpsert C005-REVIEW-Common_23_Hire_APIUpsert" data-loglevel="">
             <td class="iflow-name" title="C005-REVIEW-Common_23_Hire_APIUpsert">❓ C005-REVIEW-Common_23_Hire_APIUpsert</td>
-            <td class="iflow-id" title="C005-REVIEW-Common_23_Hire_APIUpsert"><code class="copyable" onclick="showIdMenu(event,'iflow','C005-REVIEW-Common_23_Hire_APIUpsert','I576520','DEV','','','')" title="Click for options">C005-REVIEW-Common_23_Hire_APIUpsert</code></td>
-            <td class="env-cell"><span class="row-item">—</span><span class="row-item">—</span><span class="row-item">⚫ N/A</span></td>
+            <td class="iflow-id" title="C005-REVIEW-Common_23_Hire_APIUpsert"><code class="copyable" onclick="showIdMenu(event,'iflow','C005-REVIEW-Common_23_Hire_APIUpsert','I576520','DEV','','','DEV')" title="Click for options">C005-REVIEW-Common_23_Hire_APIUpsert</code></td>
+            <td class="env-cell"><span class="row-item">—</span><span class="row-item">—</span><span class="row-item">✅ STARTED v0.0.5</span></td>
+            <td class="env-cell"><span class="row-item">—</span><span class="row-item">—</span><span class="row-item">—</span></td>
+          </tr>
+          <tr class="notingit-row" data-iflow="C005-REVIEW-Common_23_Test_StoreSampleData C005-REVIEW-Common_23_Test_StoreSampleData" data-loglevel="">
+            <td class="iflow-name" title="C005-REVIEW-Common_23_Test_StoreSampleData">❓ C005-REVIEW-Common_23_Test_StoreSampleData</td>
+            <td class="iflow-id" title="C005-REVIEW-Common_23_Test_StoreSampleData"><code class="copyable" onclick="showIdMenu(event,'iflow','C005-REVIEW-Common_23_Test_StoreSampleData','I576520','DEV','','','DEV')" title="Click for options">C005-REVIEW-Common_23_Test_StoreSampleData</code></td>
+            <td class="env-cell"><span class="row-item">—</span><span class="row-item">—</span><span class="row-item">✅ STARTED v0.0.1</span></td>
             <td class="env-cell"><span class="row-item">—</span><span class="row-item">—</span><span class="row-item">—</span></td>
           </tr>
           <tr class="notingit-row" data-iflow="CSV_S4HANA CSV_S4HANA" data-loglevel="">
@@ -14344,6 +14326,12 @@
             <td class="iflow-name" title="Integrate SO History Data from CAL2025 to _SAPIBP2_i344716">❓ Integrate SO History Data from CAL2025 to _SAPIBP2_i344716</td>
             <td class="iflow-id" title="Integrate_SO_History_Data_from_CAL2025_to__SAPIBP2_i344716"><code class="copyable" onclick="showIdMenu(event,'iflow','Integrate_SO_History_Data_from_CAL2025_to__SAPIBP2_i344716','IBPCITrainingI344716Okada','DEV','','','DEV')" title="Click for options">Integrate_SO_History_Data_from_CAL2025_to__SAPIBP2_i344716</code></td>
             <td class="env-cell"><span class="row-item">—</span><span class="row-item">—</span><span class="row-item">✅ STARTED v1.0.4</span></td>
+            <td class="env-not-found" title="Package not found on TST">📦 Not found</td>
+          </tr>
+          <tr class="notingit-row" data-iflow="ODATA_S4toIBP_Production ODATA_S4toIBP_Production" data-loglevel="">
+            <td class="iflow-name" title="ODATA_S4toIBP_Production">❓ ODATA_S4toIBP_Production</td>
+            <td class="iflow-id" title="ODATA_S4toIBP_Production"><code class="copyable" onclick="showIdMenu(event,'iflow','ODATA_S4toIBP_Production','IBPCITrainingI344716Okada','DEV','','','')" title="Click for options">ODATA_S4toIBP_Production</code></td>
+            <td class="env-cell"><span class="row-item">—</span><span class="row-item">—</span><span class="row-item">⚫ N/A</span></td>
             <td class="env-not-found" title="Package not found on TST">📦 Not found</td>
           </tr>
           <tr class="notingit-row" data-iflow="Read_from_IBP Read from IBP and write Snowflake" data-loglevel="">
@@ -21096,6 +21084,27 @@
     <div class="package-section collapsed" data-package="mcpht mcp-ht" data-source="btp" data-git-found="false" data-has-nogit-iflows="false" data-missing-envs="true">
       <div class="package-header not-in-git" onclick="togglePackage(this)">
         <h2><span class="toggle-arrow">▶</span> ❓ 📦 mcp-ht (<code class="copyable" onclick="showIdMenu(event,'package','mcpht','','DEV','mcp-ht','false')" title="Click for options">mcpht</code>)</h2>
+        <div class="meta">❓ <strong>Not found in Git</strong> — This package exists on BTP but has no deployment configuration · 📦 <strong>Not found on:</strong> TST</div>
+      </div>
+      <div class="package-body">
+      <table>
+        <thead>
+          <tr>
+            <th>IFlow Name</th>
+            <th>IFlow ID</th>
+            <th><a href="https://dev.integrationsuite.cfapps.jp10.hana.ondemand.com/shell/home" target="_blank" style="color:var(--accent-blue);text-decoration:none;">DEV</a><br><sub>Deploy · LogLevel · Runtime</sub></th>
+            <th><a href="https://eu1.integrationsuite.cfapps.eu10-003.hana.ondemand.com/shell/home" target="_blank" style="color:var(--accent-blue);text-decoration:none;">TST</a><br><sub>Deploy · LogLevel · Runtime</sub></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td colspan="4">⚠️ <em>No IFlows found — package not in Git</em></td></tr>
+        </tbody>
+      </table>
+      </div>
+    </div>
+    <div class="package-section collapsed" data-package="mcpht2 mcp-ht2" data-source="btp" data-git-found="false" data-has-nogit-iflows="false" data-missing-envs="true">
+      <div class="package-header not-in-git" onclick="togglePackage(this)">
+        <h2><span class="toggle-arrow">▶</span> ❓ 📦 mcp-ht2 (<code class="copyable" onclick="showIdMenu(event,'package','mcpht2','','DEV','mcp-ht2','false')" title="Click for options">mcpht2</code>)</h2>
         <div class="meta">❓ <strong>Not found in Git</strong> — This package exists on BTP but has no deployment configuration · 📦 <strong>Not found on:</strong> TST</div>
       </div>
       <div class="package-body">
