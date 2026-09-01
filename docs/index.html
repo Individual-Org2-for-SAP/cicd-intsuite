@@ -248,7 +248,7 @@
 <body>
   <div class="header">
     <h1>📊 Integration Suite Dashboard</h1>
-    <div class="meta"><span>📁 <strong>Individual-Org2-for-SAP/cicd-intsuite</strong></span><span>📅 2026-08-31T05:27:41Z</span><span>🌍 <a href="https://dev.integrationsuite.cfapps.jp10.hana.ondemand.com/shell/home" target="_blank" style="color:#58a6ff;text-decoration:none;">DEV</a>, <a href="https://eu1.integrationsuite.cfapps.eu10-003.hana.ondemand.com/shell/home" target="_blank" style="color:#58a6ff;text-decoration:none;">TST</a></span><span>📦 281 BTP packages</span>
+    <div class="meta"><span>📁 <strong>Individual-Org2-for-SAP/cicd-intsuite</strong></span><span>📅 2026-09-01T05:06:04Z</span><span>🌍 <a href="https://dev.integrationsuite.cfapps.jp10.hana.ondemand.com/shell/home" target="_blank" style="color:#58a6ff;text-decoration:none;">DEV</a>, <a href="https://eu1.integrationsuite.cfapps.eu10-003.hana.ondemand.com/shell/home" target="_blank" style="color:#58a6ff;text-decoration:none;">TST</a></span><span>📦 282 BTP packages</span>
     </div>
     <div class="scope-note">ℹ️ This dashboard covers Integration Flow (IFlow) artifacts only. Other artifact types (Value Mappings, Script Collections, etc.) are not included.</div>
     <nav class="page-nav">
@@ -276,21 +276,21 @@
       <h2>📈 Summary</h2>
       <div class="summary-grid">
         <div class="summary-card" data-card-filter="btp" onclick="toggleCardFilter('btp')">
-          <div class="number">281</div>
+          <div class="number">282</div>
           <div class="label">BTP Packages</div>
         </div>
         <div class="summary-card" data-card-filter="not-all-envs" onclick="toggleCardFilter('not-all-envs')">
-          <div class="number">247</div>
+          <div class="number">248</div>
           <div class="label">Not on All Environments</div>
         </div>
         <div class="summary-card" data-card-filter="git-issues" onclick="toggleCardFilter('git-issues')">
-          <div class="number">280</div>
+          <div class="number">281</div>
           <div class="label">Git Config Issues</div>
-          <div class="sub-label">🔴 280 packages missing entirely</div>
+          <div class="sub-label">🔴 281 packages missing entirely</div>
           <div class="sub-label">⚠️ 0 packages with missing IFlows</div>
         </div>
       </div>
-      <div class="alert">⚠️ <strong>Action required:</strong> 280 package(s) and 2567 IFlow(s) found on BTP have no Git deployment configuration.</div>
+      <div class="alert">⚠️ <strong>Action required:</strong> 281 package(s) and 2572 IFlow(s) found on BTP have no Git deployment configuration.</div>
     </div>
     <div class="filter-bar">
       <input type="text" id="searchInput" placeholder="🔍 Filter by package or IFlow name/ID..." onkeyup="filterDashboard()">
@@ -368,6 +368,24 @@
           </tr>
         </thead>
         <tbody>
+          <tr class="notingit-row" data-iflow="AEM_Error_Notification_with_Best_Practices AEM Error Notification with Best Practices" data-loglevel="">
+            <td class="iflow-name" title="AEM Error Notification with Best Practices">❓ AEM Error Notification with Best Practices</td>
+            <td class="iflow-id" title="AEM_Error_Notification_with_Best_Practices"><code class="copyable" onclick="showIdMenu(event,'iflow','AEM_Error_Notification_with_Best_Practices','AMARI','DEV','','','')" title="Click for options">AEM_Error_Notification_with_Best_Practices</code></td>
+            <td class="env-cell"><span class="row-item">—</span><span class="row-item">—</span><span class="row-item">⚫ N/A</span></td>
+            <td class="env-cell"><span class="row-item">—</span><span class="row-item">—</span><span class="row-item">—</span></td>
+          </tr>
+          <tr class="notingit-row" data-iflow="ExceptionSubprocess_AEM_Error_Notification ExceptionSubprocess AEM Error Notification" data-loglevel="">
+            <td class="iflow-name" title="ExceptionSubprocess AEM Error Notification">❓ ExceptionSubprocess AEM Error Notification</td>
+            <td class="iflow-id" title="ExceptionSubprocess_AEM_Error_Notification"><code class="copyable" onclick="showIdMenu(event,'iflow','ExceptionSubprocess_AEM_Error_Notification','AMARI','DEV','','','')" title="Click for options">ExceptionSubprocess_AEM_Error_Notification</code></td>
+            <td class="env-cell"><span class="row-item">—</span><span class="row-item">—</span><span class="row-item">⚫ N/A</span></td>
+            <td class="env-cell"><span class="row-item">—</span><span class="row-item">—</span><span class="row-item">—</span></td>
+          </tr>
+          <tr class="notingit-row" data-iflow="ExceptionSubprocessAEMEventNotification ExceptionSubprocessAEMEventNotification" data-loglevel="">
+            <td class="iflow-name" title="ExceptionSubprocessAEMEventNotification">❓ ExceptionSubprocessAEMEventNotification</td>
+            <td class="iflow-id" title="ExceptionSubprocessAEMEventNotification"><code class="copyable" onclick="showIdMenu(event,'iflow','ExceptionSubprocessAEMEventNotification','AMARI','DEV','','','')" title="Click for options">ExceptionSubprocessAEMEventNotification</code></td>
+            <td class="env-cell"><span class="row-item">—</span><span class="row-item">—</span><span class="row-item">⚫ N/A</span></td>
+            <td class="env-cell"><span class="row-item">—</span><span class="row-item">—</span><span class="row-item">—</span></td>
+          </tr>
           <tr class="notingit-row" data-iflow="IFLOW1 IFLOW1" data-loglevel="">
             <td class="iflow-name" title="IFLOW1">❓ IFLOW1</td>
             <td class="iflow-id" title="IFLOW1"><code class="copyable" onclick="showIdMenu(event,'iflow','IFLOW1','AMARI','DEV,TST','','','')" title="Click for options">IFLOW1</code></td>
@@ -5099,6 +5117,27 @@
             <td class="env-not-found" title="Package not found on DEV">📦 Not found</td>
             <td class="env-cell"><span class="row-item">—</span><span class="row-item">—</span><span class="row-item">✅ STARTED v1.0.0</span></td>
           </tr>
+        </tbody>
+      </table>
+      </div>
+    </div>
+    <div class="package-section collapsed" data-package="GUACE GU_ACE" data-source="btp" data-git-found="false" data-has-nogit-iflows="false" data-missing-envs="true">
+      <div class="package-header not-in-git" onclick="togglePackage(this)">
+        <h2><span class="toggle-arrow">▶</span> ❓ 📦 GU_ACE (<code class="copyable" onclick="showIdMenu(event,'package','GUACE','','DEV','GU_ACE','false')" title="Click for options">GUACE</code>)</h2>
+        <div class="meta">❓ <strong>Not found in Git</strong> — This package exists on BTP but has no deployment configuration · 📦 <strong>Not found on:</strong> TST</div>
+      </div>
+      <div class="package-body">
+      <table>
+        <thead>
+          <tr>
+            <th>IFlow Name</th>
+            <th>IFlow ID</th>
+            <th><a href="https://dev.integrationsuite.cfapps.jp10.hana.ondemand.com/shell/home" target="_blank" style="color:var(--accent-blue);text-decoration:none;">DEV</a><br><sub>Deploy · LogLevel · Runtime</sub></th>
+            <th><a href="https://eu1.integrationsuite.cfapps.eu10-003.hana.ondemand.com/shell/home" target="_blank" style="color:var(--accent-blue);text-decoration:none;">TST</a><br><sub>Deploy · LogLevel · Runtime</sub></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td colspan="4">⚠️ <em>No IFlows found — package not in Git</em></td></tr>
         </tbody>
       </table>
       </div>
@@ -12983,10 +13022,22 @@
             <td class="env-cell"><span class="row-item">—</span><span class="row-item">—</span><span class="row-item">✅ STARTED v1.0.0</span></td>
             <td class="env-not-found" title="Package not found on TST">📦 Not found</td>
           </tr>
+          <tr class="notingit-row" data-iflow="CommongLog_iFlow_nf CommongLog_iFlow_nf" data-loglevel="">
+            <td class="iflow-name" title="CommongLog_iFlow_nf">❓ CommongLog_iFlow_nf</td>
+            <td class="iflow-id" title="CommongLog_iFlow_nf"><code class="copyable" onclick="showIdMenu(event,'iflow','CommongLog_iFlow_nf','I575940','DEV','','','DEV')" title="Click for options">CommongLog_iFlow_nf</code></td>
+            <td class="env-cell"><span class="row-item">—</span><span class="row-item">—</span><span class="row-item">✅ STARTED v1.0.0</span></td>
+            <td class="env-not-found" title="Package not found on TST">📦 Not found</td>
+          </tr>
           <tr class="error-row" data-iflow="Event_Mesh Event Mesh" data-loglevel="">
             <td class="iflow-name" title="Event Mesh">🔴 Event Mesh</td>
             <td class="iflow-id" title="Event_Mesh"><code class="copyable" onclick="showIdMenu(event,'iflow','Event_Mesh','I575940','DEV','','','DEV')" title="Click for options">Event_Mesh</code></td>
             <td class="env-cell"><span class="row-item">—</span><span class="row-item">—</span><span class="row-item">🔴 ERROR v1.0.0</span></td>
+            <td class="env-not-found" title="Package not found on TST">📦 Not found</td>
+          </tr>
+          <tr class="notingit-row" data-iflow="MainCaller_iFlow_nf MainCaller_iFlow_nf" data-loglevel="">
+            <td class="iflow-name" title="MainCaller_iFlow_nf">❓ MainCaller_iFlow_nf</td>
+            <td class="iflow-id" title="MainCaller_iFlow_nf"><code class="copyable" onclick="showIdMenu(event,'iflow','MainCaller_iFlow_nf','I575940','DEV','','','')" title="Click for options">MainCaller_iFlow_nf</code></td>
+            <td class="env-cell"><span class="row-item">—</span><span class="row-item">—</span><span class="row-item">⚫ N/A</span></td>
             <td class="env-not-found" title="Package not found on TST">📦 Not found</td>
           </tr>
           <tr class="notingit-row" data-iflow="PO_Slack_I575940 PO_Slack_I575940" data-loglevel="">
