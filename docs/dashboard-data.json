@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-03T04:18:23Z",
+  "generated": "2026-09-04T04:23:51Z",
   "environments": [
     "DEV",
     "TST"
@@ -13306,6 +13306,26 @@
         "jsonFormat": "new"
       },
       "iflows": [
+        {
+          "id": "HPK_PP_HPKBT_400_00_S4HANA_to_HPKBT_Batch",
+          "name": "HPK_PP_HPKBT_400_00_S4HANA_to_HPKBT_Batch",
+          "source": "btp",
+          "hasGitConfig": false,
+          "environments": {
+            "DEV": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": "NOT_DEPLOYED",
+              "runtimeVersion": ""
+            },
+            "TST": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": null,
+              "runtimeVersion": null
+            }
+          }
+        },
         {
           "id": "iFlow_CICD_1",
           "name": "iFlow_CICD_1",
@@ -55465,6 +55485,19 @@
       "iflows": []
     },
     {
+      "id": "mcptinouetest",
+      "name": "mcp-tinoue-test",
+      "source": "btp",
+      "foundOnEnvironments": [
+        "DEV"
+      ],
+      "gitConfig": {
+        "found": false,
+        "jsonFormat": null
+      },
+      "iflows": []
+    },
+    {
       "id": "otapackage",
       "name": "otapackage",
       "source": "btp",
@@ -55491,8 +55524,34 @@
       "iflows": []
     },
     {
+      "id": "s41demoapipp",
+      "name": "s41-demo-api-pp",
+      "source": "btp",
+      "foundOnEnvironments": [
+        "DEV"
+      ],
+      "gitConfig": {
+        "found": false,
+        "jsonFormat": null
+      },
+      "iflows": []
+    },
+    {
       "id": "s41demomcp",
       "name": "s41-demo-mcp",
+      "source": "btp",
+      "foundOnEnvironments": [
+        "DEV"
+      ],
+      "gitConfig": {
+        "found": false,
+        "jsonFormat": null
+      },
+      "iflows": []
+    },
+    {
+      "id": "s41demomcppp",
+      "name": "s41-demo-mcp-pp",
       "source": "btp",
       "foundOnEnvironments": [
         "DEV"
@@ -55735,8 +55794,8 @@
     }
   ],
   "summary": {
-    "btpPackageCount": 284,
+    "btpPackageCount": 287,
     "gitOnlyPackageCount": 0,
-    "totalPackageCount": 284
+    "totalPackageCount": 287
   }
 }
