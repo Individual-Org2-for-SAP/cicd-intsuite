@@ -248,7 +248,7 @@
 <body>
   <div class="header">
     <h1>📊 Integration Suite Dashboard</h1>
-    <div class="meta"><span>📁 <strong>Individual-Org2-for-SAP/cicd-intsuite</strong></span><span>📅 2026-09-06T04:25:59Z</span><span>🌍 <a href="https://dev.integrationsuite.cfapps.jp10.hana.ondemand.com/shell/home" target="_blank" style="color:#58a6ff;text-decoration:none;">DEV</a>, <a href="https://eu1.integrationsuite.cfapps.eu10-003.hana.ondemand.com/shell/home" target="_blank" style="color:#58a6ff;text-decoration:none;">TST</a></span><span>📦 289 BTP packages</span>
+    <div class="meta"><span>📁 <strong>Individual-Org2-for-SAP/cicd-intsuite</strong></span><span>📅 2026-09-07T04:23:12Z</span><span>🌍 <a href="https://dev.integrationsuite.cfapps.jp10.hana.ondemand.com/shell/home" target="_blank" style="color:#58a6ff;text-decoration:none;">DEV</a>, <a href="https://eu1.integrationsuite.cfapps.eu10-003.hana.ondemand.com/shell/home" target="_blank" style="color:#58a6ff;text-decoration:none;">TST</a></span><span>📦 290 BTP packages</span>
     </div>
     <div class="scope-note">ℹ️ This dashboard covers Integration Flow (IFlow) artifacts only. Other artifact types (Value Mappings, Script Collections, etc.) are not included.</div>
     <nav class="page-nav">
@@ -276,21 +276,21 @@
       <h2>📈 Summary</h2>
       <div class="summary-grid">
         <div class="summary-card" data-card-filter="btp" onclick="toggleCardFilter('btp')">
-          <div class="number">289</div>
+          <div class="number">290</div>
           <div class="label">BTP Packages</div>
         </div>
         <div class="summary-card" data-card-filter="not-all-envs" onclick="toggleCardFilter('not-all-envs')">
-          <div class="number">255</div>
+          <div class="number">256</div>
           <div class="label">Not on All Environments</div>
         </div>
         <div class="summary-card" data-card-filter="git-issues" onclick="toggleCardFilter('git-issues')">
-          <div class="number">289</div>
+          <div class="number">290</div>
           <div class="label">Git Config Issues</div>
-          <div class="sub-label">🔴 288 packages missing entirely</div>
+          <div class="sub-label">🔴 289 packages missing entirely</div>
           <div class="sub-label">⚠️ 1 packages with missing IFlows</div>
         </div>
       </div>
-      <div class="alert">⚠️ <strong>Action required:</strong> 288 package(s) and 2591 IFlow(s) found on BTP have no Git deployment configuration.</div>
+      <div class="alert">⚠️ <strong>Action required:</strong> 289 package(s) and 2593 IFlow(s) found on BTP have no Git deployment configuration.</div>
     </div>
     <div class="filter-bar">
       <input type="text" id="searchInput" placeholder="🔍 Filter by package or IFlow name/ID..." onkeyup="filterDashboard()">
@@ -6095,7 +6095,7 @@
       </table>
       </div>
     </div>
-    <div class="package-section collapsed" data-package="I016095DEMO I016095_DEMO" data-source="btp" data-git-found="false" data-has-nogit-iflows="false" data-missing-envs="true">
+    <div class="package-section collapsed" data-package="I016095DEMO I016095_DEMO" data-source="btp" data-git-found="false" data-has-nogit-iflows="true" data-missing-envs="true">
       <div class="package-header not-in-git" onclick="togglePackage(this)">
         <h2><span class="toggle-arrow">▶</span> ❓ 📦 I016095_DEMO (<code class="copyable" onclick="showIdMenu(event,'package','I016095DEMO','','DEV','I016095_DEMO','false')" title="Click for options">I016095DEMO</code>)</h2>
         <div class="meta">❓ <strong>Not found in Git</strong> — This package exists on BTP but has no deployment configuration · 📦 <strong>Not found on:</strong> TST</div>
@@ -6111,7 +6111,12 @@
           </tr>
         </thead>
         <tbody>
-          <tr><td colspan="4">⚠️ <em>No IFlows found — package not in Git</em></td></tr>
+          <tr class="notingit-row" data-iflow="PurchaseOrderFile PurchaseOrderFile" data-loglevel="">
+            <td class="iflow-name" title="PurchaseOrderFile">❓ PurchaseOrderFile</td>
+            <td class="iflow-id" title="PurchaseOrderFile"><code class="copyable" onclick="showIdMenu(event,'iflow','PurchaseOrderFile','I016095DEMO','DEV','','','')" title="Click for options">PurchaseOrderFile</code></td>
+            <td class="env-cell"><span class="row-item">—</span><span class="row-item">—</span><span class="row-item">⚫ N/A</span></td>
+            <td class="env-not-found" title="Package not found on TST">📦 Not found</td>
+          </tr>
         </tbody>
       </table>
       </div>
@@ -8446,9 +8451,9 @@
       </div>
     </div>
     <div class="package-section collapsed" data-package="I0383282026 I038328_2026" data-source="btp" data-git-found="false" data-has-nogit-iflows="true" data-missing-envs="true">
-      <div class="package-header error" onclick="togglePackage(this)">
-        <h2><span class="toggle-arrow">▶</span> 🔴 📦 I038328_2026 (<code class="copyable" onclick="showIdMenu(event,'package','I0383282026','','DEV','I038328_2026','false')" title="Click for options">I0383282026</code>)</h2>
-        <div class="meta"><span class="json-template-link" onclick="showJsonTemplate(event)">Deployment JSON: ⚪ none</span> · 🔴 Some IFlows have runtime ERROR status · 📦 <strong>Not found on:</strong> TST</div>
+      <div class="package-header not-in-git" onclick="togglePackage(this)">
+        <h2><span class="toggle-arrow">▶</span> ❓ 📦 I038328_2026 (<code class="copyable" onclick="showIdMenu(event,'package','I0383282026','','DEV','I038328_2026','false')" title="Click for options">I0383282026</code>)</h2>
+        <div class="meta">❓ <strong>Not found in Git</strong> — This package exists on BTP but has no deployment configuration · 📦 <strong>Not found on:</strong> TST</div>
       </div>
       <div class="package-body">
       <table>
@@ -8653,10 +8658,10 @@
             <td class="env-cell"><span class="row-item">—</span><span class="row-item">—</span><span class="row-item">⚫ N/A</span></td>
             <td class="env-not-found" title="Package not found on TST">📦 Not found</td>
           </tr>
-          <tr class="error-row" data-iflow="YdemoCI2026037 YdemoCI2026037" data-loglevel="">
-            <td class="iflow-name" title="YdemoCI2026037">🔴 YdemoCI2026037</td>
+          <tr class="notingit-row" data-iflow="YdemoCI2026037 YdemoCI2026037" data-loglevel="">
+            <td class="iflow-name" title="YdemoCI2026037">❓ YdemoCI2026037</td>
             <td class="iflow-id" title="YdemoCI2026037"><code class="copyable" onclick="showIdMenu(event,'iflow','YdemoCI2026037','I0383282026','DEV','','','DEV')" title="Click for options">YdemoCI2026037</code></td>
-            <td class="env-cell"><span class="row-item">—</span><span class="row-item">—</span><span class="row-item">🔴 ERROR v1.0.11</span></td>
+            <td class="env-cell"><span class="row-item">—</span><span class="row-item">—</span><span class="row-item">✅ STARTED v1.0.11</span></td>
             <td class="env-not-found" title="Package not found on TST">📦 Not found</td>
           </tr>
         </tbody>
@@ -13555,6 +13560,12 @@
             <td class="iflow-name" title="P031-Splitter_HTTPSession_CSRF">❓ P031-Splitter_HTTPSession_CSRF</td>
             <td class="iflow-id" title="P031-Splitter_HTTPSession_CSRF"><code class="copyable" onclick="showIdMenu(event,'iflow','P031-Splitter_HTTPSession_CSRF','I576520','DEV','','','DEV')" title="Click for options">P031-Splitter_HTTPSession_CSRF</code></td>
             <td class="env-cell"><span class="row-item">—</span><span class="row-item">—</span><span class="row-item">✅ STARTED v1.0.0</span></td>
+            <td class="env-cell"><span class="row-item">—</span><span class="row-item">—</span><span class="row-item">—</span></td>
+          </tr>
+          <tr class="notingit-row" data-iflow="P032-DocumentAI P032-DocumentAI" data-loglevel="">
+            <td class="iflow-name" title="P032-DocumentAI">❓ P032-DocumentAI</td>
+            <td class="iflow-id" title="P032-DocumentAI"><code class="copyable" onclick="showIdMenu(event,'iflow','P032-DocumentAI','I576520','DEV','','','')" title="Click for options">P032-DocumentAI</code></td>
+            <td class="env-cell"><span class="row-item">—</span><span class="row-item">—</span><span class="row-item">⚫ N/A</span></td>
             <td class="env-cell"><span class="row-item">—</span><span class="row-item">—</span><span class="row-item">—</span></td>
           </tr>
           <tr class="error-row" data-iflow="R-SFTP-HANAC R-SFTP-HANAC" data-loglevel="">
@@ -20916,6 +20927,27 @@
             <td class="env-cell"><span class="row-item">—</span><span class="row-item">—</span><span class="row-item">⚫ N/A</span></td>
             <td class="env-not-found" title="Package not found on TST">📦 Not found</td>
           </tr>
+        </tbody>
+      </table>
+      </div>
+    </div>
+    <div class="package-section collapsed" data-package="demos41apiht demo-s41-api-ht" data-source="btp" data-git-found="false" data-has-nogit-iflows="false" data-missing-envs="true">
+      <div class="package-header not-in-git" onclick="togglePackage(this)">
+        <h2><span class="toggle-arrow">▶</span> ❓ 📦 demo-s41-api-ht (<code class="copyable" onclick="showIdMenu(event,'package','demos41apiht','','DEV','demo-s41-api-ht','false')" title="Click for options">demos41apiht</code>)</h2>
+        <div class="meta">❓ <strong>Not found in Git</strong> — This package exists on BTP but has no deployment configuration · 📦 <strong>Not found on:</strong> TST</div>
+      </div>
+      <div class="package-body">
+      <table>
+        <thead>
+          <tr>
+            <th>IFlow Name</th>
+            <th>IFlow ID</th>
+            <th><a href="https://dev.integrationsuite.cfapps.jp10.hana.ondemand.com/shell/home" target="_blank" style="color:var(--accent-blue);text-decoration:none;">DEV</a><br><sub>Deploy · LogLevel · Runtime</sub></th>
+            <th><a href="https://eu1.integrationsuite.cfapps.eu10-003.hana.ondemand.com/shell/home" target="_blank" style="color:var(--accent-blue);text-decoration:none;">TST</a><br><sub>Deploy · LogLevel · Runtime</sub></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td colspan="4">⚠️ <em>No IFlows found — package not in Git</em></td></tr>
         </tbody>
       </table>
       </div>
