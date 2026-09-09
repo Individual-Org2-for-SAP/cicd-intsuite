@@ -248,7 +248,7 @@
 <body>
   <div class="header">
     <h1>📊 Integration Suite Dashboard</h1>
-    <div class="meta"><span>📁 <strong>Individual-Org2-for-SAP/cicd-intsuite</strong></span><span>📅 2026-09-08T04:31:55Z</span><span>🌍 <a href="https://dev.integrationsuite.cfapps.jp10.hana.ondemand.com/shell/home" target="_blank" style="color:#58a6ff;text-decoration:none;">DEV</a>, <a href="https://eu1.integrationsuite.cfapps.eu10-003.hana.ondemand.com/shell/home" target="_blank" style="color:#58a6ff;text-decoration:none;">TST</a></span><span>📦 290 BTP packages</span>
+    <div class="meta"><span>📁 <strong>Individual-Org2-for-SAP/cicd-intsuite</strong></span><span>📅 2026-09-09T04:36:48Z</span><span>🌍 <a href="https://dev.integrationsuite.cfapps.jp10.hana.ondemand.com/shell/home" target="_blank" style="color:#58a6ff;text-decoration:none;">DEV</a>, <a href="https://eu1.integrationsuite.cfapps.eu10-003.hana.ondemand.com/shell/home" target="_blank" style="color:#58a6ff;text-decoration:none;">TST</a></span><span>📦 297 BTP packages</span>
     </div>
     <div class="scope-note">ℹ️ This dashboard covers Integration Flow (IFlow) artifacts only. Other artifact types (Value Mappings, Script Collections, etc.) are not included.</div>
     <nav class="page-nav">
@@ -276,21 +276,21 @@
       <h2>📈 Summary</h2>
       <div class="summary-grid">
         <div class="summary-card" data-card-filter="btp" onclick="toggleCardFilter('btp')">
-          <div class="number">290</div>
+          <div class="number">297</div>
           <div class="label">BTP Packages</div>
         </div>
         <div class="summary-card" data-card-filter="not-all-envs" onclick="toggleCardFilter('not-all-envs')">
-          <div class="number">256</div>
+          <div class="number">263</div>
           <div class="label">Not on All Environments</div>
         </div>
         <div class="summary-card" data-card-filter="git-issues" onclick="toggleCardFilter('git-issues')">
-          <div class="number">290</div>
+          <div class="number">297</div>
           <div class="label">Git Config Issues</div>
-          <div class="sub-label">🔴 289 packages missing entirely</div>
+          <div class="sub-label">🔴 296 packages missing entirely</div>
           <div class="sub-label">⚠️ 1 packages with missing IFlows</div>
         </div>
       </div>
-      <div class="alert">⚠️ <strong>Action required:</strong> 289 package(s) and 2595 IFlow(s) found on BTP have no Git deployment configuration.</div>
+      <div class="alert">⚠️ <strong>Action required:</strong> 296 package(s) and 2645 IFlow(s) found on BTP have no Git deployment configuration.</div>
     </div>
     <div class="filter-bar">
       <input type="text" id="searchInput" placeholder="🔍 Filter by package or IFlow name/ID..." onkeyup="filterDashboard()">
@@ -1220,6 +1220,434 @@
         </thead>
         <tbody>
           <tr><td colspan="4">⚠️ <em>No IFlows found — package not in Git</em></td></tr>
+        </tbody>
+      </table>
+      </div>
+    </div>
+    <div class="package-section collapsed" data-package="B2BIntegrationFactoryCloudIntegrationTradingPartnerManagement B2B Integration Factory - Cloud Integration - Trading Partner Management" data-source="btp" data-git-found="false" data-has-nogit-iflows="true" data-missing-envs="true">
+      <div class="package-header not-in-git" onclick="togglePackage(this)">
+        <h2><span class="toggle-arrow">▶</span> ❓ 📦 B2B Integration Factory - Cloud Integration - Trading Partner Management (<code class="copyable" onclick="showIdMenu(event,'package','B2BIntegrationFactoryCloudIntegrationTradingPartnerManagement','','DEV','B2B Integration Factory - Cloud Integration - Trading Partner Management','false')" title="Click for options">B2BIntegrationFactoryCloudIntegrationTradingPartnerManagement</code>)</h2>
+        <div class="meta">❓ <strong>Not found in Git</strong> — This package exists on BTP but has no deployment configuration · 📦 <strong>Not found on:</strong> TST</div>
+      </div>
+      <div class="package-body">
+      <table>
+        <thead>
+          <tr>
+            <th>IFlow Name</th>
+            <th>IFlow ID</th>
+            <th><a href="https://dev.integrationsuite.cfapps.jp10.hana.ondemand.com/shell/home" target="_blank" style="color:var(--accent-blue);text-decoration:none;">DEV</a><br><sub>Deploy · LogLevel · Runtime</sub></th>
+            <th><a href="https://eu1.integrationsuite.cfapps.eu10-003.hana.ondemand.com/shell/home" target="_blank" style="color:var(--accent-blue);text-decoration:none;">TST</a><br><sub>Deploy · LogLevel · Runtime</sub></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="notingit-row" data-iflow="Step_1a_-_Sender_AS2_MDN_Flow Step 1a - Sender AS2 MDN Flow" data-loglevel="">
+            <td class="iflow-name" title="Step 1a - Sender AS2 MDN Flow">❓ Step 1a - Sender AS2 MDN Flow</td>
+            <td class="iflow-id" title="Step_1a_-_Sender_AS2_MDN_Flow"><code class="copyable" onclick="showIdMenu(event,'iflow','Step_1a_-_Sender_AS2_MDN_Flow','B2BIntegrationFactoryCloudIntegrationTradingPartnerManagement','DEV','','','')" title="Click for options">Step_1a_-_Sender_AS2_MDN_Flow</code></td>
+            <td class="env-cell"><span class="row-item">—</span><span class="row-item">—</span><span class="row-item">⚫ N/A</span></td>
+            <td class="env-not-found" title="Package not found on TST">📦 Not found</td>
+          </tr>
+          <tr class="notingit-row" data-iflow="Step_1a_-_Sender_Internal_Communication_Flow Step 1a - Sender Internal Communication Flow" data-loglevel="">
+            <td class="iflow-name" title="Step 1a - Sender Internal Communication Flow">❓ Step 1a - Sender Internal Communication Flow</td>
+            <td class="iflow-id" title="Step_1a_-_Sender_Internal_Communication_Flow"><code class="copyable" onclick="showIdMenu(event,'iflow','Step_1a_-_Sender_Internal_Communication_Flow','B2BIntegrationFactoryCloudIntegrationTradingPartnerManagement','DEV','','','DEV')" title="Click for options">Step_1a_-_Sender_Internal_Communication_Flow</code></td>
+            <td class="env-cell"><span class="row-item">—</span><span class="row-item">—</span><span class="row-item">✅ STARTED v1.3.0</span></td>
+            <td class="env-not-found" title="Package not found on TST">📦 Not found</td>
+          </tr>
+          <tr class="notingit-row" data-iflow="Step_1b_-_Sender_Interchange_Extraction_Flow Step 1b - Sender Interchange Extraction Flow" data-loglevel="">
+            <td class="iflow-name" title="Step 1b - Sender Interchange Extraction Flow">❓ Step 1b - Sender Interchange Extraction Flow</td>
+            <td class="iflow-id" title="Step_1b_-_Sender_Interchange_Extraction_Flow"><code class="copyable" onclick="showIdMenu(event,'iflow','Step_1b_-_Sender_Interchange_Extraction_Flow','B2BIntegrationFactoryCloudIntegrationTradingPartnerManagement','DEV','','','DEV')" title="Click for options">Step_1b_-_Sender_Interchange_Extraction_Flow</code></td>
+            <td class="env-cell"><span class="row-item">—</span><span class="row-item">—</span><span class="row-item">✅ STARTED v1.10.0</span></td>
+            <td class="env-not-found" title="Package not found on TST">📦 Not found</td>
+          </tr>
+          <tr class="notingit-row" data-iflow="Step_2_-_Interchange_Processing_Flow Step 2 - Interchange Processing Flow" data-loglevel="">
+            <td class="iflow-name" title="Step 2 - Interchange Processing Flow">❓ Step 2 - Interchange Processing Flow</td>
+            <td class="iflow-id" title="Step_2_-_Interchange_Processing_Flow"><code class="copyable" onclick="showIdMenu(event,'iflow','Step_2_-_Interchange_Processing_Flow','B2BIntegrationFactoryCloudIntegrationTradingPartnerManagement','DEV','','','DEV')" title="Click for options">Step_2_-_Interchange_Processing_Flow</code></td>
+            <td class="env-cell"><span class="row-item">—</span><span class="row-item">—</span><span class="row-item">✅ STARTED v1.10.0</span></td>
+            <td class="env-not-found" title="Package not found on TST">📦 Not found</td>
+          </tr>
+          <tr class="notingit-row" data-iflow="Step_2b_-_Interchange_Processing_Flow_-_Base-Overlay_Mapping_Process Step 2b - Interchange Processing Flow - Base-Overlay Mapping Process" data-loglevel="">
+            <td class="iflow-name" title="Step 2b - Interchange Processing Flow - Base-Overlay Mapping Process">❓ Step 2b - Interchange Processing Flow - Base-Overlay Mapping Process</td>
+            <td class="iflow-id" title="Step_2b_-_Interchange_Processing_Flow_-_Base-Overlay_Mapping_Process"><code class="copyable" onclick="showIdMenu(event,'iflow','Step_2b_-_Interchange_Processing_Flow_-_Base-Overlay_Mapping_Process','B2BIntegrationFactoryCloudIntegrationTradingPartnerManagement','DEV','','','')" title="Click for options">Step_2b_-_Interchange_Processing_Flow_-_Base-Overlay_Mapping_Process</code></td>
+            <td class="env-cell"><span class="row-item">—</span><span class="row-item">—</span><span class="row-item">⚫ N/A</span></td>
+            <td class="env-not-found" title="Package not found on TST">📦 Not found</td>
+          </tr>
+          <tr class="notingit-row" data-iflow="Step_3_-_Receiver_Communication_Flow Step 3 - Receiver Communication Flow" data-loglevel="">
+            <td class="iflow-name" title="Step 3 - Receiver Communication Flow">❓ Step 3 - Receiver Communication Flow</td>
+            <td class="iflow-id" title="Step_3_-_Receiver_Communication_Flow"><code class="copyable" onclick="showIdMenu(event,'iflow','Step_3_-_Receiver_Communication_Flow','B2BIntegrationFactoryCloudIntegrationTradingPartnerManagement','DEV','','','DEV')" title="Click for options">Step_3_-_Receiver_Communication_Flow</code></td>
+            <td class="env-cell"><span class="row-item">—</span><span class="row-item">—</span><span class="row-item">✅ STARTED v1.10.0</span></td>
+            <td class="env-not-found" title="Package not found on TST">📦 Not found</td>
+          </tr>
+        </tbody>
+      </table>
+      </div>
+    </div>
+    <div class="package-section collapsed" data-package="B2BIntegrationFactoryCommunicationReceiverFlowsCustom B2B Integration Factory - Communication Receiver Flows - Custom" data-source="btp" data-git-found="false" data-has-nogit-iflows="true" data-missing-envs="true">
+      <div class="package-header not-in-git" onclick="togglePackage(this)">
+        <h2><span class="toggle-arrow">▶</span> ❓ 📦 B2B Integration Factory - Communication Receiver Flows - Custom (<code class="copyable" onclick="showIdMenu(event,'package','B2BIntegrationFactoryCommunicationReceiverFlowsCustom','','DEV','B2B Integration Factory - Communication Receiver Flows - Custom','false')" title="Click for options">B2BIntegrationFactoryCommunicationReceiverFlowsCustom</code>)</h2>
+        <div class="meta">❓ <strong>Not found in Git</strong> — This package exists on BTP but has no deployment configuration · 📦 <strong>Not found on:</strong> TST</div>
+      </div>
+      <div class="package-body">
+      <table>
+        <thead>
+          <tr>
+            <th>IFlow Name</th>
+            <th>IFlow ID</th>
+            <th><a href="https://dev.integrationsuite.cfapps.jp10.hana.ondemand.com/shell/home" target="_blank" style="color:var(--accent-blue);text-decoration:none;">DEV</a><br><sub>Deploy · LogLevel · Runtime</sub></th>
+            <th><a href="https://eu1.integrationsuite.cfapps.eu10-003.hana.ondemand.com/shell/home" target="_blank" style="color:var(--accent-blue);text-decoration:none;">TST</a><br><sub>Deploy · LogLevel · Runtime</sub></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="notingit-row" data-iflow="Step_3b_-_Custom.B2B_Simulation.Receiver Step 3b - B2B Simulation Receiver" data-loglevel="">
+            <td class="iflow-name" title="Step 3b - B2B Simulation Receiver">❓ Step 3b - B2B Simulation Receiver</td>
+            <td class="iflow-id" title="Step_3b_-_Custom.B2B_Simulation.Receiver"><code class="copyable" onclick="showIdMenu(event,'iflow','Step_3b_-_Custom.B2B_Simulation.Receiver','B2BIntegrationFactoryCommunicationReceiverFlowsCustom','DEV','','','')" title="Click for options">Step_3b_-_Custom.B2B_Simulation.Receiver</code></td>
+            <td class="env-cell"><span class="row-item">—</span><span class="row-item">—</span><span class="row-item">⚫ N/A</span></td>
+            <td class="env-not-found" title="Package not found on TST">📦 Not found</td>
+          </tr>
+          <tr class="notingit-row" data-iflow="Step_3b_-_Custom.eMail.Receiver Step 3b - Email Receiver" data-loglevel="">
+            <td class="iflow-name" title="Step 3b - Email Receiver">❓ Step 3b - Email Receiver</td>
+            <td class="iflow-id" title="Step_3b_-_Custom.eMail.Receiver"><code class="copyable" onclick="showIdMenu(event,'iflow','Step_3b_-_Custom.eMail.Receiver','B2BIntegrationFactoryCommunicationReceiverFlowsCustom','DEV','','','')" title="Click for options">Step_3b_-_Custom.eMail.Receiver</code></td>
+            <td class="env-cell"><span class="row-item">—</span><span class="row-item">—</span><span class="row-item">⚫ N/A</span></td>
+            <td class="env-not-found" title="Package not found on TST">📦 Not found</td>
+          </tr>
+          <tr class="notingit-row" data-iflow="Step_3b_-_Custom.SFTP.Receiver Step 3b - SFTP Receiver" data-loglevel="">
+            <td class="iflow-name" title="Step 3b - SFTP Receiver">❓ Step 3b - SFTP Receiver</td>
+            <td class="iflow-id" title="Step_3b_-_Custom.SFTP.Receiver"><code class="copyable" onclick="showIdMenu(event,'iflow','Step_3b_-_Custom.SFTP.Receiver','B2BIntegrationFactoryCommunicationReceiverFlowsCustom','DEV','','','')" title="Click for options">Step_3b_-_Custom.SFTP.Receiver</code></td>
+            <td class="env-cell"><span class="row-item">—</span><span class="row-item">—</span><span class="row-item">⚫ N/A</span></td>
+            <td class="env-not-found" title="Package not found on TST">📦 Not found</td>
+          </tr>
+          <tr class="notingit-row" data-iflow="Step_3b_-_TEMPLATE.Receiver Step 3b - TEMPLATE Receiver" data-loglevel="">
+            <td class="iflow-name" title="Step 3b - TEMPLATE Receiver">❓ Step 3b - TEMPLATE Receiver</td>
+            <td class="iflow-id" title="Step_3b_-_TEMPLATE.Receiver"><code class="copyable" onclick="showIdMenu(event,'iflow','Step_3b_-_TEMPLATE.Receiver','B2BIntegrationFactoryCommunicationReceiverFlowsCustom','DEV','','','')" title="Click for options">Step_3b_-_TEMPLATE.Receiver</code></td>
+            <td class="env-cell"><span class="row-item">—</span><span class="row-item">—</span><span class="row-item">⚫ N/A</span></td>
+            <td class="env-not-found" title="Package not found on TST">📦 Not found</td>
+          </tr>
+        </tbody>
+      </table>
+      </div>
+    </div>
+    <div class="package-section collapsed" data-package="B2BIntegrationFactoryCommunicationSenderFlows B2B Integration Factory - Communication Sender Flows" data-source="btp" data-git-found="false" data-has-nogit-iflows="true" data-missing-envs="true">
+      <div class="package-header not-in-git" onclick="togglePackage(this)">
+        <h2><span class="toggle-arrow">▶</span> ❓ 📦 B2B Integration Factory - Communication Sender Flows (<code class="copyable" onclick="showIdMenu(event,'package','B2BIntegrationFactoryCommunicationSenderFlows','','DEV','B2B Integration Factory - Communication Sender Flows','false')" title="Click for options">B2BIntegrationFactoryCommunicationSenderFlows</code>)</h2>
+        <div class="meta">❓ <strong>Not found in Git</strong> — This package exists on BTP but has no deployment configuration · 📦 <strong>Not found on:</strong> TST</div>
+      </div>
+      <div class="package-body">
+      <table>
+        <thead>
+          <tr>
+            <th>IFlow Name</th>
+            <th>IFlow ID</th>
+            <th><a href="https://dev.integrationsuite.cfapps.jp10.hana.ondemand.com/shell/home" target="_blank" style="color:var(--accent-blue);text-decoration:none;">DEV</a><br><sub>Deploy · LogLevel · Runtime</sub></th>
+            <th><a href="https://eu1.integrationsuite.cfapps.eu10-003.hana.ondemand.com/shell/home" target="_blank" style="color:var(--accent-blue);text-decoration:none;">TST</a><br><sub>Deploy · LogLevel · Runtime</sub></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="notingit-row" data-iflow="Step_1a_-_AS2.Sender Step 1a - AS2 Sender" data-loglevel="">
+            <td class="iflow-name" title="Step 1a - AS2 Sender">❓ Step 1a - AS2 Sender</td>
+            <td class="iflow-id" title="Step_1a_-_AS2.Sender"><code class="copyable" onclick="showIdMenu(event,'iflow','Step_1a_-_AS2.Sender','B2BIntegrationFactoryCommunicationSenderFlows','DEV','','','')" title="Click for options">Step_1a_-_AS2.Sender</code></td>
+            <td class="env-cell"><span class="row-item">—</span><span class="row-item">—</span><span class="row-item">⚫ N/A</span></td>
+            <td class="env-not-found" title="Package not found on TST">📦 Not found</td>
+          </tr>
+          <tr class="notingit-row" data-iflow="Step_1a_-_B2B_Simulation.Sender Step 1a - B2B Simulation Sender" data-loglevel="">
+            <td class="iflow-name" title="Step 1a - B2B Simulation Sender">❓ Step 1a - B2B Simulation Sender</td>
+            <td class="iflow-id" title="Step_1a_-_B2B_Simulation.Sender"><code class="copyable" onclick="showIdMenu(event,'iflow','Step_1a_-_B2B_Simulation.Sender','B2BIntegrationFactoryCommunicationSenderFlows','DEV','','','DEV')" title="Click for options">Step_1a_-_B2B_Simulation.Sender</code></td>
+            <td class="env-cell"><span class="row-item">—</span><span class="row-item">—</span><span class="row-item">✅ STARTED v1.0.0</span></td>
+            <td class="env-not-found" title="Package not found on TST">📦 Not found</td>
+          </tr>
+          <tr class="notingit-row" data-iflow="Step_1a_-_HTTP.Sender Step 1a - HTTP Sender" data-loglevel="">
+            <td class="iflow-name" title="Step 1a - HTTP Sender">❓ Step 1a - HTTP Sender</td>
+            <td class="iflow-id" title="Step_1a_-_HTTP.Sender"><code class="copyable" onclick="showIdMenu(event,'iflow','Step_1a_-_HTTP.Sender','B2BIntegrationFactoryCommunicationSenderFlows','DEV','','','')" title="Click for options">Step_1a_-_HTTP.Sender</code></td>
+            <td class="env-cell"><span class="row-item">—</span><span class="row-item">—</span><span class="row-item">⚫ N/A</span></td>
+            <td class="env-not-found" title="Package not found on TST">📦 Not found</td>
+          </tr>
+          <tr class="notingit-row" data-iflow="Step_1a_-_IDOC.Sender Step 1a - IDOC Sender" data-loglevel="">
+            <td class="iflow-name" title="Step 1a - IDOC Sender">❓ Step 1a - IDOC Sender</td>
+            <td class="iflow-id" title="Step_1a_-_IDOC.Sender"><code class="copyable" onclick="showIdMenu(event,'iflow','Step_1a_-_IDOC.Sender','B2BIntegrationFactoryCommunicationSenderFlows','DEV','','','')" title="Click for options">Step_1a_-_IDOC.Sender</code></td>
+            <td class="env-cell"><span class="row-item">—</span><span class="row-item">—</span><span class="row-item">⚫ N/A</span></td>
+            <td class="env-not-found" title="Package not found on TST">📦 Not found</td>
+          </tr>
+          <tr class="notingit-row" data-iflow="Step_1a_-_SFTP_Sender Step 1a - SFTP Sender" data-loglevel="">
+            <td class="iflow-name" title="Step 1a - SFTP Sender">❓ Step 1a - SFTP Sender</td>
+            <td class="iflow-id" title="Step_1a_-_SFTP_Sender"><code class="copyable" onclick="showIdMenu(event,'iflow','Step_1a_-_SFTP_Sender','B2BIntegrationFactoryCommunicationSenderFlows','DEV','','','')" title="Click for options">Step_1a_-_SFTP_Sender</code></td>
+            <td class="env-cell"><span class="row-item">—</span><span class="row-item">—</span><span class="row-item">⚫ N/A</span></td>
+            <td class="env-not-found" title="Package not found on TST">📦 Not found</td>
+          </tr>
+          <tr class="notingit-row" data-iflow="Step_1a_-_SOAP_Cloud_Sender Step 1a - SOAP Cloud Sender" data-loglevel="">
+            <td class="iflow-name" title="Step 1a - SOAP Cloud Sender">❓ Step 1a - SOAP Cloud Sender</td>
+            <td class="iflow-id" title="Step_1a_-_SOAP_Cloud_Sender"><code class="copyable" onclick="showIdMenu(event,'iflow','Step_1a_-_SOAP_Cloud_Sender','B2BIntegrationFactoryCommunicationSenderFlows','DEV','','','')" title="Click for options">Step_1a_-_SOAP_Cloud_Sender</code></td>
+            <td class="env-cell"><span class="row-item">—</span><span class="row-item">—</span><span class="row-item">⚫ N/A</span></td>
+            <td class="env-not-found" title="Package not found on TST">📦 Not found</td>
+          </tr>
+          <tr class="notingit-row" data-iflow="Step_1a_-_SOAP.Sender Step 1a - SOAP On-Premise Sender" data-loglevel="">
+            <td class="iflow-name" title="Step 1a - SOAP On-Premise Sender">❓ Step 1a - SOAP On-Premise Sender</td>
+            <td class="iflow-id" title="Step_1a_-_SOAP.Sender"><code class="copyable" onclick="showIdMenu(event,'iflow','Step_1a_-_SOAP.Sender','B2BIntegrationFactoryCommunicationSenderFlows','DEV','','','')" title="Click for options">Step_1a_-_SOAP.Sender</code></td>
+            <td class="env-cell"><span class="row-item">—</span><span class="row-item">—</span><span class="row-item">⚫ N/A</span></td>
+            <td class="env-not-found" title="Package not found on TST">📦 Not found</td>
+          </tr>
+          <tr class="notingit-row" data-iflow="Step_1a_-_TEMPLATE.Sender Step 1a - TEMPLATE Sender" data-loglevel="">
+            <td class="iflow-name" title="Step 1a - TEMPLATE Sender">❓ Step 1a - TEMPLATE Sender</td>
+            <td class="iflow-id" title="Step_1a_-_TEMPLATE.Sender"><code class="copyable" onclick="showIdMenu(event,'iflow','Step_1a_-_TEMPLATE.Sender','B2BIntegrationFactoryCommunicationSenderFlows','DEV','','','')" title="Click for options">Step_1a_-_TEMPLATE.Sender</code></td>
+            <td class="env-cell"><span class="row-item">—</span><span class="row-item">—</span><span class="row-item">⚫ N/A</span></td>
+            <td class="env-not-found" title="Package not found on TST">📦 Not found</td>
+          </tr>
+        </tbody>
+      </table>
+      </div>
+    </div>
+    <div class="package-section collapsed" data-package="B2BIntegrationFactoryExtendedInterchangeProcessingFlows B2B Integration Factory - Extended Interchange Processing Flows" data-source="btp" data-git-found="false" data-has-nogit-iflows="true" data-missing-envs="true">
+      <div class="package-header not-in-git" onclick="togglePackage(this)">
+        <h2><span class="toggle-arrow">▶</span> ❓ 📦 B2B Integration Factory - Extended Interchange Processing Flows (<code class="copyable" onclick="showIdMenu(event,'package','B2BIntegrationFactoryExtendedInterchangeProcessingFlows','','DEV','B2B Integration Factory - Extended Interchange Processing Flows','false')" title="Click for options">B2BIntegrationFactoryExtendedInterchangeProcessingFlows</code>)</h2>
+        <div class="meta">❓ <strong>Not found in Git</strong> — This package exists on BTP but has no deployment configuration · 📦 <strong>Not found on:</strong> TST</div>
+      </div>
+      <div class="package-body">
+      <table>
+        <thead>
+          <tr>
+            <th>IFlow Name</th>
+            <th>IFlow ID</th>
+            <th><a href="https://dev.integrationsuite.cfapps.jp10.hana.ondemand.com/shell/home" target="_blank" style="color:var(--accent-blue);text-decoration:none;">DEV</a><br><sub>Deploy · LogLevel · Runtime</sub></th>
+            <th><a href="https://eu1.integrationsuite.cfapps.eu10-003.hana.ondemand.com/shell/home" target="_blank" style="color:var(--accent-blue);text-decoration:none;">TST</a><br><sub>Deploy · LogLevel · Runtime</sub></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="notingit-row" data-iflow="UN-EDIFACT_Extracted_Key_Value_Change Extracted Key Value Change - UN-EDIFACT" data-loglevel="">
+            <td class="iflow-name" title="Extracted Key Value Change - UN-EDIFACT">❓ Extracted Key Value Change - UN-EDIFACT</td>
+            <td class="iflow-id" title="UN-EDIFACT_Extracted_Key_Value_Change"><code class="copyable" onclick="showIdMenu(event,'iflow','UN-EDIFACT_Extracted_Key_Value_Change','B2BIntegrationFactoryExtendedInterchangeProcessingFlows','DEV','','','')" title="Click for options">UN-EDIFACT_Extracted_Key_Value_Change</code></td>
+            <td class="env-cell"><span class="row-item">—</span><span class="row-item">—</span><span class="row-item">⚫ N/A</span></td>
+            <td class="env-not-found" title="Package not found on TST">📦 Not found</td>
+          </tr>
+          <tr class="notingit-row" data-iflow="UN-EDIFACT_Functional_Acknowledgement_Interchange_Modification Functional Acknowledgement Interchange Modification - UN-EDIFACT" data-loglevel="">
+            <td class="iflow-name" title="Functional Acknowledgement Interchange Modification - UN-EDIFACT">❓ Functional Acknowledgement Interchange Modification - UN-EDIFACT</td>
+            <td class="iflow-id" title="UN-EDIFACT_Functional_Acknowledgement_Interchange_Modification"><code class="copyable" onclick="showIdMenu(event,'iflow','UN-EDIFACT_Functional_Acknowledgement_Interchange_Modification','B2BIntegrationFactoryExtendedInterchangeProcessingFlows','DEV','','','')" title="Click for options">UN-EDIFACT_Functional_Acknowledgement_Interchange_Modification</code></td>
+            <td class="env-cell"><span class="row-item">—</span><span class="row-item">—</span><span class="row-item">⚫ N/A</span></td>
+            <td class="env-not-found" title="Package not found on TST">📦 Not found</td>
+          </tr>
+          <tr class="notingit-row" data-iflow="IDoc-XML_To_IDoc-Flat_Syntax_Conversion IDoc-XML To IDoc-Flat Syntax Conversion" data-loglevel="">
+            <td class="iflow-name" title="IDoc-XML To IDoc-Flat Syntax Conversion">❓ IDoc-XML To IDoc-Flat Syntax Conversion</td>
+            <td class="iflow-id" title="IDoc-XML_To_IDoc-Flat_Syntax_Conversion"><code class="copyable" onclick="showIdMenu(event,'iflow','IDoc-XML_To_IDoc-Flat_Syntax_Conversion','B2BIntegrationFactoryExtendedInterchangeProcessingFlows','DEV','','','')" title="Click for options">IDoc-XML_To_IDoc-Flat_Syntax_Conversion</code></td>
+            <td class="env-cell"><span class="row-item">—</span><span class="row-item">—</span><span class="row-item">⚫ N/A</span></td>
+            <td class="env-not-found" title="Package not found on TST">📦 Not found</td>
+          </tr>
+          <tr class="notingit-row" data-iflow="SAP-EDI_Interchange_Modification Interchange Modification - UN-EDIFACT" data-loglevel="">
+            <td class="iflow-name" title="Interchange Modification - UN-EDIFACT">❓ Interchange Modification - UN-EDIFACT</td>
+            <td class="iflow-id" title="SAP-EDI_Interchange_Modification"><code class="copyable" onclick="showIdMenu(event,'iflow','SAP-EDI_Interchange_Modification','B2BIntegrationFactoryExtendedInterchangeProcessingFlows','DEV','','','')" title="Click for options">SAP-EDI_Interchange_Modification</code></td>
+            <td class="env-cell"><span class="row-item">—</span><span class="row-item">—</span><span class="row-item">⚫ N/A</span></td>
+            <td class="env-not-found" title="Package not found on TST">📦 Not found</td>
+          </tr>
+          <tr class="notingit-row" data-iflow="Interchange_Processing_Flow_-_External_Table_Lookup Interchange Processing Flow - External Table Lookup" data-loglevel="">
+            <td class="iflow-name" title="Interchange Processing Flow - External Table Lookup">❓ Interchange Processing Flow - External Table Lookup</td>
+            <td class="iflow-id" title="Interchange_Processing_Flow_-_External_Table_Lookup"><code class="copyable" onclick="showIdMenu(event,'iflow','Interchange_Processing_Flow_-_External_Table_Lookup','B2BIntegrationFactoryExtendedInterchangeProcessingFlows','DEV','','','')" title="Click for options">Interchange_Processing_Flow_-_External_Table_Lookup</code></td>
+            <td class="env-cell"><span class="row-item">—</span><span class="row-item">—</span><span class="row-item">⚫ N/A</span></td>
+            <td class="env-not-found" title="Package not found on TST">📦 Not found</td>
+          </tr>
+          <tr class="notingit-row" data-iflow="Interchange_Processing_Flow_-_SAP_PI-PO_Operating_Mapping_Process Interchange Processing Flow - SAP PI-PO Operating Mapping Process" data-loglevel="">
+            <td class="iflow-name" title="Interchange Processing Flow - SAP PI-PO Operating Mapping Process">❓ Interchange Processing Flow - SAP PI-PO Operating Mapping Process</td>
+            <td class="iflow-id" title="Interchange_Processing_Flow_-_SAP_PI-PO_Operating_Mapping_Process"><code class="copyable" onclick="showIdMenu(event,'iflow','Interchange_Processing_Flow_-_SAP_PI-PO_Operating_Mapping_Process','B2BIntegrationFactoryExtendedInterchangeProcessingFlows','DEV','','','')" title="Click for options">Interchange_Processing_Flow_-_SAP_PI-PO_Operating_Mapping_Process</code></td>
+            <td class="env-cell"><span class="row-item">—</span><span class="row-item">—</span><span class="row-item">⚫ N/A</span></td>
+            <td class="env-not-found" title="Package not found on TST">📦 Not found</td>
+          </tr>
+          <tr class="notingit-row" data-iflow="VDA-Automotive-XML_To_VDA-Automotive-Flat_Syntax_Conversion VDA-Automotive-XML To VDA-Automotive-Flat Syntax Conversion" data-loglevel="">
+            <td class="iflow-name" title="VDA-Automotive-XML To VDA-Automotive-Flat Syntax Conversion">❓ VDA-Automotive-XML To VDA-Automotive-Flat Syntax Conversion</td>
+            <td class="iflow-id" title="VDA-Automotive-XML_To_VDA-Automotive-Flat_Syntax_Conversion"><code class="copyable" onclick="showIdMenu(event,'iflow','VDA-Automotive-XML_To_VDA-Automotive-Flat_Syntax_Conversion','B2BIntegrationFactoryExtendedInterchangeProcessingFlows','DEV','','','')" title="Click for options">VDA-Automotive-XML_To_VDA-Automotive-Flat_Syntax_Conversion</code></td>
+            <td class="env-cell"><span class="row-item">—</span><span class="row-item">—</span><span class="row-item">⚫ N/A</span></td>
+            <td class="env-not-found" title="Package not found on TST">📦 Not found</td>
+          </tr>
+          <tr class="notingit-row" data-iflow="XML_To_CSV_Syntax_Conversion XML To CSV Syntax Conversion" data-loglevel="">
+            <td class="iflow-name" title="XML To CSV Syntax Conversion">❓ XML To CSV Syntax Conversion</td>
+            <td class="iflow-id" title="XML_To_CSV_Syntax_Conversion"><code class="copyable" onclick="showIdMenu(event,'iflow','XML_To_CSV_Syntax_Conversion','B2BIntegrationFactoryExtendedInterchangeProcessingFlows','DEV','','','')" title="Click for options">XML_To_CSV_Syntax_Conversion</code></td>
+            <td class="env-cell"><span class="row-item">—</span><span class="row-item">—</span><span class="row-item">⚫ N/A</span></td>
+            <td class="env-not-found" title="Package not found on TST">📦 Not found</td>
+          </tr>
+        </tbody>
+      </table>
+      </div>
+    </div>
+    <div class="package-section collapsed" data-package="B2BIntegrationFactoryInterchangeAssemblyFlows B2B Integration Factory - Interchange Assembly Flows" data-source="btp" data-git-found="false" data-has-nogit-iflows="true" data-missing-envs="true">
+      <div class="package-header not-in-git" onclick="togglePackage(this)">
+        <h2><span class="toggle-arrow">▶</span> ❓ 📦 B2B Integration Factory - Interchange Assembly Flows (<code class="copyable" onclick="showIdMenu(event,'package','B2BIntegrationFactoryInterchangeAssemblyFlows','','DEV','B2B Integration Factory - Interchange Assembly Flows','false')" title="Click for options">B2BIntegrationFactoryInterchangeAssemblyFlows</code>)</h2>
+        <div class="meta">❓ <strong>Not found in Git</strong> — This package exists on BTP but has no deployment configuration · 📦 <strong>Not found on:</strong> TST</div>
+      </div>
+      <div class="package-body">
+      <table>
+        <thead>
+          <tr>
+            <th>IFlow Name</th>
+            <th>IFlow ID</th>
+            <th><a href="https://dev.integrationsuite.cfapps.jp10.hana.ondemand.com/shell/home" target="_blank" style="color:var(--accent-blue);text-decoration:none;">DEV</a><br><sub>Deploy · LogLevel · Runtime</sub></th>
+            <th><a href="https://eu1.integrationsuite.cfapps.eu10-003.hana.ondemand.com/shell/home" target="_blank" style="color:var(--accent-blue);text-decoration:none;">TST</a><br><sub>Deploy · LogLevel · Runtime</sub></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="notingit-row" data-iflow="ASC-X12_Interchange_Assembly_Process ASC-X12 Interchange Assembly Process" data-loglevel="">
+            <td class="iflow-name" title="ASC-X12 Interchange Assembly Process">❓ ASC-X12 Interchange Assembly Process</td>
+            <td class="iflow-id" title="ASC-X12_Interchange_Assembly_Process"><code class="copyable" onclick="showIdMenu(event,'iflow','ASC-X12_Interchange_Assembly_Process','B2BIntegrationFactoryInterchangeAssemblyFlows','DEV','','','DEV')" title="Click for options">ASC-X12_Interchange_Assembly_Process</code></td>
+            <td class="env-cell"><span class="row-item">—</span><span class="row-item">—</span><span class="row-item">✅ STARTED v1.2.4</span></td>
+            <td class="env-not-found" title="Package not found on TST">📦 Not found</td>
+          </tr>
+          <tr class="notingit-row" data-iflow="MS3_GS1XML_Interchange_Assembly_Process GS1XML Interchange Assembly Process" data-loglevel="">
+            <td class="iflow-name" title="GS1XML Interchange Assembly Process">❓ GS1XML Interchange Assembly Process</td>
+            <td class="iflow-id" title="MS3_GS1XML_Interchange_Assembly_Process"><code class="copyable" onclick="showIdMenu(event,'iflow','MS3_GS1XML_Interchange_Assembly_Process','B2BIntegrationFactoryInterchangeAssemblyFlows','DEV','','','')" title="Click for options">MS3_GS1XML_Interchange_Assembly_Process</code></td>
+            <td class="env-cell"><span class="row-item">—</span><span class="row-item">—</span><span class="row-item">⚫ N/A</span></td>
+            <td class="env-not-found" title="Package not found on TST">📦 Not found</td>
+          </tr>
+          <tr class="notingit-row" data-iflow="MS3_SAP-IDoc_Interchange_Assembly_Process SAP-IDoc Interchange Assembly Process" data-loglevel="">
+            <td class="iflow-name" title="SAP-IDoc Interchange Assembly Process">❓ SAP-IDoc Interchange Assembly Process</td>
+            <td class="iflow-id" title="MS3_SAP-IDoc_Interchange_Assembly_Process"><code class="copyable" onclick="showIdMenu(event,'iflow','MS3_SAP-IDoc_Interchange_Assembly_Process','B2BIntegrationFactoryInterchangeAssemblyFlows','DEV','','','DEV')" title="Click for options">MS3_SAP-IDoc_Interchange_Assembly_Process</code></td>
+            <td class="env-cell"><span class="row-item">—</span><span class="row-item">—</span><span class="row-item">✅ STARTED v1.2.0</span></td>
+            <td class="env-not-found" title="Package not found on TST">📦 Not found</td>
+          </tr>
+          <tr class="notingit-row" data-iflow="SAP-S4HANA-Cloud-SOA_Interchange_Assembly_Process SAP-S4HANA-Cloud-SOA Interchange Assembly Process" data-loglevel="">
+            <td class="iflow-name" title="SAP-S4HANA-Cloud-SOA Interchange Assembly Process">❓ SAP-S4HANA-Cloud-SOA Interchange Assembly Process</td>
+            <td class="iflow-id" title="SAP-S4HANA-Cloud-SOA_Interchange_Assembly_Process"><code class="copyable" onclick="showIdMenu(event,'iflow','SAP-S4HANA-Cloud-SOA_Interchange_Assembly_Process','B2BIntegrationFactoryInterchangeAssemblyFlows','DEV','','','')" title="Click for options">SAP-S4HANA-Cloud-SOA_Interchange_Assembly_Process</code></td>
+            <td class="env-cell"><span class="row-item">—</span><span class="row-item">—</span><span class="row-item">⚫ N/A</span></td>
+            <td class="env-not-found" title="Package not found on TST">📦 Not found</td>
+          </tr>
+          <tr class="notingit-row" data-iflow="MS3_SAP_S4HANA_OnPremise_SOA_Interchange_Assembly_Process SAP-S4HANA-OnPremise-SOA Interchange Assembly Process" data-loglevel="">
+            <td class="iflow-name" title="SAP-S4HANA-OnPremise-SOA Interchange Assembly Process">❓ SAP-S4HANA-OnPremise-SOA Interchange Assembly Process</td>
+            <td class="iflow-id" title="MS3_SAP_S4HANA_OnPremise_SOA_Interchange_Assembly_Process"><code class="copyable" onclick="showIdMenu(event,'iflow','MS3_SAP_S4HANA_OnPremise_SOA_Interchange_Assembly_Process','B2BIntegrationFactoryInterchangeAssemblyFlows','DEV','','','')" title="Click for options">MS3_SAP_S4HANA_OnPremise_SOA_Interchange_Assembly_Process</code></td>
+            <td class="env-cell"><span class="row-item">—</span><span class="row-item">—</span><span class="row-item">⚫ N/A</span></td>
+            <td class="env-not-found" title="Package not found on TST">📦 Not found</td>
+          </tr>
+          <tr class="notingit-row" data-iflow="TEMPLATE_Interchange_Assembly_Process TEMPLATE Interchange Assembly Process" data-loglevel="">
+            <td class="iflow-name" title="TEMPLATE Interchange Assembly Process">❓ TEMPLATE Interchange Assembly Process</td>
+            <td class="iflow-id" title="TEMPLATE_Interchange_Assembly_Process"><code class="copyable" onclick="showIdMenu(event,'iflow','TEMPLATE_Interchange_Assembly_Process','B2BIntegrationFactoryInterchangeAssemblyFlows','DEV','','','')" title="Click for options">TEMPLATE_Interchange_Assembly_Process</code></td>
+            <td class="env-cell"><span class="row-item">—</span><span class="row-item">—</span><span class="row-item">⚫ N/A</span></td>
+            <td class="env-not-found" title="Package not found on TST">📦 Not found</td>
+          </tr>
+          <tr class="notingit-row" data-iflow="TRADACOMS_Interchange_Assembly_Process TRADACOMS Interchange Assembly Process" data-loglevel="">
+            <td class="iflow-name" title="TRADACOMS Interchange Assembly Process">❓ TRADACOMS Interchange Assembly Process</td>
+            <td class="iflow-id" title="TRADACOMS_Interchange_Assembly_Process"><code class="copyable" onclick="showIdMenu(event,'iflow','TRADACOMS_Interchange_Assembly_Process','B2BIntegrationFactoryInterchangeAssemblyFlows','DEV','','','')" title="Click for options">TRADACOMS_Interchange_Assembly_Process</code></td>
+            <td class="env-cell"><span class="row-item">—</span><span class="row-item">—</span><span class="row-item">⚫ N/A</span></td>
+            <td class="env-not-found" title="Package not found on TST">📦 Not found</td>
+          </tr>
+          <tr class="notingit-row" data-iflow="MS3_UN-EDIFACT_Interchange_Assembly_Process UN-EDIFACT Interchange Assembly Process" data-loglevel="">
+            <td class="iflow-name" title="UN-EDIFACT Interchange Assembly Process">❓ UN-EDIFACT Interchange Assembly Process</td>
+            <td class="iflow-id" title="MS3_UN-EDIFACT_Interchange_Assembly_Process"><code class="copyable" onclick="showIdMenu(event,'iflow','MS3_UN-EDIFACT_Interchange_Assembly_Process','B2BIntegrationFactoryInterchangeAssemblyFlows','DEV','','','')" title="Click for options">MS3_UN-EDIFACT_Interchange_Assembly_Process</code></td>
+            <td class="env-cell"><span class="row-item">—</span><span class="row-item">—</span><span class="row-item">⚫ N/A</span></td>
+            <td class="env-not-found" title="Package not found on TST">📦 Not found</td>
+          </tr>
+        </tbody>
+      </table>
+      </div>
+    </div>
+    <div class="package-section collapsed" data-package="B2BIntegrationFactoryInterchangeExtractionFlows B2B Integration Factory - Interchange Extraction Flows" data-source="btp" data-git-found="false" data-has-nogit-iflows="true" data-missing-envs="true">
+      <div class="package-header not-in-git" onclick="togglePackage(this)">
+        <h2><span class="toggle-arrow">▶</span> ❓ 📦 B2B Integration Factory - Interchange Extraction Flows (<code class="copyable" onclick="showIdMenu(event,'package','B2BIntegrationFactoryInterchangeExtractionFlows','','DEV','B2B Integration Factory - Interchange Extraction Flows','false')" title="Click for options">B2BIntegrationFactoryInterchangeExtractionFlows</code>)</h2>
+        <div class="meta">❓ <strong>Not found in Git</strong> — This package exists on BTP but has no deployment configuration · 📦 <strong>Not found on:</strong> TST</div>
+      </div>
+      <div class="package-body">
+      <table>
+        <thead>
+          <tr>
+            <th>IFlow Name</th>
+            <th>IFlow ID</th>
+            <th><a href="https://dev.integrationsuite.cfapps.jp10.hana.ondemand.com/shell/home" target="_blank" style="color:var(--accent-blue);text-decoration:none;">DEV</a><br><sub>Deploy · LogLevel · Runtime</sub></th>
+            <th><a href="https://eu1.integrationsuite.cfapps.eu10-003.hana.ondemand.com/shell/home" target="_blank" style="color:var(--accent-blue);text-decoration:none;">TST</a><br><sub>Deploy · LogLevel · Runtime</sub></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="notingit-row" data-iflow="CSV_Interchange_Extraction_Process CSV-Custom Interchange Extraction Flow" data-loglevel="">
+            <td class="iflow-name" title="CSV-Custom Interchange Extraction Flow">❓ CSV-Custom Interchange Extraction Flow</td>
+            <td class="iflow-id" title="CSV_Interchange_Extraction_Process"><code class="copyable" onclick="showIdMenu(event,'iflow','CSV_Interchange_Extraction_Process','B2BIntegrationFactoryInterchangeExtractionFlows','DEV','','','')" title="Click for options">CSV_Interchange_Extraction_Process</code></td>
+            <td class="env-cell"><span class="row-item">—</span><span class="row-item">—</span><span class="row-item">⚫ N/A</span></td>
+            <td class="env-not-found" title="Package not found on TST">📦 Not found</td>
+          </tr>
+          <tr class="notingit-row" data-iflow="GS1XML_Interchange_Extraction_Process GS1XML Interchange Extraction Flow" data-loglevel="">
+            <td class="iflow-name" title="GS1XML Interchange Extraction Flow">❓ GS1XML Interchange Extraction Flow</td>
+            <td class="iflow-id" title="GS1XML_Interchange_Extraction_Process"><code class="copyable" onclick="showIdMenu(event,'iflow','GS1XML_Interchange_Extraction_Process','B2BIntegrationFactoryInterchangeExtractionFlows','DEV','','','')" title="Click for options">GS1XML_Interchange_Extraction_Process</code></td>
+            <td class="env-cell"><span class="row-item">—</span><span class="row-item">—</span><span class="row-item">⚫ N/A</span></td>
+            <td class="env-not-found" title="Package not found on TST">📦 Not found</td>
+          </tr>
+          <tr class="notingit-row" data-iflow="_Get_XML_based_Type_System Get XML based Type System" data-loglevel="">
+            <td class="iflow-name" title="Get XML based Type System">❓ Get XML based Type System</td>
+            <td class="iflow-id" title="_Get_XML_based_Type_System"><code class="copyable" onclick="showIdMenu(event,'iflow','_Get_XML_based_Type_System','B2BIntegrationFactoryInterchangeExtractionFlows','DEV','','','DEV')" title="Click for options">_Get_XML_based_Type_System</code></td>
+            <td class="env-cell"><span class="row-item">—</span><span class="row-item">—</span><span class="row-item">✅ STARTED v1.1.0</span></td>
+            <td class="env-not-found" title="Package not found on TST">📦 Not found</td>
+          </tr>
+          <tr class="notingit-row" data-iflow="__Get_flat_based_Type_System Get flat based Type System" data-loglevel="">
+            <td class="iflow-name" title="Get flat based Type System">❓ Get flat based Type System</td>
+            <td class="iflow-id" title="__Get_flat_based_Type_System"><code class="copyable" onclick="showIdMenu(event,'iflow','__Get_flat_based_Type_System','B2BIntegrationFactoryInterchangeExtractionFlows','DEV','','','')" title="Click for options">__Get_flat_based_Type_System</code></td>
+            <td class="env-cell"><span class="row-item">—</span><span class="row-item">—</span><span class="row-item">⚫ N/A</span></td>
+            <td class="env-not-found" title="Package not found on TST">📦 Not found</td>
+          </tr>
+          <tr class="notingit-row" data-iflow="SAP-IDOC_Interchange_Extraction_Process SAP-IDOC Interchange Extraction Flow" data-loglevel="">
+            <td class="iflow-name" title="SAP-IDOC Interchange Extraction Flow">❓ SAP-IDOC Interchange Extraction Flow</td>
+            <td class="iflow-id" title="SAP-IDOC_Interchange_Extraction_Process"><code class="copyable" onclick="showIdMenu(event,'iflow','SAP-IDOC_Interchange_Extraction_Process','B2BIntegrationFactoryInterchangeExtractionFlows','DEV','','','DEV')" title="Click for options">SAP-IDOC_Interchange_Extraction_Process</code></td>
+            <td class="env-cell"><span class="row-item">—</span><span class="row-item">—</span><span class="row-item">✅ STARTED v1.4.1</span></td>
+            <td class="env-not-found" title="Package not found on TST">📦 Not found</td>
+          </tr>
+          <tr class="notingit-row" data-iflow="SAP-IDOC-Flat_Interchange_Extraction_Flow SAP-IDOC-Flat Interchange Extraction Flow" data-loglevel="">
+            <td class="iflow-name" title="SAP-IDOC-Flat Interchange Extraction Flow">❓ SAP-IDOC-Flat Interchange Extraction Flow</td>
+            <td class="iflow-id" title="SAP-IDOC-Flat_Interchange_Extraction_Flow"><code class="copyable" onclick="showIdMenu(event,'iflow','SAP-IDOC-Flat_Interchange_Extraction_Flow','B2BIntegrationFactoryInterchangeExtractionFlows','DEV','','','')" title="Click for options">SAP-IDOC-Flat_Interchange_Extraction_Flow</code></td>
+            <td class="env-cell"><span class="row-item">—</span><span class="row-item">—</span><span class="row-item">⚫ N/A</span></td>
+            <td class="env-not-found" title="Package not found on TST">📦 Not found</td>
+          </tr>
+          <tr class="notingit-row" data-iflow="SAP-SOAP_Cloud_Interchange_Extraction_Flow SAP-SOAP Cloud Interchange Extraction Flow" data-loglevel="">
+            <td class="iflow-name" title="SAP-SOAP Cloud Interchange Extraction Flow">❓ SAP-SOAP Cloud Interchange Extraction Flow</td>
+            <td class="iflow-id" title="SAP-SOAP_Cloud_Interchange_Extraction_Flow"><code class="copyable" onclick="showIdMenu(event,'iflow','SAP-SOAP_Cloud_Interchange_Extraction_Flow','B2BIntegrationFactoryInterchangeExtractionFlows','DEV','','','')" title="Click for options">SAP-SOAP_Cloud_Interchange_Extraction_Flow</code></td>
+            <td class="env-cell"><span class="row-item">—</span><span class="row-item">—</span><span class="row-item">⚫ N/A</span></td>
+            <td class="env-not-found" title="Package not found on TST">📦 Not found</td>
+          </tr>
+          <tr class="notingit-row" data-iflow="SAP-SOAP_On-Premise_Interchange_Extraction_Flow SAP-SOAP On-Premise Interchange Extraction Flow" data-loglevel="">
+            <td class="iflow-name" title="SAP-SOAP On-Premise Interchange Extraction Flow">❓ SAP-SOAP On-Premise Interchange Extraction Flow</td>
+            <td class="iflow-id" title="SAP-SOAP_On-Premise_Interchange_Extraction_Flow"><code class="copyable" onclick="showIdMenu(event,'iflow','SAP-SOAP_On-Premise_Interchange_Extraction_Flow','B2BIntegrationFactoryInterchangeExtractionFlows','DEV','','','')" title="Click for options">SAP-SOAP_On-Premise_Interchange_Extraction_Flow</code></td>
+            <td class="env-cell"><span class="row-item">—</span><span class="row-item">—</span><span class="row-item">⚫ N/A</span></td>
+            <td class="env-not-found" title="Package not found on TST">📦 Not found</td>
+          </tr>
+          <tr class="notingit-row" data-iflow="TEMPLATE_Interchange_Extraction_Flow TEMPLATE Interchange Extraction Flow" data-loglevel="">
+            <td class="iflow-name" title="TEMPLATE Interchange Extraction Flow">❓ TEMPLATE Interchange Extraction Flow</td>
+            <td class="iflow-id" title="TEMPLATE_Interchange_Extraction_Flow"><code class="copyable" onclick="showIdMenu(event,'iflow','TEMPLATE_Interchange_Extraction_Flow','B2BIntegrationFactoryInterchangeExtractionFlows','DEV','','','')" title="Click for options">TEMPLATE_Interchange_Extraction_Flow</code></td>
+            <td class="env-cell"><span class="row-item">—</span><span class="row-item">—</span><span class="row-item">⚫ N/A</span></td>
+            <td class="env-not-found" title="Package not found on TST">📦 Not found</td>
+          </tr>
+          <tr class="notingit-row" data-iflow="VDA-AUTOMOTIVE-Flat_Interchange_Extraction_Flow VDA-AUTOMOTIVE-Flat Interchange Extraction Flow" data-loglevel="">
+            <td class="iflow-name" title="VDA-AUTOMOTIVE-Flat Interchange Extraction Flow">❓ VDA-AUTOMOTIVE-Flat Interchange Extraction Flow</td>
+            <td class="iflow-id" title="VDA-AUTOMOTIVE-Flat_Interchange_Extraction_Flow"><code class="copyable" onclick="showIdMenu(event,'iflow','VDA-AUTOMOTIVE-Flat_Interchange_Extraction_Flow','B2BIntegrationFactoryInterchangeExtractionFlows','DEV','','','')" title="Click for options">VDA-AUTOMOTIVE-Flat_Interchange_Extraction_Flow</code></td>
+            <td class="env-cell"><span class="row-item">—</span><span class="row-item">—</span><span class="row-item">⚫ N/A</span></td>
+            <td class="env-not-found" title="Package not found on TST">📦 Not found</td>
+          </tr>
+        </tbody>
+      </table>
+      </div>
+    </div>
+    <div class="package-section collapsed" data-package="B2BIntegrationFactoryPreandPostProcessingFlowsCustom B2B Integration Factory - Pre and Post-Processing Flows - Custom" data-source="btp" data-git-found="false" data-has-nogit-iflows="true" data-missing-envs="true">
+      <div class="package-header not-in-git" onclick="togglePackage(this)">
+        <h2><span class="toggle-arrow">▶</span> ❓ 📦 B2B Integration Factory - Pre and Post-Processing Flows - Custom (<code class="copyable" onclick="showIdMenu(event,'package','B2BIntegrationFactoryPreandPostProcessingFlowsCustom','','DEV','B2B Integration Factory - Pre and Post-Processing Flows - Custom','false')" title="Click for options">B2BIntegrationFactoryPreandPostProcessingFlowsCustom</code>)</h2>
+        <div class="meta">❓ <strong>Not found in Git</strong> — This package exists on BTP but has no deployment configuration · 📦 <strong>Not found on:</strong> TST</div>
+      </div>
+      <div class="package-body">
+      <table>
+        <thead>
+          <tr>
+            <th>IFlow Name</th>
+            <th>IFlow ID</th>
+            <th><a href="https://dev.integrationsuite.cfapps.jp10.hana.ondemand.com/shell/home" target="_blank" style="color:var(--accent-blue);text-decoration:none;">DEV</a><br><sub>Deploy · LogLevel · Runtime</sub></th>
+            <th><a href="https://eu1.integrationsuite.cfapps.eu10-003.hana.ondemand.com/shell/home" target="_blank" style="color:var(--accent-blue);text-decoration:none;">TST</a><br><sub>Deploy · LogLevel · Runtime</sub></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="notingit-row" data-iflow="Post-Processing_-_BASE_-_01b_-_Sales_Order_Response_-_Outbound_UN-EDIFACT Post-Processing - BASE - 01b - Sales Order Response - Outbound UN-EDIFACT" data-loglevel="">
+            <td class="iflow-name" title="Post-Processing - BASE - 01b - Sales Order Response - Outbound UN-EDIFACT">❓ Post-Processing - BASE - 01b - Sales Order Response - Outbound UN-EDIFACT</td>
+            <td class="iflow-id" title="Post-Processing_-_BASE_-_01b_-_Sales_Order_Response_-_Outbound_UN-EDIFACT"><code class="copyable" onclick="showIdMenu(event,'iflow','Post-Processing_-_BASE_-_01b_-_Sales_Order_Response_-_Outbound_UN-EDIFACT','B2BIntegrationFactoryPreandPostProcessingFlowsCustom','DEV','','','')" title="Click for options">Post-Processing_-_BASE_-_01b_-_Sales_Order_Response_-_Outbound_UN-EDIFACT</code></td>
+            <td class="env-cell"><span class="row-item">—</span><span class="row-item">—</span><span class="row-item">⚫ N/A</span></td>
+            <td class="env-not-found" title="Package not found on TST">📦 Not found</td>
+          </tr>
+          <tr class="notingit-row" data-iflow="Post-Processing_-_BASE_-_02_-_Delivery_Notification_-_Outbound_UN-EDIFACT Post-Processing - BASE - 02 - Delivery Notification - Outbound UN-EDIFACT" data-loglevel="">
+            <td class="iflow-name" title="Post-Processing - BASE - 02 - Delivery Notification - Outbound UN-EDIFACT">❓ Post-Processing - BASE - 02 - Delivery Notification - Outbound UN-EDIFACT</td>
+            <td class="iflow-id" title="Post-Processing_-_BASE_-_02_-_Delivery_Notification_-_Outbound_UN-EDIFACT"><code class="copyable" onclick="showIdMenu(event,'iflow','Post-Processing_-_BASE_-_02_-_Delivery_Notification_-_Outbound_UN-EDIFACT','B2BIntegrationFactoryPreandPostProcessingFlowsCustom','DEV','','','')" title="Click for options">Post-Processing_-_BASE_-_02_-_Delivery_Notification_-_Outbound_UN-EDIFACT</code></td>
+            <td class="env-cell"><span class="row-item">—</span><span class="row-item">—</span><span class="row-item">⚫ N/A</span></td>
+            <td class="env-not-found" title="Package not found on TST">📦 Not found</td>
+          </tr>
+          <tr class="notingit-row" data-iflow="Post-Processing_-_BASE_-_03_-_Invoice_-_Outbound_UN-EDIFACT Post-Processing - BASE - 03 - Invoice - Outbound UN-EDIFACT" data-loglevel="">
+            <td class="iflow-name" title="Post-Processing - BASE - 03 - Invoice - Outbound UN-EDIFACT">❓ Post-Processing - BASE - 03 - Invoice - Outbound UN-EDIFACT</td>
+            <td class="iflow-id" title="Post-Processing_-_BASE_-_03_-_Invoice_-_Outbound_UN-EDIFACT"><code class="copyable" onclick="showIdMenu(event,'iflow','Post-Processing_-_BASE_-_03_-_Invoice_-_Outbound_UN-EDIFACT','B2BIntegrationFactoryPreandPostProcessingFlowsCustom','DEV','','','')" title="Click for options">Post-Processing_-_BASE_-_03_-_Invoice_-_Outbound_UN-EDIFACT</code></td>
+            <td class="env-cell"><span class="row-item">—</span><span class="row-item">—</span><span class="row-item">⚫ N/A</span></td>
+            <td class="env-not-found" title="Package not found on TST">📦 Not found</td>
+          </tr>
+          <tr class="notingit-row" data-iflow="Pre-Processing_-_BASE_-_01a_-_Sales_Order_Request_-_Inbound_UN-EDIFACT Pre-Processing - BASE - 01a - Sales Order Request - Inbound UN-EDIFACT" data-loglevel="">
+            <td class="iflow-name" title="Pre-Processing - BASE - 01a - Sales Order Request - Inbound UN-EDIFACT">❓ Pre-Processing - BASE - 01a - Sales Order Request - Inbound UN-EDIFACT</td>
+            <td class="iflow-id" title="Pre-Processing_-_BASE_-_01a_-_Sales_Order_Request_-_Inbound_UN-EDIFACT"><code class="copyable" onclick="showIdMenu(event,'iflow','Pre-Processing_-_BASE_-_01a_-_Sales_Order_Request_-_Inbound_UN-EDIFACT','B2BIntegrationFactoryPreandPostProcessingFlowsCustom','DEV','','','')" title="Click for options">Pre-Processing_-_BASE_-_01a_-_Sales_Order_Request_-_Inbound_UN-EDIFACT</code></td>
+            <td class="env-cell"><span class="row-item">—</span><span class="row-item">—</span><span class="row-item">⚫ N/A</span></td>
+            <td class="env-not-found" title="Package not found on TST">📦 Not found</td>
+          </tr>
         </tbody>
       </table>
       </div>
@@ -7942,8 +8370,8 @@
           </tr>
           <tr class="notingit-row" data-iflow="YdemoCPI058 YdemoCPI058" data-loglevel="">
             <td class="iflow-name" title="YdemoCPI058">❓ YdemoCPI058</td>
-            <td class="iflow-id" title="YdemoCPI058"><code class="copyable" onclick="showIdMenu(event,'iflow','YdemoCPI058','I038328','DEV','','','DEV')" title="Click for options">YdemoCPI058</code></td>
-            <td class="env-cell"><span class="row-item">—</span><span class="row-item">—</span><span class="row-item">✅ STARTED v1.0.66</span></td>
+            <td class="iflow-id" title="YdemoCPI058"><code class="copyable" onclick="showIdMenu(event,'iflow','YdemoCPI058','I038328','DEV','','','')" title="Click for options">YdemoCPI058</code></td>
+            <td class="env-cell"><span class="row-item">—</span><span class="row-item">—</span><span class="row-item">⚫ N/A</span></td>
             <td class="env-cell"><span class="row-item">—</span><span class="row-item">—</span><span class="row-item">—</span></td>
           </tr>
           <tr class="notingit-row" data-iflow="YdemoCPI059 YdemoCPI059" data-loglevel="">
@@ -8674,6 +9102,12 @@
             <td class="iflow-name" title="YdemoCI2026037">❓ YdemoCI2026037</td>
             <td class="iflow-id" title="YdemoCI2026037"><code class="copyable" onclick="showIdMenu(event,'iflow','YdemoCI2026037','I0383282026','DEV','','','DEV')" title="Click for options">YdemoCI2026037</code></td>
             <td class="env-cell"><span class="row-item">—</span><span class="row-item">—</span><span class="row-item">✅ STARTED v1.0.11</span></td>
+            <td class="env-not-found" title="Package not found on TST">📦 Not found</td>
+          </tr>
+          <tr class="notingit-row" data-iflow="YdemoCI2026038 YdemoCI2026038" data-loglevel="">
+            <td class="iflow-name" title="YdemoCI2026038">❓ YdemoCI2026038</td>
+            <td class="iflow-id" title="YdemoCI2026038"><code class="copyable" onclick="showIdMenu(event,'iflow','YdemoCI2026038','I0383282026','DEV','','','')" title="Click for options">YdemoCI2026038</code></td>
+            <td class="env-cell"><span class="row-item">—</span><span class="row-item">—</span><span class="row-item">⚫ N/A</span></td>
             <td class="env-not-found" title="Package not found on TST">📦 Not found</td>
           </tr>
         </tbody>
@@ -12848,6 +13282,12 @@
             <td class="iflow-name" title="XMLtoCSV">❓ XMLtoCSV</td>
             <td class="iflow-id" title="XMLtoCSV"><code class="copyable" onclick="showIdMenu(event,'iflow','XMLtoCSV','I558965','DEV','','','DEV')" title="Click for options">XMLtoCSV</code></td>
             <td class="env-cell"><span class="row-item">—</span><span class="row-item">—</span><span class="row-item">✅ STARTED v1.0.0</span></td>
+            <td class="env-cell"><span class="row-item">—</span><span class="row-item">—</span><span class="row-item">—</span></td>
+          </tr>
+          <tr class="notingit-row" data-iflow="delete delete" data-loglevel="">
+            <td class="iflow-name" title="delete">❓ delete</td>
+            <td class="iflow-id" title="delete"><code class="copyable" onclick="showIdMenu(event,'iflow','delete','I558965','DEV','','','')" title="Click for options">delete</code></td>
+            <td class="env-cell"><span class="row-item">—</span><span class="row-item">—</span><span class="row-item">⚫ N/A</span></td>
             <td class="env-cell"><span class="row-item">—</span><span class="row-item">—</span><span class="row-item">—</span></td>
           </tr>
           <tr class="notingit-row" data-iflow="demo_Mapping demo Mapping" data-loglevel="">
