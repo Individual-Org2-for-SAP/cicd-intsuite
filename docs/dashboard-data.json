@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-11T04:32:44Z",
+  "generated": "2026-09-12T04:28:53Z",
   "environments": [
     "DEV",
     "TST"
@@ -9352,6 +9352,40 @@
       ]
     },
     {
+      "id": "DemoScenario",
+      "name": "Demo Scenario",
+      "source": "btp",
+      "foundOnEnvironments": [
+        "DEV"
+      ],
+      "gitConfig": {
+        "found": false,
+        "jsonFormat": null
+      },
+      "iflows": [
+        {
+          "id": "Demo_Scenario",
+          "name": "Demo Scenario",
+          "source": "btp",
+          "hasGitConfig": false,
+          "environments": {
+            "DEV": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": "STARTED",
+              "runtimeVersion": "1.0.0"
+            },
+            "TST": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": null,
+              "runtimeVersion": null
+            }
+          }
+        }
+      ]
+    },
+    {
       "id": "DesignGuidelinesHandleErrors",
       "name": "Integration Flow Design Guidelines - Handle Errors Gracefully",
       "source": "btp",
@@ -17518,6 +17552,26 @@
           }
         },
         {
+          "id": "I026676_052_geniflow_fromAce",
+          "name": "I026676_052_geniflow_fromAce",
+          "source": "btp",
+          "hasGitConfig": false,
+          "environments": {
+            "DEV": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": "NOT_DEPLOYED",
+              "runtimeVersion": ""
+            },
+            "TST": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": null,
+              "runtimeVersion": null
+            }
+          }
+        },
+        {
           "id": "I026676_AI02_s3_to_s4hana_product_registration",
           "name": "I026676_AI02_s3_to_s4hana_product_registration",
           "source": "btp",
@@ -24237,7 +24291,7 @@
             "DEV": {
               "deploy": null,
               "logLevel": null,
-              "runtimeStatus": "STARTED",
+              "runtimeStatus": "ERROR",
               "runtimeVersion": "1.0.11"
             },
             "TST": {
@@ -44989,6 +45043,240 @@
       ]
     },
     {
+      "id": "POCSupport",
+      "name": "I038328_Import",
+      "source": "btp",
+      "foundOnEnvironments": [
+        "DEV"
+      ],
+      "gitConfig": {
+        "found": false,
+        "jsonFormat": null
+      },
+      "iflows": [
+        {
+          "id": "POC_HPK_InhouseDevSupport_SAP_001_S4HANA_to_File_copy",
+          "name": "POC_HPK_InhouseDevSupport_SAP_001_S4HANA_to_File",
+          "source": "btp",
+          "hasGitConfig": false,
+          "environments": {
+            "DEV": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": "NOT_DEPLOYED",
+              "runtimeVersion": ""
+            },
+            "TST": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": null,
+              "runtimeVersion": null
+            }
+          }
+        },
+        {
+          "id": "POC_HPK_InhouseDevSupport_SAP_006_01_S4HANA_to_Mail_SalesOrder",
+          "name": "POC_HPK_InhouseDevSupport_SAP_006_01_S4HANA_to_Mail_SalesOrder",
+          "source": "btp",
+          "hasGitConfig": false,
+          "environments": {
+            "DEV": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": "NOT_DEPLOYED",
+              "runtimeVersion": ""
+            },
+            "TST": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": null,
+              "runtimeVersion": null
+            }
+          }
+        },
+        {
+          "id": "POC_HPK_InhouseDevSupport_SAP_007_01_HTTP_to_S4HANA_Material",
+          "name": "POC_HPK_InhouseDevSupport_SAP_007_01_HTTP_to_S4HANA_Material",
+          "source": "btp",
+          "hasGitConfig": false,
+          "environments": {
+            "DEV": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": "STARTED",
+              "runtimeVersion": "1.0.6"
+            },
+            "TST": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": null,
+              "runtimeVersion": null
+            }
+          }
+        },
+        {
+          "id": "POC_Support_001",
+          "name": "POC_Support_001",
+          "source": "btp",
+          "hasGitConfig": false,
+          "environments": {
+            "DEV": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": "NOT_DEPLOYED",
+              "runtimeVersion": ""
+            },
+            "TST": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": null,
+              "runtimeVersion": null
+            }
+          }
+        },
+        {
+          "id": "POC_Support_002",
+          "name": "POC_Support_002",
+          "source": "btp",
+          "hasGitConfig": false,
+          "environments": {
+            "DEV": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": "NOT_DEPLOYED",
+              "runtimeVersion": ""
+            },
+            "TST": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": null,
+              "runtimeVersion": null
+            }
+          }
+        },
+        {
+          "id": "POC_Support_002_Tools",
+          "name": "POC_Support_002_Tools",
+          "source": "btp",
+          "hasGitConfig": false,
+          "environments": {
+            "DEV": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": "NOT_DEPLOYED",
+              "runtimeVersion": ""
+            },
+            "TST": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": null,
+              "runtimeVersion": null
+            }
+          }
+        },
+        {
+          "id": "POC_Support_003",
+          "name": "POC_Support_003",
+          "source": "btp",
+          "hasGitConfig": false,
+          "environments": {
+            "DEV": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": "NOT_DEPLOYED",
+              "runtimeVersion": ""
+            },
+            "TST": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": null,
+              "runtimeVersion": null
+            }
+          }
+        },
+        {
+          "id": "POC_Support_003_Tools",
+          "name": "POC_Support_003_Tools",
+          "source": "btp",
+          "hasGitConfig": false,
+          "environments": {
+            "DEV": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": "NOT_DEPLOYED",
+              "runtimeVersion": ""
+            },
+            "TST": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": null,
+              "runtimeVersion": null
+            }
+          }
+        },
+        {
+          "id": "POC_Support_004",
+          "name": "POC_Support_004",
+          "source": "btp",
+          "hasGitConfig": false,
+          "environments": {
+            "DEV": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": "NOT_DEPLOYED",
+              "runtimeVersion": ""
+            },
+            "TST": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": null,
+              "runtimeVersion": null
+            }
+          }
+        },
+        {
+          "id": "POC_Support_004_Tools",
+          "name": "POC_Support_004_Tools",
+          "source": "btp",
+          "hasGitConfig": false,
+          "environments": {
+            "DEV": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": "NOT_DEPLOYED",
+              "runtimeVersion": ""
+            },
+            "TST": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": null,
+              "runtimeVersion": null
+            }
+          }
+        },
+        {
+          "id": "POC_Support_005",
+          "name": "POC_Support_005",
+          "source": "btp",
+          "hasGitConfig": false,
+          "environments": {
+            "DEV": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": "NOT_DEPLOYED",
+              "runtimeVersion": ""
+            },
+            "TST": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": null,
+              "runtimeVersion": null
+            }
+          }
+        }
+      ]
+    },
+    {
       "id": "POscenario",
       "name": "PO_scenario",
       "source": "btp",
@@ -57225,8 +57513,8 @@
     }
   ],
   "summary": {
-    "btpPackageCount": 301,
+    "btpPackageCount": 303,
     "gitOnlyPackageCount": 0,
-    "totalPackageCount": 301
+    "totalPackageCount": 303
   }
 }
