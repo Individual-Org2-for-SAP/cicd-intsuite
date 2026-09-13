@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-12T04:28:53Z",
+  "generated": "2026-09-13T06:01:46Z",
   "environments": [
     "DEV",
     "TST"
@@ -16106,8 +16106,8 @@
             "DEV": {
               "deploy": null,
               "logLevel": null,
-              "runtimeStatus": "NOT_DEPLOYED",
-              "runtimeVersion": ""
+              "runtimeStatus": "STARTED",
+              "runtimeVersion": "1.0.0"
             },
             "TST": {
               "deploy": null,
@@ -54687,6 +54687,19 @@
       ]
     },
     {
+      "id": "TKojimaMCPTest",
+      "name": "TKojima MCP Test",
+      "source": "btp",
+      "foundOnEnvironments": [
+        "DEV"
+      ],
+      "gitConfig": {
+        "found": false,
+        "jsonFormat": null
+      },
+      "iflows": []
+    },
+    {
       "id": "TPDEMOSFTP",
       "name": "KYONEO_SFTP_DEMO",
       "source": "btp",
@@ -57513,8 +57526,8 @@
     }
   ],
   "summary": {
-    "btpPackageCount": 303,
+    "btpPackageCount": 304,
     "gitOnlyPackageCount": 0,
-    "totalPackageCount": 303
+    "totalPackageCount": 304
   }
 }
