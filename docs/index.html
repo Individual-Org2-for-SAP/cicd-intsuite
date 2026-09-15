@@ -248,7 +248,7 @@
 <body>
   <div class="header">
     <h1>📊 Integration Suite Dashboard</h1>
-    <div class="meta"><span>📁 <strong>Individual-Org2-for-SAP/cicd-intsuite</strong></span><span>📅 2026-09-14T04:53:38Z</span><span>🌍 <a href="https://dev.integrationsuite.cfapps.jp10.hana.ondemand.com/shell/home" target="_blank" style="color:#58a6ff;text-decoration:none;">DEV</a>, <a href="https://eu1.integrationsuite.cfapps.eu10-003.hana.ondemand.com/shell/home" target="_blank" style="color:#58a6ff;text-decoration:none;">TST</a></span><span>📦 305 BTP packages</span>
+    <div class="meta"><span>📁 <strong>Individual-Org2-for-SAP/cicd-intsuite</strong></span><span>📅 2026-09-15T04:47:46Z</span><span>🌍 <a href="https://dev.integrationsuite.cfapps.jp10.hana.ondemand.com/shell/home" target="_blank" style="color:#58a6ff;text-decoration:none;">DEV</a>, <a href="https://eu1.integrationsuite.cfapps.eu10-003.hana.ondemand.com/shell/home" target="_blank" style="color:#58a6ff;text-decoration:none;">TST</a></span><span>📦 307 BTP packages</span>
     </div>
     <div class="scope-note">ℹ️ This dashboard covers Integration Flow (IFlow) artifacts only. Other artifact types (Value Mappings, Script Collections, etc.) are not included.</div>
     <nav class="page-nav">
@@ -276,21 +276,21 @@
       <h2>📈 Summary</h2>
       <div class="summary-grid">
         <div class="summary-card" data-card-filter="btp" onclick="toggleCardFilter('btp')">
-          <div class="number">305</div>
+          <div class="number">307</div>
           <div class="label">BTP Packages</div>
         </div>
         <div class="summary-card" data-card-filter="not-all-envs" onclick="toggleCardFilter('not-all-envs')">
-          <div class="number">271</div>
+          <div class="number">273</div>
           <div class="label">Not on All Environments</div>
         </div>
         <div class="summary-card" data-card-filter="git-issues" onclick="toggleCardFilter('git-issues')">
-          <div class="number">305</div>
+          <div class="number">307</div>
           <div class="label">Git Config Issues</div>
-          <div class="sub-label">🔴 304 packages missing entirely</div>
+          <div class="sub-label">🔴 306 packages missing entirely</div>
           <div class="sub-label">⚠️ 1 packages with missing IFlows</div>
         </div>
       </div>
-      <div class="alert">⚠️ <strong>Action required:</strong> 304 package(s) and 2664 IFlow(s) found on BTP have no Git deployment configuration.</div>
+      <div class="alert">⚠️ <strong>Action required:</strong> 306 package(s) and 2664 IFlow(s) found on BTP have no Git deployment configuration.</div>
     </div>
     <div class="filter-bar">
       <input type="text" id="searchInput" placeholder="🔍 Filter by package or IFlow name/ID..." onkeyup="filterDashboard()">
@@ -5538,6 +5538,27 @@
       </table>
       </div>
     </div>
+    <div class="package-section collapsed" data-package="FINMCP FIN_MCP" data-source="btp" data-git-found="false" data-has-nogit-iflows="false" data-missing-envs="true">
+      <div class="package-header not-in-git" onclick="togglePackage(this)">
+        <h2><span class="toggle-arrow">▶</span> ❓ 📦 FIN_MCP (<code class="copyable" onclick="showIdMenu(event,'package','FINMCP','','DEV','FIN_MCP','false')" title="Click for options">FINMCP</code>)</h2>
+        <div class="meta">❓ <strong>Not found in Git</strong> — This package exists on BTP but has no deployment configuration · 📦 <strong>Not found on:</strong> TST</div>
+      </div>
+      <div class="package-body">
+      <table>
+        <thead>
+          <tr>
+            <th>IFlow Name</th>
+            <th>IFlow ID</th>
+            <th><a href="https://dev.integrationsuite.cfapps.jp10.hana.ondemand.com/shell/home" target="_blank" style="color:var(--accent-blue);text-decoration:none;">DEV</a><br><sub>Deploy · LogLevel · Runtime</sub></th>
+            <th><a href="https://eu1.integrationsuite.cfapps.eu10-003.hana.ondemand.com/shell/home" target="_blank" style="color:var(--accent-blue);text-decoration:none;">TST</a><br><sub>Deploy · LogLevel · Runtime</sub></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td colspan="4">⚠️ <em>No IFlows found — package not in Git</em></td></tr>
+        </tbody>
+      </table>
+      </div>
+    </div>
     <div class="package-section collapsed" data-package="FirstTransportPackage FirstTransportPackage" data-source="btp" data-git-found="false" data-has-nogit-iflows="true" data-missing-envs="false">
       <div class="package-header not-in-git" onclick="togglePackage(this)">
         <h2><span class="toggle-arrow">▶</span> ❓ 📦 FirstTransportPackage (<code class="copyable" onclick="showIdMenu(event,'package','FirstTransportPackage','','DEV,TST','FirstTransportPackage','false')" title="Click for options">FirstTransportPackage</code>)</h2>
@@ -7224,6 +7245,27 @@
             <td class="env-cell"><span class="row-item">—</span><span class="row-item">—</span><span class="row-item">⚫ N/A</span></td>
             <td class="env-not-found" title="Package not found on TST">📦 Not found</td>
           </tr>
+        </tbody>
+      </table>
+      </div>
+    </div>
+    <div class="package-section collapsed" data-package="I027553 I027553" data-source="btp" data-git-found="false" data-has-nogit-iflows="false" data-missing-envs="true">
+      <div class="package-header not-in-git" onclick="togglePackage(this)">
+        <h2><span class="toggle-arrow">▶</span> ❓ 📦 I027553 (<code class="copyable" onclick="showIdMenu(event,'package','I027553','','DEV','I027553','false')" title="Click for options">I027553</code>)</h2>
+        <div class="meta">❓ <strong>Not found in Git</strong> — This package exists on BTP but has no deployment configuration · 📦 <strong>Not found on:</strong> TST</div>
+      </div>
+      <div class="package-body">
+      <table>
+        <thead>
+          <tr>
+            <th>IFlow Name</th>
+            <th>IFlow ID</th>
+            <th><a href="https://dev.integrationsuite.cfapps.jp10.hana.ondemand.com/shell/home" target="_blank" style="color:var(--accent-blue);text-decoration:none;">DEV</a><br><sub>Deploy · LogLevel · Runtime</sub></th>
+            <th><a href="https://eu1.integrationsuite.cfapps.eu10-003.hana.ondemand.com/shell/home" target="_blank" style="color:var(--accent-blue);text-decoration:none;">TST</a><br><sub>Deploy · LogLevel · Runtime</sub></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td colspan="4">⚠️ <em>No IFlows found — package not in Git</em></td></tr>
         </tbody>
       </table>
       </div>
@@ -8986,9 +9028,9 @@
       </div>
     </div>
     <div class="package-section collapsed" data-package="I0383282026 I038328_2026" data-source="btp" data-git-found="false" data-has-nogit-iflows="true" data-missing-envs="true">
-      <div class="package-header not-in-git" onclick="togglePackage(this)">
-        <h2><span class="toggle-arrow">▶</span> ❓ 📦 I038328_2026 (<code class="copyable" onclick="showIdMenu(event,'package','I0383282026','','DEV','I038328_2026','false')" title="Click for options">I0383282026</code>)</h2>
-        <div class="meta">❓ <strong>Not found in Git</strong> — This package exists on BTP but has no deployment configuration · 📦 <strong>Not found on:</strong> TST</div>
+      <div class="package-header error" onclick="togglePackage(this)">
+        <h2><span class="toggle-arrow">▶</span> 🔴 📦 I038328_2026 (<code class="copyable" onclick="showIdMenu(event,'package','I0383282026','','DEV','I038328_2026','false')" title="Click for options">I0383282026</code>)</h2>
+        <div class="meta"><span class="json-template-link" onclick="showJsonTemplate(event)">Deployment JSON: ⚪ none</span> · 🔴 Some IFlows have runtime ERROR status · 📦 <strong>Not found on:</strong> TST</div>
       </div>
       <div class="package-body">
       <table>
@@ -9193,10 +9235,10 @@
             <td class="env-cell"><span class="row-item">—</span><span class="row-item">—</span><span class="row-item">⚫ N/A</span></td>
             <td class="env-not-found" title="Package not found on TST">📦 Not found</td>
           </tr>
-          <tr class="notingit-row" data-iflow="YdemoCI2026037 YdemoCI2026037" data-loglevel="">
-            <td class="iflow-name" title="YdemoCI2026037">❓ YdemoCI2026037</td>
+          <tr class="error-row" data-iflow="YdemoCI2026037 YdemoCI2026037" data-loglevel="">
+            <td class="iflow-name" title="YdemoCI2026037">🔴 YdemoCI2026037</td>
             <td class="iflow-id" title="YdemoCI2026037"><code class="copyable" onclick="showIdMenu(event,'iflow','YdemoCI2026037','I0383282026','DEV','','','DEV')" title="Click for options">YdemoCI2026037</code></td>
-            <td class="env-cell"><span class="row-item">—</span><span class="row-item">—</span><span class="row-item">✅ STARTED v1.0.11</span></td>
+            <td class="env-cell"><span class="row-item">—</span><span class="row-item">—</span><span class="row-item">🔴 ERROR v1.0.11</span></td>
             <td class="env-not-found" title="Package not found on TST">📦 Not found</td>
           </tr>
           <tr class="notingit-row" data-iflow="YdemoCI2026038 YdemoCI2026038" data-loglevel="">
@@ -13025,22 +13067,22 @@
             <td class="env-cell"><span class="row-item">—</span><span class="row-item">—</span><span class="row-item">✅ STARTED v1.0.0</span></td>
             <td class="env-cell"><span class="row-item">—</span><span class="row-item">—</span><span class="row-item">—</span></td>
           </tr>
-          <tr class="notingit-row" data-iflow="Change_Character_code Change Character code" data-loglevel="">
-            <td class="iflow-name" title="Change Character code">❓ Change Character code</td>
+          <tr class="error-row" data-iflow="Change_Character_code Change Character code" data-loglevel="">
+            <td class="iflow-name" title="Change Character code">🔴 Change Character code</td>
             <td class="iflow-id" title="Change_Character_code"><code class="copyable" onclick="showIdMenu(event,'iflow','Change_Character_code','I558965','DEV','','','DEV')" title="Click for options">Change_Character_code</code></td>
-            <td class="env-cell"><span class="row-item">—</span><span class="row-item">—</span><span class="row-item">✅ STARTED v1.0.0</span></td>
+            <td class="env-cell"><span class="row-item">—</span><span class="row-item">—</span><span class="row-item">🔴 ERROR v1.0.0</span></td>
             <td class="env-cell"><span class="row-item">—</span><span class="row-item">—</span><span class="row-item">—</span></td>
           </tr>
-          <tr class="notingit-row" data-iflow="Change_Character_code_SJIStoIBM1047 Change Character code SJIStoIBM1047" data-loglevel="">
-            <td class="iflow-name" title="Change Character code SJIStoIBM1047">❓ Change Character code SJIStoIBM1047</td>
+          <tr class="error-row" data-iflow="Change_Character_code_SJIStoIBM1047 Change Character code SJIStoIBM1047" data-loglevel="">
+            <td class="iflow-name" title="Change Character code SJIStoIBM1047">🔴 Change Character code SJIStoIBM1047</td>
             <td class="iflow-id" title="Change_Character_code_SJIStoIBM1047"><code class="copyable" onclick="showIdMenu(event,'iflow','Change_Character_code_SJIStoIBM1047','I558965','DEV','','','DEV')" title="Click for options">Change_Character_code_SJIStoIBM1047</code></td>
-            <td class="env-cell"><span class="row-item">—</span><span class="row-item">—</span><span class="row-item">✅ STARTED v1.0.3</span></td>
+            <td class="env-cell"><span class="row-item">—</span><span class="row-item">—</span><span class="row-item">🔴 ERROR v1.0.3</span></td>
             <td class="env-cell"><span class="row-item">—</span><span class="row-item">—</span><span class="row-item">—</span></td>
           </tr>
-          <tr class="notingit-row" data-iflow="Change_Character_code2 Change Character code SJIStoUTF8" data-loglevel="">
-            <td class="iflow-name" title="Change Character code SJIStoUTF8">❓ Change Character code SJIStoUTF8</td>
+          <tr class="error-row" data-iflow="Change_Character_code2 Change Character code SJIStoUTF8" data-loglevel="">
+            <td class="iflow-name" title="Change Character code SJIStoUTF8">🔴 Change Character code SJIStoUTF8</td>
             <td class="iflow-id" title="Change_Character_code2"><code class="copyable" onclick="showIdMenu(event,'iflow','Change_Character_code2','I558965','DEV','','','DEV')" title="Click for options">Change_Character_code2</code></td>
-            <td class="env-cell"><span class="row-item">—</span><span class="row-item">—</span><span class="row-item">✅ STARTED v1.0.3</span></td>
+            <td class="env-cell"><span class="row-item">—</span><span class="row-item">—</span><span class="row-item">🔴 ERROR v1.0.3</span></td>
             <td class="env-cell"><span class="row-item">—</span><span class="row-item">—</span><span class="row-item">—</span></td>
           </tr>
           <tr class="notingit-row" data-iflow="Demo_INPEXsama Demo_ODATAtoGoogleDrive" data-loglevel="">
@@ -13481,10 +13523,10 @@
             <td class="env-cell"><span class="row-item">—</span><span class="row-item">—</span><span class="row-item">✅ STARTED v2.0.36</span></td>
             <td class="env-cell"><span class="row-item">—</span><span class="row-item">—</span><span class="row-item">—</span></td>
           </tr>
-          <tr class="notingit-row" data-iflow="test_CamelCharset_copy test_CamelCharset_copy" data-loglevel="">
-            <td class="iflow-name" title="test_CamelCharset_copy">❓ test_CamelCharset_copy</td>
+          <tr class="error-row" data-iflow="test_CamelCharset_copy test_CamelCharset_copy" data-loglevel="">
+            <td class="iflow-name" title="test_CamelCharset_copy">🔴 test_CamelCharset_copy</td>
             <td class="iflow-id" title="test_CamelCharset_copy"><code class="copyable" onclick="showIdMenu(event,'iflow','test_CamelCharset_copy','I558965','DEV','','','DEV')" title="Click for options">test_CamelCharset_copy</code></td>
-            <td class="env-cell"><span class="row-item">—</span><span class="row-item">—</span><span class="row-item">✅ STARTED v1.0.0</span></td>
+            <td class="env-cell"><span class="row-item">—</span><span class="row-item">—</span><span class="row-item">🔴 ERROR v1.0.0</span></td>
             <td class="env-cell"><span class="row-item">—</span><span class="row-item">—</span><span class="row-item">—</span></td>
           </tr>
         </tbody>
@@ -21114,10 +21156,10 @@
           </tr>
         </thead>
         <tbody>
-          <tr class="notingit-row" data-iflow="No003_Backup_RegularCSVFile No001_Backup_RegularCSVFile" data-loglevel="">
-            <td class="iflow-name" title="No001_Backup_RegularCSVFile">❓ No001_Backup_RegularCSVFile</td>
+          <tr class="error-row" data-iflow="No003_Backup_RegularCSVFile No001_Backup_RegularCSVFile" data-loglevel="">
+            <td class="iflow-name" title="No001_Backup_RegularCSVFile">🔴 No001_Backup_RegularCSVFile</td>
             <td class="iflow-id" title="No003_Backup_RegularCSVFile"><code class="copyable" onclick="showIdMenu(event,'iflow','No003_Backup_RegularCSVFile','UserProvisioningAndAccessControl','DEV','','','DEV')" title="Click for options">No003_Backup_RegularCSVFile</code></td>
-            <td class="env-cell"><span class="row-item">—</span><span class="row-item">—</span><span class="row-item">✅ STARTED v1.0.0</span></td>
+            <td class="env-cell"><span class="row-item">—</span><span class="row-item">—</span><span class="row-item">🔴 ERROR v1.0.0</span></td>
             <td class="env-not-found" title="Package not found on TST">📦 Not found</td>
           </tr>
           <tr class="error-row" data-iflow="No002_User_Role_Provision No002_User_Role_Provision" data-loglevel="">
