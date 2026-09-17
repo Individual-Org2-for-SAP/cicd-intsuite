@@ -248,7 +248,7 @@
 <body>
   <div class="header">
     <h1>📊 Integration Suite Dashboard</h1>
-    <div class="meta"><span>📁 <strong>Individual-Org2-for-SAP/cicd-intsuite</strong></span><span>📅 2026-09-16T04:53:59Z</span><span>🌍 <a href="https://dev.integrationsuite.cfapps.jp10.hana.ondemand.com/shell/home" target="_blank" style="color:#58a6ff;text-decoration:none;">DEV</a>, <a href="https://eu1.integrationsuite.cfapps.eu10-003.hana.ondemand.com/shell/home" target="_blank" style="color:#58a6ff;text-decoration:none;">TST</a></span><span>📦 308 BTP packages</span>
+    <div class="meta"><span>📁 <strong>Individual-Org2-for-SAP/cicd-intsuite</strong></span><span>📅 2026-09-17T04:59:22Z</span><span>🌍 <a href="https://dev.integrationsuite.cfapps.jp10.hana.ondemand.com/shell/home" target="_blank" style="color:#58a6ff;text-decoration:none;">DEV</a>, <a href="https://eu1.integrationsuite.cfapps.eu10-003.hana.ondemand.com/shell/home" target="_blank" style="color:#58a6ff;text-decoration:none;">TST</a></span><span>📦 309 BTP packages</span>
     </div>
     <div class="scope-note">ℹ️ This dashboard covers Integration Flow (IFlow) artifacts only. Other artifact types (Value Mappings, Script Collections, etc.) are not included.</div>
     <nav class="page-nav">
@@ -276,21 +276,21 @@
       <h2>📈 Summary</h2>
       <div class="summary-grid">
         <div class="summary-card" data-card-filter="btp" onclick="toggleCardFilter('btp')">
-          <div class="number">308</div>
+          <div class="number">309</div>
           <div class="label">BTP Packages</div>
         </div>
         <div class="summary-card" data-card-filter="not-all-envs" onclick="toggleCardFilter('not-all-envs')">
-          <div class="number">274</div>
+          <div class="number">275</div>
           <div class="label">Not on All Environments</div>
         </div>
         <div class="summary-card" data-card-filter="git-issues" onclick="toggleCardFilter('git-issues')">
-          <div class="number">308</div>
+          <div class="number">309</div>
           <div class="label">Git Config Issues</div>
-          <div class="sub-label">🔴 307 packages missing entirely</div>
+          <div class="sub-label">🔴 308 packages missing entirely</div>
           <div class="sub-label">⚠️ 1 packages with missing IFlows</div>
         </div>
       </div>
-      <div class="alert">⚠️ <strong>Action required:</strong> 307 package(s) and 2664 IFlow(s) found on BTP have no Git deployment configuration.</div>
+      <div class="alert">⚠️ <strong>Action required:</strong> 308 package(s) and 2669 IFlow(s) found on BTP have no Git deployment configuration.</div>
     </div>
     <div class="filter-bar">
       <input type="text" id="searchInput" placeholder="🔍 Filter by package or IFlow name/ID..." onkeyup="filterDashboard()">
@@ -7069,6 +7069,12 @@
             <td class="iflow-name" title="I026676_052_geniflow_fromAce">❓ I026676_052_geniflow_fromAce</td>
             <td class="iflow-id" title="I026676_052_geniflow_fromAce"><code class="copyable" onclick="showIdMenu(event,'iflow','I026676_052_geniflow_fromAce','I026676','DEV','','','')" title="Click for options">I026676_052_geniflow_fromAce</code></td>
             <td class="env-cell"><span class="row-item">—</span><span class="row-item">—</span><span class="row-item">⚫ N/A</span></td>
+            <td class="env-not-found" title="Package not found on TST">📦 Not found</td>
+          </tr>
+          <tr class="notingit-row" data-iflow="I026676_053_router_condition I026676_053_router_condition" data-loglevel="">
+            <td class="iflow-name" title="I026676_053_router_condition">❓ I026676_053_router_condition</td>
+            <td class="iflow-id" title="I026676_053_router_condition"><code class="copyable" onclick="showIdMenu(event,'iflow','I026676_053_router_condition','I026676','DEV','','','DEV')" title="Click for options">I026676_053_router_condition</code></td>
+            <td class="env-cell"><span class="row-item">—</span><span class="row-item">—</span><span class="row-item">✅ STARTED v1.0.0</span></td>
             <td class="env-not-found" title="Package not found on TST">📦 Not found</td>
           </tr>
           <tr class="notingit-row" data-iflow="I026676_AI02_s3_to_s4hana_product_registration I026676_AI02_s3_to_s4hana_product_registration" data-loglevel="">
@@ -14490,6 +14496,12 @@
             <td class="env-cell"><span class="row-item">—</span><span class="row-item">—</span><span class="row-item">⚫ N/A</span></td>
             <td class="env-cell"><span class="row-item">—</span><span class="row-item">—</span><span class="row-item">⚫ N/A</span></td>
           </tr>
+          <tr class="notingit-row" data-iflow="gitTEST gitTEST" data-loglevel="">
+            <td class="iflow-name" title="gitTEST">❓ gitTEST</td>
+            <td class="iflow-id" title="gitTEST"><code class="copyable" onclick="showIdMenu(event,'iflow','gitTEST','I576520transport','DEV,TST','','','')" title="Click for options">gitTEST</code></td>
+            <td class="env-cell"><span class="row-item">—</span><span class="row-item">—</span><span class="row-item">⚫ N/A</span></td>
+            <td class="env-cell"><span class="row-item">—</span><span class="row-item">—</span><span class="row-item">⚫ N/A</span></td>
+          </tr>
           <tr class="notingit-row" data-iflow="iFlow_TransportTest iFlow TransportTest" data-loglevel="">
             <td class="iflow-name" title="iFlow TransportTest">❓ iFlow TransportTest</td>
             <td class="iflow-id" title="iFlow_TransportTest"><code class="copyable" onclick="showIdMenu(event,'iflow','iFlow_TransportTest','I576520transport','DEV,TST','','','DEV,TST')" title="Click for options">iFlow_TransportTest</code></td>
@@ -16374,6 +16386,44 @@
             <td class="iflow-name" title="Receive supplier invoice Custom Mapping">❓ Receive supplier invoice Custom Mapping</td>
             <td class="iflow-id" title="com.sap.S4CESupplier.S4CEsupplier2OPbuyer.InvoiceRequest_CustomMapping"><code class="copyable" onclick="showIdMenu(event,'iflow','com.sap.S4CESupplier.S4CEsupplier2OPbuyer.InvoiceRequest_CustomMapping','IntegrationofSAPS4HANACloudforSaleswithSAPS4HANAorSAPERPMappingExtension','DEV','','','')" title="Click for options">com.sap.S4CESupplier.S4CEsupplier2OPbuyer.InvoiceRequest_CustomMapping</code></td>
             <td class="env-cell"><span class="row-item">—</span><span class="row-item">—</span><span class="row-item">⚫ N/A</span></td>
+            <td class="env-not-found" title="Package not found on TST">📦 Not found</td>
+          </tr>
+        </tbody>
+      </table>
+      </div>
+    </div>
+    <div class="package-section collapsed" data-package="JMSSampleI575940 JMS_Sample_I575940" data-source="btp" data-git-found="false" data-has-nogit-iflows="true" data-missing-envs="true">
+      <div class="package-header not-in-git" onclick="togglePackage(this)">
+        <h2><span class="toggle-arrow">▶</span> ❓ 📦 JMS_Sample_I575940 (<code class="copyable" onclick="showIdMenu(event,'package','JMSSampleI575940','','DEV','JMS_Sample_I575940','false')" title="Click for options">JMSSampleI575940</code>)</h2>
+        <div class="meta">❓ <strong>Not found in Git</strong> — This package exists on BTP but has no deployment configuration · 📦 <strong>Not found on:</strong> TST</div>
+      </div>
+      <div class="package-body">
+      <table>
+        <thead>
+          <tr>
+            <th>IFlow Name</th>
+            <th>IFlow ID</th>
+            <th><a href="https://dev.integrationsuite.cfapps.jp10.hana.ondemand.com/shell/home" target="_blank" style="color:var(--accent-blue);text-decoration:none;">DEV</a><br><sub>Deploy · LogLevel · Runtime</sub></th>
+            <th><a href="https://eu1.integrationsuite.cfapps.eu10-003.hana.ondemand.com/shell/home" target="_blank" style="color:var(--accent-blue);text-decoration:none;">TST</a><br><sub>Deploy · LogLevel · Runtime</sub></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="notingit-row" data-iflow="iFlow_A_NF iFlow_A_NF" data-loglevel="">
+            <td class="iflow-name" title="iFlow_A_NF">❓ iFlow_A_NF</td>
+            <td class="iflow-id" title="iFlow_A_NF"><code class="copyable" onclick="showIdMenu(event,'iflow','iFlow_A_NF','JMSSampleI575940','DEV','','','DEV')" title="Click for options">iFlow_A_NF</code></td>
+            <td class="env-cell"><span class="row-item">—</span><span class="row-item">—</span><span class="row-item">✅ STARTED v1.0.0</span></td>
+            <td class="env-not-found" title="Package not found on TST">📦 Not found</td>
+          </tr>
+          <tr class="notingit-row" data-iflow="iFlow_B_NF iFlow_B_NF" data-loglevel="">
+            <td class="iflow-name" title="iFlow_B_NF">❓ iFlow_B_NF</td>
+            <td class="iflow-id" title="iFlow_B_NF"><code class="copyable" onclick="showIdMenu(event,'iflow','iFlow_B_NF','JMSSampleI575940','DEV','','','DEV')" title="Click for options">iFlow_B_NF</code></td>
+            <td class="env-cell"><span class="row-item">—</span><span class="row-item">—</span><span class="row-item">✅ STARTED v1.0.0</span></td>
+            <td class="env-not-found" title="Package not found on TST">📦 Not found</td>
+          </tr>
+          <tr class="notingit-row" data-iflow="iFlow_C_NF iFlow_C_NF" data-loglevel="">
+            <td class="iflow-name" title="iFlow_C_NF">❓ iFlow_C_NF</td>
+            <td class="iflow-id" title="iFlow_C_NF"><code class="copyable" onclick="showIdMenu(event,'iflow','iFlow_C_NF','JMSSampleI575940','DEV','','','DEV')" title="Click for options">iFlow_C_NF</code></td>
+            <td class="env-cell"><span class="row-item">—</span><span class="row-item">—</span><span class="row-item">✅ STARTED v1.0.0</span></td>
             <td class="env-not-found" title="Package not found on TST">📦 Not found</td>
           </tr>
         </tbody>
@@ -20966,8 +21016,8 @@
         <tbody>
           <tr class="error-row" data-iflow="sftp_flow_demo sftp_flow_demo" data-loglevel="">
             <td class="iflow-name" title="sftp_flow_demo">🔴 sftp_flow_demo</td>
-            <td class="iflow-id" title="sftp_flow_demo"><code class="copyable" onclick="showIdMenu(event,'iflow','sftp_flow_demo','TPSFTPDEMO','TST','','','TST')" title="Click for options">sftp_flow_demo</code></td>
-            <td class="env-cell"><span class="row-item">—</span><span class="row-item">—</span><span class="row-item">—</span></td>
+            <td class="iflow-id" title="sftp_flow_demo"><code class="copyable" onclick="showIdMenu(event,'iflow','sftp_flow_demo','TPSFTPDEMO','DEV,TST','','','TST')" title="Click for options">sftp_flow_demo</code></td>
+            <td class="env-cell"><span class="row-item">—</span><span class="row-item">—</span><span class="row-item">⚫ N/A</span></td>
             <td class="env-cell"><span class="row-item">—</span><span class="row-item">—</span><span class="row-item">🔴 ERROR v1.0.0</span></td>
           </tr>
         </tbody>
