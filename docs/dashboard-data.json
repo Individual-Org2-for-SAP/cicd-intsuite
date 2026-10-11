@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-10T05:44:35Z",
+  "generated": "2026-10-11T05:33:37Z",
   "environments": [
     "DEV",
     "TST"
@@ -3557,7 +3557,7 @@
             "DEV": {
               "deploy": null,
               "logLevel": null,
-              "runtimeStatus": "STARTED",
+              "runtimeStatus": "ERROR",
               "runtimeVersion": "1.0.2"
             },
             "TST": {
@@ -24932,7 +24932,7 @@
             "DEV": {
               "deploy": null,
               "logLevel": null,
-              "runtimeStatus": "ERROR",
+              "runtimeStatus": "STARTED",
               "runtimeVersion": "1.0.6"
             },
             "TST": {
@@ -35789,7 +35789,7 @@
             "DEV": {
               "deploy": null,
               "logLevel": null,
-              "runtimeStatus": "ERROR",
+              "runtimeStatus": "STARTED",
               "runtimeVersion": "1.0.0"
             },
             "TST": {
@@ -35829,7 +35829,7 @@
             "DEV": {
               "deploy": null,
               "logLevel": null,
-              "runtimeStatus": "ERROR",
+              "runtimeStatus": "STARTED",
               "runtimeVersion": "1.0.3"
             },
             "TST": {
@@ -37309,7 +37309,7 @@
             "DEV": {
               "deploy": null,
               "logLevel": null,
-              "runtimeStatus": "ERROR",
+              "runtimeStatus": "STARTED",
               "runtimeVersion": "1.0.0"
             },
             "TST": {
