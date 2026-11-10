@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-09T06:06:40Z",
+  "generated": "2026-11-10T07:25:16Z",
   "environments": [
     "DEV",
     "TST"
@@ -3396,6 +3396,100 @@
         {
           "id": "Sample_Flow_99",
           "name": "Sample Flow_99",
+          "source": "btp",
+          "hasGitConfig": false,
+          "environments": {
+            "DEV": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": "STARTED",
+              "runtimeVersion": "1.0.0"
+            },
+            "TST": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": null,
+              "runtimeVersion": null
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "BTPWorkshopsampleI334965",
+      "name": "BTP Workshop sample_I334965",
+      "source": "btp",
+      "foundOnEnvironments": [
+        "DEV"
+      ],
+      "gitConfig": {
+        "found": false,
+        "jsonFormat": null
+      },
+      "iflows": [
+        {
+          "id": "Demo_Scenario2_I334965",
+          "name": "Demo_Scenario2_I334965",
+          "source": "btp",
+          "hasGitConfig": false,
+          "environments": {
+            "DEV": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": "STARTED",
+              "runtimeVersion": "1.0.0"
+            },
+            "TST": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": null,
+              "runtimeVersion": null
+            }
+          }
+        },
+        {
+          "id": "Demo_Scenario3_I334965",
+          "name": "Demo_Scenario3_I334965",
+          "source": "btp",
+          "hasGitConfig": false,
+          "environments": {
+            "DEV": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": "STARTED",
+              "runtimeVersion": "1.0.0"
+            },
+            "TST": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": null,
+              "runtimeVersion": null
+            }
+          }
+        },
+        {
+          "id": "Demo_Scenario_I334965",
+          "name": "Demo_Scenario_I334965",
+          "source": "btp",
+          "hasGitConfig": false,
+          "environments": {
+            "DEV": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": "STARTED",
+              "runtimeVersion": "1.0.3"
+            },
+            "TST": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": null,
+              "runtimeVersion": null
+            }
+          }
+        },
+        {
+          "id": "Sample_Flow_I334965",
+          "name": "Sample Flow_I334965",
           "source": "btp",
           "hasGitConfig": false,
           "environments": {
@@ -14835,40 +14929,6 @@
         {
           "id": "HO_DataConversion_I536156",
           "name": "HO_DataConversion_I536156",
-          "source": "btp",
-          "hasGitConfig": false,
-          "environments": {
-            "DEV": {
-              "deploy": null,
-              "logLevel": null,
-              "runtimeStatus": "NOT_DEPLOYED",
-              "runtimeVersion": ""
-            },
-            "TST": {
-              "deploy": null,
-              "logLevel": null,
-              "runtimeStatus": null,
-              "runtimeVersion": null
-            }
-          }
-        }
-      ]
-    },
-    {
-      "id": "HOiFlowI334965",
-      "name": "HO_iFlow_I334965",
-      "source": "btp",
-      "foundOnEnvironments": [
-        "DEV"
-      ],
-      "gitConfig": {
-        "found": false,
-        "jsonFormat": null
-      },
-      "iflows": [
-        {
-          "id": "HO_DataConversion__I334965",
-          "name": "HO_DataConversion _I334965",
           "source": "btp",
           "hasGitConfig": false,
           "environments": {
@@ -40565,7 +40625,28 @@
         "found": false,
         "jsonFormat": null
       },
-      "iflows": []
+      "iflows": [
+        {
+          "id": "Connection_Test",
+          "name": "Connection Test",
+          "source": "btp",
+          "hasGitConfig": false,
+          "environments": {
+            "DEV": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": "NOT_DEPLOYED",
+              "runtimeVersion": ""
+            },
+            "TST": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": null,
+              "runtimeVersion": null
+            }
+          }
+        }
+      ]
     },
     {
       "id": "I741435",
@@ -40620,6 +40701,19 @@
           }
         }
       ]
+    },
+    {
+      "id": "I742062TestIBP",
+      "name": "I742062_Test_IBP",
+      "source": "btp",
+      "foundOnEnvironments": [
+        "TST"
+      ],
+      "gitConfig": {
+        "found": false,
+        "jsonFormat": null
+      },
+      "iflows": []
     },
     {
       "id": "I742374",
@@ -44011,6 +44105,19 @@
       ]
     },
     {
+      "id": "IntegrationTest20261109",
+      "name": "Integration Test 20261109",
+      "source": "btp",
+      "foundOnEnvironments": [
+        "DEV"
+      ],
+      "gitConfig": {
+        "found": false,
+        "jsonFormat": null
+      },
+      "iflows": []
+    },
+    {
       "id": "IntegrationTraning2024",
       "name": "Integration Traning  2024",
       "source": "btp",
@@ -44955,6 +45062,19 @@
           }
         }
       ]
+    },
+    {
+      "id": "MYoshidaMCPTest",
+      "name": "MYoshida MCP Test",
+      "source": "btp",
+      "foundOnEnvironments": [
+        "DEV"
+      ],
+      "gitConfig": {
+        "found": false,
+        "jsonFormat": null
+      },
+      "iflows": []
     },
     {
       "id": "MicrosoftSentinelSolutionforSAP",
@@ -58882,8 +59002,8 @@
     }
   ],
   "summary": {
-    "btpPackageCount": 334,
+    "btpPackageCount": 337,
     "gitOnlyPackageCount": 0,
-    "totalPackageCount": 334
+    "totalPackageCount": 337
   }
 }
