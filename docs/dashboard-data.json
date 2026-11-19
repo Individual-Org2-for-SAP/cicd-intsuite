@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-18T07:18:00Z",
+  "generated": "2026-11-19T07:21:47Z",
   "environments": [
     "DEV",
     "TST"
@@ -3468,6 +3468,26 @@
           }
         },
         {
+          "id": "Demo_Scenario4_I334965",
+          "name": "Demo_Scenario4_I334965",
+          "source": "btp",
+          "hasGitConfig": false,
+          "environments": {
+            "DEV": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": "NOT_DEPLOYED",
+              "runtimeVersion": ""
+            },
+            "TST": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": null,
+              "runtimeVersion": null
+            }
+          }
+        },
+        {
           "id": "Demo_Scenario_I334965",
           "name": "Demo_Scenario_I334965",
           "source": "btp",
@@ -3508,6 +3528,19 @@
           }
         }
       ]
+    },
+    {
+      "id": "BTPWorkshopsampleI3349652",
+      "name": "BTP Workshop sample_I334965_2",
+      "source": "btp",
+      "foundOnEnvironments": [
+        "DEV"
+      ],
+      "gitConfig": {
+        "found": false,
+        "jsonFormat": null
+      },
+      "iflows": []
     },
     {
       "id": "BillingDocument",
@@ -40855,7 +40888,7 @@
               "deploy": null,
               "logLevel": null,
               "runtimeStatus": "STARTED",
-              "runtimeVersion": "1.0.2"
+              "runtimeVersion": "1.0.4"
             },
             "TST": {
               "deploy": null,
@@ -42158,7 +42191,7 @@
     },
     {
       "id": "I742379MCPTest",
-      "name": "I742379 MCP Test",
+      "name": "I742379 MCP JSHackathon",
       "source": "btp",
       "foundOnEnvironments": [
         "DEV"
@@ -43535,6 +43568,60 @@
         {
           "id": "Read_from_Snowflake_and_write_IBP",
           "name": "Write to IBP with data from Snowflake",
+          "source": "btp",
+          "hasGitConfig": false,
+          "environments": {
+            "DEV": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": "NOT_DEPLOYED",
+              "runtimeVersion": ""
+            },
+            "TST": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": null,
+              "runtimeVersion": null
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "IEADemoReviewTargets",
+      "name": "IEA_Demo_ReviewTargets",
+      "source": "btp",
+      "foundOnEnvironments": [
+        "DEV"
+      ],
+      "gitConfig": {
+        "found": false,
+        "jsonFormat": null
+      },
+      "iflows": [
+        {
+          "id": "IEA_Demo_OData_NoResilience",
+          "name": "IEA_Demo_OData_NoResilience",
+          "source": "btp",
+          "hasGitConfig": false,
+          "environments": {
+            "DEV": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": "NOT_DEPLOYED",
+              "runtimeVersion": ""
+            },
+            "TST": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": null,
+              "runtimeVersion": null
+            }
+          }
+        },
+        {
+          "id": "IEA_Demo_OData_Resilient",
+          "name": "IEA_Demo_OData_Resilient",
           "source": "btp",
           "hasGitConfig": false,
           "environments": {
@@ -59139,6 +59226,26 @@
       },
       "iflows": [
         {
+          "id": "P035_Sample_S4toS3_BillingDoc_copy",
+          "name": "P035_Sample_S4toS3_BillingDoc_copy",
+          "source": "btp",
+          "hasGitConfig": false,
+          "environments": {
+            "DEV": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": "NOT_DEPLOYED",
+              "runtimeVersion": ""
+            },
+            "TST": {
+              "deploy": null,
+              "logLevel": null,
+              "runtimeStatus": null,
+              "runtimeVersion": null
+            }
+          }
+        },
+        {
           "id": "S4HANA_PurchaseOrder_OData_Fetch",
           "name": "S4HANA PurchaseOrder OData Fetch",
           "source": "btp",
@@ -60436,8 +60543,8 @@
     }
   ],
   "summary": {
-    "btpPackageCount": 341,
+    "btpPackageCount": 343,
     "gitOnlyPackageCount": 0,
-    "totalPackageCount": 341
+    "totalPackageCount": 343
   }
 }
